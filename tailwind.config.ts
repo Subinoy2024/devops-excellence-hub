@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        mono: ["JetBrains Mono", "Fira Code", "monospace"],
+        cyber: ["Orbitron", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Cyberpunk specific colors
+        neon: {
+          cyan: "hsl(var(--glow-cyan))",
+          pink: "hsl(var(--glow-pink))",
+          purple: "hsl(var(--glow-purple))",
+          green: "hsl(var(--glow-green))",
+        },
+        terminal: {
+          bg: "hsl(var(--terminal-bg))",
+          border: "hsl(var(--terminal-border))",
+          glow: "hsl(var(--terminal-glow))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,25 +81,32 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "fade-in": {
+          from: { opacity: "0", transform: "translateY(10px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        "slide-in": {
+          from: { opacity: "0", transform: "translateX(-20px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
+        "matrix-fall": {
+          "0%": { transform: "translateY(-100%)", opacity: "1" },
+          "100%": { transform: "translateY(100vh)", opacity: "0" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.5s ease-out forwards",
+        "slide-in": "slide-in 0.3s ease-out forwards",
+        "matrix-fall": "matrix-fall 10s linear infinite",
       },
     },
   },
