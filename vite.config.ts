@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Needed for GitHub Pages project sites (e.g. /repo-name/)
+  // In CI we pass BASE_URL=/devops-excellence-hub/
+  base: process.env.BASE_URL ?? "/",
   server: {
     host: "::",
     port: 8080,
