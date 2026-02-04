@@ -45,7 +45,7 @@ const ProfileCard = () => {
               Results-driven Cloud & DevOps Engineer with a strong foundation in infrastructure engineering and a passion for building scalable, resilient, and secure cloud platforms.
             </p>
             <p>
-              My career journey spans from managing bare-metal environments to designing fully automated, cloud-native delivery systems—driven by a commitment to solving real operational challenges.
+              Enterprise experience across leading global organizations including Kyndryl, HCL, KPMG, Atos, Microland, CGI, TCS, and Capgemini—delivering production-grade infrastructure at scale.
             </p>
             <p>
               I specialize in Infrastructure as Code, CI/CD automation, and cloud security best practices, ensuring environments are consistent, auditable, and production-grade.
