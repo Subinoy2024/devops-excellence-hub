@@ -1,4 +1,5 @@
 import { Award, GraduationCap, BookOpen, Cloud } from 'lucide-react';
+import { useState } from 'react';
 
 const certifications = [
   {
@@ -24,7 +25,8 @@ const certifications = [
     issuer: 'UPGRAD',
     description: 'Successfully participated in the 7 months bootcamp program. Issued on 17-02-2025',
     icon: BookOpen,
-    color: 'primary'
+    color: 'primary',
+    certificateImage: '/assets/upgrad-certificate.png'
   },
   {
     title: 'AI Powered Cloud & DevOps',
@@ -37,6 +39,8 @@ const certifications = [
 ];
 
 const CertificationsPanel = () => {
+  const [selectedCert, setSelectedCert] = useState<string | null>(null);
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -48,6 +52,28 @@ const CertificationsPanel = () => {
           Professional certifications and continuous learning achievements
         </p>
       </div>
+
+      {/* Certificate Modal */}
+      {selectedCert && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          onClick={() => setSelectedCert(null)}
+        >
+          <div className="relative max-w-4xl w-full animate-fade-in">
+            <img 
+              src={selectedCert} 
+              alt="Certificate" 
+              className="w-full h-auto rounded-lg border border-primary/50 neon-glow-cyan"
+            />
+            <button 
+              onClick={() => setSelectedCert(null)}
+              className="absolute top-4 right-4 px-3 py-1 bg-card/90 border border-primary/50 rounded text-primary font-mono text-sm hover:bg-primary hover:text-primary-foreground transition-all"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Certifications Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -97,6 +123,15 @@ const CertificationsPanel = () => {
                     <span className="inline-block text-xs px-2 py-1 bg-primary/10 border border-primary/30 rounded text-primary font-mono">
                       {cert.timeline}
                     </span>
+                  )}
+                  {cert.certificateImage && (
+                    <button
+                      onClick={() => setSelectedCert(cert.certificateImage)}
+                      className="mt-3 flex items-center gap-2 text-xs px-3 py-1.5 bg-primary/10 border border-primary/30 rounded text-primary font-mono hover:bg-primary/20 hover:border-primary transition-all"
+                    >
+                      <Award size={14} />
+                      View Certificate
+                    </button>
                   )}
                 </div>
               </div>
