@@ -42,13 +42,13 @@ const ProfileCard = () => {
           <p className="text-xs text-muted-foreground mb-2 font-mono">// ABOUT ME</p>
           <div className="text-xs text-muted-foreground leading-relaxed space-y-2 max-h-48 overflow-y-auto pr-2">
             <p>
-              Results-driven Cloud & DevOps Engineer with a strong foundation in infrastructure engineering and a passion for building scalable, resilient, and secure cloud platforms.
+              Results-driven DevOps and Cloud Engineer with a strong foundation in infrastructure engineering and a passion for building scalable, resilient, and secure cloud platforms.
             </p>
             <p>
               Enterprise experience across leading global organizations including Kyndryl, HCL, KPMG, Atos, Microland, CGI, TCS, and Capgemini—delivering production-grade infrastructure at scale.
             </p>
             <p>
-              I specialize in Infrastructure as Code, CI/CD automation, and cloud security best practices, ensuring environments are consistent, auditable, and production-grade.
+              I specialize in Infrastructure as Code, CI/CD automation and cloud configuration best practices, ensuring environments are consistent, auditable, and production-grade.
             </p>
             <p className="text-primary italic">
               Currently exploring AI-driven cloud operations (AIOps / GenAI) to enhance automation and enable smarter infrastructure management.
@@ -59,7 +59,7 @@ const ProfileCard = () => {
         {/* Social Links */}
         <div className="flex justify-center gap-4">
           <a
-            href="https://github.com/Subinoy2024/subinoy.debnath_dc_cloud.io.git"
+            href="https://github.com/Subinoy2024"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 bg-muted/30 rounded border border-primary/30 hover:border-primary hover:neon-glow-cyan transition-all"

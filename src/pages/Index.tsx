@@ -139,7 +139,7 @@ const Index = () => {
                           → linkedin.com/in/subinoy-debnath-3ab534272
                         </a>
                         <a
-                          href="https://github.com/Subinoy2024/subinoy.debnath_dc_cloud.io.git"
+                          href="https://github.com/Subinoy2024"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="block text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
