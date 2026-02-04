@@ -4,11 +4,12 @@ import ProfileCard from '@/components/ProfileCard';
 import SkillsPanel from '@/components/SkillsPanel';
 import ProjectsPanel from '@/components/ProjectsPanel';
 import KnowledgePanel from '@/components/KnowledgePanel';
+import CertificationsPanel from '@/components/CertificationsPanel';
 import MatrixRain from '@/components/MatrixRain';
-import { Download, MessageSquare, User, Cpu, FolderGit2, BookOpen } from 'lucide-react';
+import { Download, MessageSquare, User, Cpu, FolderGit2, BookOpen, Award } from 'lucide-react';
 
 const Index = () => {
-  const [activeTab, setActiveTab] = useState<'terminal' | 'profile' | 'skills' | 'projects' | 'knowledge'>('terminal');
+  const [activeTab, setActiveTab] = useState<'terminal' | 'profile' | 'skills' | 'projects' | 'knowledge' | 'certifications'>('terminal');
 
   const tabs = [
     { id: 'terminal', label: 'Profile AI Assistance', icon: MessageSquare },
@@ -16,6 +17,7 @@ const Index = () => {
     { id: 'skills', label: 'Skills Matrix', icon: Cpu },
     { id: 'projects', label: 'Projects', icon: FolderGit2 },
     { id: 'knowledge', label: 'Knowledge', icon: BookOpen },
+    { id: 'certifications', label: 'Certifications', icon: Award },
   ] as const;
 
   return (
@@ -158,6 +160,7 @@ const Index = () => {
               {activeTab === 'skills' && <SkillsPanel />}
               {activeTab === 'projects' && <ProjectsPanel />}
               {activeTab === 'knowledge' && <KnowledgePanel />}
+              {activeTab === 'certifications' && <CertificationsPanel />}
             </div>
 
             {/* Sidebar - Stats */}
