@@ -1,4 +1,4 @@
-// Pre-programmed AI responses for the DevOps portfolio
+// Pre-programmed AI responses for the Cloud & DevOps Engineer portfolio
 // Simulates an AI assistant that knows about Subinoy Debnath's skills and experience
 
 interface AIResponse {
@@ -11,7 +11,7 @@ const responses: AIResponse[] = [
     keywords: ['hello', 'hi', 'hey', 'greet'],
     response: `> SYSTEM INITIALIZED
     
-Greetings, user. I am DEVOPS-AI, the neural interface for Subinoy Debnath's professional profile.
+Greetings, user. I am PROFILE-AI, the neural interface for Subinoy Debnath's professional profile.
 
 I can tell you about:
 • Cloud & Infrastructure expertise
@@ -19,6 +19,7 @@ I can tell you about:
 • Kubernetes & container orchestration
 • Terraform & IaC strategies
 • Security & compliance practices
+• Projects & real-world implementations
 
 What would you like to explore?`
   },
@@ -41,21 +42,51 @@ What would you like to explore?`
 12+ years IT | 6+ years Cloud & DevOps | Enterprise-scale operations`
   },
   {
+    keywords: ['about', 'who', 'introduction', 'summary', 'background'],
+    response: `> LOADING PROFILE DATA...
+
+╔══════════════════════════════════════════════════════════════╗
+║  ABOUT SUBINOY DEBNATH                                       ║
+╚══════════════════════════════════════════════════════════════╝
+
+Results-driven Cloud & DevOps Engineer with a strong foundation 
+in infrastructure engineering and a passion for building scalable, 
+resilient, and secure cloud platforms.
+
+Career journey spans from managing bare-metal environments to 
+designing fully automated, cloud-native delivery systems.
+
+CORE STRENGTHS:
+► Infrastructure as Code (Terraform-first approach)
+► CI/CD automation (Azure DevOps, Jenkins, GitHub Actions)
+► Cloud security best practices & compliance
+► Production-grade platform design
+
+PHILOSOPHY:
+"Simplicity, observability, and resilience guide every 
+architectural decision I make."
+
+Currently exploring: AIOps / GenAI for smarter cloud operations`
+  },
+  {
     keywords: ['experience', 'work', 'company', 'enterprise', 'client'],
     response: `> QUERYING EXPERIENCE DATABASE...
 
 ╭─────────────────────────────────────────╮
 │  ENTERPRISE DEPLOYMENTS                 │
 ├─────────────────────────────────────────┤
-│  ► KYNDRYL    │ Cloud Infrastructure   │
-│  ► HCL TECH   │ Platform Engineering   │
-│  ► KPMG       │ Security & Compliance  │
-│  ► ATOS       │ Multi-cloud Migration  │
-│  ► MICROLAND  │ DevOps Transformation  │
+│  ► CGI         │ Cloud Infrastructure   │
+│  ► TCS         │ Platform Engineering   │
+│  ► CAPGEMINI   │ DevOps Transformation  │
 ╰─────────────────────────────────────────╯
 
 Delivered production-grade infrastructure serving millions of users.
-Zero-downtime deployments. 99.99% SLA achievements.`
+Zero-downtime deployments. 99.99% SLA achievements.
+
+IMPACT:
+• Transformed legacy systems into cloud-native platforms
+• Reduced deployment time by 70% through automation
+• Implemented security-first infrastructure patterns`
   },
   {
     keywords: ['terraform', 'iac', 'infrastructure as code', 'provision'],
@@ -159,46 +190,51 @@ Tools: Azure DevOps, Jenkins, GitHub Actions, ArgoCD`
 └────────────────────────────────────────┘
 
 Continuous learning. Always evolving.
-Currently exploring: Platform Engineering, SRE, FinOps`
+Currently exploring: Platform Engineering, SRE, FinOps, AIOps`
   },
   {
     keywords: ['project', 'portfolio', 'built', 'implement'],
     response: `> FETCHING PROJECT LOGS...
 
 ╭─────────────────────────────────────────────────╮
-│  PROJECT 1: Enterprise CI/CD Platform           │
+│  PROJECT 1: CI/CD with Jenkins + Terraform      │
 ├─────────────────────────────────────────────────┤
-│  Stack: Azure DevOps + Terraform + Ansible      │
-│  Scale: 200+ microservices                      │
-│  Impact: 70% faster deployments                 │
+│  Stack: Jenkins + Docker + Terraform + Ansible  │
+│  Flow: Push → Build → Provision → Deploy → Test │
 ╰─────────────────────────────────────────────────╯
 
 ╭─────────────────────────────────────────────────╮
-│  PROJECT 2: Multi-Cloud K8s Platform            │
+│  PROJECT 2: Kubernetes CI/CD Pipeline           │
 ├─────────────────────────────────────────────────┤
-│  Stack: Jenkins + Terraform + AKS/EKS           │
-│  Scale: 50+ clusters across regions             │
-│  Impact: 99.99% availability                    │
+│  Stack: Jenkins + Docker + Terraform + K8s      │
+│  Flow: Webhook → Build → Infra → K8s Deploy     │
 ╰─────────────────────────────────────────────────╯
 
-More projects available. Ask about specific domains.`
+╭─────────────────────────────────────────────────╮
+│  PROJECT 3: AWS WordPress with CloudFormation   │
+├─────────────────────────────────────────────────┤
+│  Stack: CloudFormation + EC2 + Route 53 + ASG   │
+│  Features: Multi-env, auto-scaling, scheduling  │
+╰─────────────────────────────────────────────────╯
+
+Switch to PROJECTS tab for detailed breakdowns.`
   },
   {
     keywords: ['contact', 'reach', 'email', 'linkedin', 'github', 'connect'],
     response: `> ESTABLISHING CONNECTION...
 
-╔═══════════════════════════════════════════╗
-║  COMMUNICATION CHANNELS                   ║
-╠═══════════════════════════════════════════╣
-║  GitHub    │ github.com/subinoydebnath   ║
-║  LinkedIn  │ linkedin.com/in/subinoydebnath ║
-║  Email     │ subinoy.debnath@email.com   ║
-╚═══════════════════════════════════════════╝
+╔═══════════════════════════════════════════════════════════════╗
+║  COMMUNICATION CHANNELS                                       ║
+╠═══════════════════════════════════════════════════════════════╣
+║  GitHub    │ github.com/Subinoy2024                           ║
+║  LinkedIn  │ linkedin.com/in/subinoy-debnath-3ab534272        ║
+║  Email     │ sdebnath8887@gmail.com                           ║
+╚═══════════════════════════════════════════════════════════════╝
 
 Ready for:
-• DevOps consulting
-• Cloud architecture reviews
+• Cloud & DevOps consulting
 • Platform engineering roles
+• Infrastructure architecture reviews
 • Speaking engagements
 
 Let's build something production-grade together.`
@@ -252,6 +288,7 @@ const defaultResponse = `> QUERY NOT RECOGNIZED
 I couldn't find specific information about that topic.
 
 Try asking about:
+• About me / background
 • Skills & expertise
 • Cloud platforms (Azure, AWS)
 • CI/CD pipelines
@@ -271,6 +308,7 @@ Available query topics:
 ╔═══════════════════════════════════════╗
 ║  TOPIC          │  KEYWORDS           ║
 ╠═══════════════════════════════════════╣
+║  About Me       │  about, who         ║
 ║  Greeting       │  hello, hi          ║
 ║  Skills         │  skills, expertise  ║
 ║  Experience     │  work, company      ║
@@ -306,14 +344,14 @@ export const getAIResponse = (query: string): string => {
 export const getWelcomeMessage = (): string => {
   return `╔════════════════════════════════════════════════════════════════╗
 ║                                                                ║
-║     ██████╗ ███████╗██╗   ██╗ ██████╗ ██████╗ ███████╗         ║
-║     ██╔══██╗██╔════╝██║   ██║██╔═══██╗██╔══██╗██╔════╝         ║
-║     ██║  ██║█████╗  ██║   ██║██║   ██║██████╔╝███████╗         ║
-║     ██║  ██║██╔══╝  ╚██╗ ██╔╝██║   ██║██╔═══╝ ╚════██║         ║
-║     ██████╔╝███████╗ ╚████╔╝ ╚██████╔╝██║     ███████║         ║
-║     ╚═════╝ ╚══════╝  ╚═══╝   ╚═════╝ ╚═╝     ╚══════╝         ║
+║   ██████╗ ██████╗  ██████╗ ███████╗██╗██╗     ███████╗         ║
+║   ██╔══██╗██╔══██╗██╔═══██╗██╔════╝██║██║     ██╔════╝         ║
+║   ██████╔╝██████╔╝██║   ██║█████╗  ██║██║     █████╗           ║
+║   ██╔═══╝ ██╔══██╗██║   ██║██╔══╝  ██║██║     ██╔══╝           ║
+║   ██║     ██║  ██║╚██████╔╝██║     ██║███████╗███████╗         ║
+║   ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚══════╝         ║
 ║                                                                ║
-║                    A I   A S S I S T A N T                     ║
+║                  A I   A S S I S T A N C E                     ║
 ║                                                                ║
 ╚════════════════════════════════════════════════════════════════╝
 
@@ -322,9 +360,9 @@ export const getWelcomeMessage = (): string => {
 > INITIALIZING SUBINOY DEBNATH PROFILE...
 > CONNECTION ESTABLISHED
 
-Welcome to the AI-powered DevOps Engineer profile.
+Welcome to the AI-powered Cloud & DevOps Engineer profile.
 
-I am DEVOPS-AI, your intelligent assistant. Ask me anything about:
+I am PROFILE-AI, your intelligent assistant. Ask me anything about:
 • Cloud infrastructure & architecture
 • CI/CD pipelines & automation
 • Kubernetes & container orchestration

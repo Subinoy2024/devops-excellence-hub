@@ -1,5 +1,5 @@
 import profileImage from "/assets/profile.png";
-import { Github, Linkedin, Mail, Terminal, Cloud, Shield, Server } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const ProfileCard = () => {
   return (
@@ -29,7 +29,7 @@ const ProfileCard = () => {
             SUBINOY DEBNATH
           </h1>
           <p className="text-accent mt-1 font-mono text-sm">
-            Senior DevOps & Cloud Engineer
+            Cloud & DevOps Engineer
           </p>
           <div className="flex items-center justify-center gap-2 mt-2 text-xs text-muted-foreground">
             <span className="pulse-glow w-2 h-2 bg-primary rounded-full" />
@@ -37,43 +37,29 @@ const ProfileCard = () => {
           </div>
         </div>
 
-        {/* Quick Stats */}
-        <div className="grid grid-cols-2 gap-3 mb-6">
-          {[
-            { icon: Cloud, label: 'Multi-Cloud', value: 'Azure / AWS' },
-            { icon: Server, label: 'Containers', value: 'K8s / Docker' },
-            { icon: Terminal, label: 'IaC', value: 'Terraform' },
-            { icon: Shield, label: 'Security', value: 'IAM / RBAC' },
-          ].map(({ icon: Icon, label, value }) => (
-            <div key={label} className="bg-muted/30 rounded p-2 border border-primary/20">
-              <div className="flex items-center gap-2 text-primary mb-1">
-                <Icon size={14} />
-                <span className="text-xs">{label}</span>
-              </div>
-              <span className="text-xs text-muted-foreground">{value}</span>
-            </div>
-          ))}
-        </div>
-
-        {/* Certifications */}
+        {/* About Me */}
         <div className="mb-6">
-          <p className="text-xs text-muted-foreground mb-2 font-mono">// CERTIFICATIONS</p>
-          <div className="flex flex-wrap gap-2">
-            {['AWS Certified', 'AZ-104', 'AZ-900'].map((cert) => (
-              <span
-                key={cert}
-                className="text-xs px-2 py-1 bg-secondary/20 border border-secondary/50 rounded text-secondary-foreground"
-              >
-                {cert}
-              </span>
-            ))}
+          <p className="text-xs text-muted-foreground mb-2 font-mono">// ABOUT ME</p>
+          <div className="text-xs text-muted-foreground leading-relaxed space-y-2 max-h-48 overflow-y-auto pr-2">
+            <p>
+              Results-driven Cloud & DevOps Engineer with a strong foundation in infrastructure engineering and a passion for building scalable, resilient, and secure cloud platforms.
+            </p>
+            <p>
+              My career journey spans from managing bare-metal environments to designing fully automated, cloud-native delivery systems—driven by a commitment to solving real operational challenges.
+            </p>
+            <p>
+              I specialize in Infrastructure as Code, CI/CD automation, and cloud security best practices, ensuring environments are consistent, auditable, and production-grade.
+            </p>
+            <p className="text-primary italic">
+              Currently exploring AI-driven cloud operations (AIOps / GenAI) to enhance automation and enable smarter infrastructure management.
+            </p>
           </div>
         </div>
 
         {/* Social Links */}
         <div className="flex justify-center gap-4">
           <a
-            href="https://github.com/subinoydebnath"
+            href="https://github.com/Subinoy2024/subinoy.debnath_dc_cloud.io.git"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 bg-muted/30 rounded border border-primary/30 hover:border-primary hover:neon-glow-cyan transition-all"
@@ -81,7 +67,7 @@ const ProfileCard = () => {
             <Github size={18} className="text-primary" />
           </a>
           <a
-            href="https://linkedin.com/in/subinoydebnath"
+            href="https://www.linkedin.com/in/subinoy-debnath-3ab534272"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 bg-muted/30 rounded border border-primary/30 hover:border-primary hover:neon-glow-cyan transition-all"
@@ -89,7 +75,7 @@ const ProfileCard = () => {
             <Linkedin size={18} className="text-primary" />
           </a>
           <a
-            href="mailto:subinoy.debnath@email.com"
+            href="mailto:sdebnath8887@gmail.com"
             className="p-2 bg-muted/30 rounded border border-primary/30 hover:border-primary hover:neon-glow-cyan transition-all"
           >
             <Mail size={18} className="text-primary" />
