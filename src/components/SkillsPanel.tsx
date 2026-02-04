@@ -38,7 +38,7 @@ const skills = [
     color: 'accent'
   },
   {
-    category: 'Team Management & AI',
+    category: 'Team Management',
     icon: Users,
     items: ['Collaboration', 'Motivation', 'Support', 'Build'],
     color: 'primary'
