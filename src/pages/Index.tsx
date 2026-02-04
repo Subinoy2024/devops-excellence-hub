@@ -2,16 +2,29 @@ import { useState } from 'react';
 import Terminal from '@/components/Terminal';
 import ProfileCard from '@/components/ProfileCard';
 import SkillsPanel from '@/components/SkillsPanel';
+import ProjectsPanel from '@/components/ProjectsPanel';
+import KnowledgePanel from '@/components/KnowledgePanel';
 import MatrixRain from '@/components/MatrixRain';
-import { Download, MessageSquare, User, Cpu } from 'lucide-react';
+import { Download, MessageSquare, User, Cpu, FolderGit2, BookOpen } from 'lucide-react';
 
 const Index = () => {
-  const [activeTab, setActiveTab] = useState<'terminal' | 'profile' | 'skills'>('terminal');
+  const [activeTab, setActiveTab] = useState<'terminal' | 'profile' | 'skills' | 'projects' | 'knowledge'>('terminal');
+
+  const tabs = [
+    { id: 'terminal', label: 'Profile AI Assistance', icon: MessageSquare },
+    { id: 'profile', label: 'Profile', icon: User },
+    { id: 'skills', label: 'Skills Matrix', icon: Cpu },
+    { id: 'projects', label: 'Projects', icon: FolderGit2 },
+    { id: 'knowledge', label: 'Knowledge', icon: BookOpen },
+  ] as const;
 
   return (
     <div className="min-h-screen bg-background text-foreground matrix-bg">
       {/* Matrix Rain Background */}
       <MatrixRain />
+
+      {/* Animated gradient overlay */}
+      <div className="fixed inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" />
 
       {/* Main Content */}
       <div className="relative z-10 min-h-screen p-4 md:p-6">
@@ -20,15 +33,18 @@ const Index = () => {
           <header className="mb-6">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary/20 border border-primary rounded flex items-center justify-center neon-glow-cyan">
-                  <Cpu className="text-primary" size={20} />
+                <div className="relative">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded blur opacity-50 animate-pulse" />
+                  <div className="relative w-12 h-12 bg-card border border-primary rounded flex items-center justify-center neon-glow-cyan">
+                    <Cpu className="text-primary" size={24} />
+                  </div>
                 </div>
                 <div>
-                  <h1 className="text-xl font-bold font-mono neon-text-cyan">
-                    DEVOPS-AI INTERFACE
+                  <h1 className="text-xl md:text-2xl font-bold font-mono neon-text-cyan">
+                    CLOUD-DEVOPS AI INTERFACE
                   </h1>
                   <p className="text-xs text-muted-foreground font-mono">
-                    v2.0.0 // Neural Network Active
+                    v2.0.0 // Neural Network Active // AIOps Enabled
                   </p>
                 </div>
               </div>
@@ -47,19 +63,15 @@ const Index = () => {
           </header>
 
           {/* Navigation Tabs */}
-          <div className="flex gap-2 mb-6">
-            {[
-              { id: 'terminal', label: 'AI Terminal', icon: MessageSquare },
-              { id: 'profile', label: 'Profile', icon: User },
-              { id: 'skills', label: 'Skills Matrix', icon: Cpu },
-            ].map(({ id, label, icon: Icon }) => (
+          <div className="flex flex-wrap gap-2 mb-6">
+            {tabs.map(({ id, label, icon: Icon }) => (
               <button
                 key={id}
-                onClick={() => setActiveTab(id as typeof activeTab)}
-                className={`flex items-center gap-2 px-4 py-2 rounded font-mono text-sm transition-all ${
+                onClick={() => setActiveTab(id)}
+                className={`flex items-center gap-2 px-3 md:px-4 py-2 rounded font-mono text-xs md:text-sm transition-all ${
                   activeTab === id
                     ? 'bg-primary text-primary-foreground neon-glow-cyan'
-                    : 'bg-muted/30 text-muted-foreground border border-border hover:border-primary/50'
+                    : 'bg-muted/30 text-muted-foreground border border-border hover:border-primary/50 hover:text-foreground'
                 }`}
               >
                 <Icon size={16} />
@@ -83,15 +95,15 @@ const Index = () => {
                   <ProfileCard />
                   <div className="space-y-4">
                     {/* Experience */}
-                    <div className="bg-card/50 border border-primary/30 rounded-lg p-4">
+                    <div className="bg-card/50 backdrop-blur-sm border border-primary/30 rounded-lg p-4">
                       <h3 className="text-sm font-mono text-primary mb-3 neon-text-cyan">
                         // ENTERPRISE EXPERIENCE
                       </h3>
                       <div className="flex flex-wrap gap-2">
-                        {['Kyndryl', 'HCL Technologies', 'KPMG', 'ATOS', 'Microland'].map((company) => (
+                        {['CGI', 'TCS', 'Capgemini'].map((company) => (
                           <span
                             key={company}
-                            className="text-xs px-3 py-1.5 bg-muted/50 rounded border border-border text-foreground"
+                            className="text-xs px-3 py-1.5 bg-primary/10 rounded border border-primary/30 text-foreground font-mono"
                           >
                             {company}
                           </span>
@@ -100,42 +112,42 @@ const Index = () => {
                     </div>
 
                     {/* Philosophy */}
-                    <div className="bg-card/50 border border-accent/30 rounded-lg p-4">
+                    <div className="bg-card/50 backdrop-blur-sm border border-accent/30 rounded-lg p-4">
                       <h3 className="text-sm font-mono text-accent mb-3 neon-text-pink">
                         // PHILOSOPHY
                       </h3>
                       <p className="text-sm text-muted-foreground italic font-mono leading-relaxed">
-                        "Infrastructure should be cattle, not pets. Automate everything, trust nothing, verify always."
+                        "Simplicity, observability, and resilience guide every architectural decision I make. Infrastructure should be cattle, not pets."
                       </p>
                     </div>
 
                     {/* Quick Actions */}
-                    <div className="bg-card/50 border border-secondary/30 rounded-lg p-4">
+                    <div className="bg-card/50 backdrop-blur-sm border border-secondary/30 rounded-lg p-4">
                       <h3 className="text-sm font-mono text-secondary mb-3">
                         // CONNECT
                       </h3>
                       <div className="space-y-2">
                         <a
-                          href="https://linkedin.com/in/subinoydebnath"
+                          href="https://www.linkedin.com/in/subinoy-debnath-3ab534272"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="block text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
                         >
-                          → linkedin.com/in/subinoydebnath
+                          → linkedin.com/in/subinoy-debnath-3ab534272
                         </a>
                         <a
-                          href="https://github.com/subinoydebnath"
+                          href="https://github.com/Subinoy2024/subinoy.debnath_dc_cloud.io.git"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="block text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
                         >
-                          → github.com/subinoydebnath
+                          → github.com/Subinoy2024
                         </a>
                         <a
-                          href="mailto:subinoy.debnath@email.com"
+                          href="mailto:sdebnath8887@gmail.com"
                           className="block text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
                         >
-                          → subinoy.debnath@email.com
+                          → sdebnath8887@gmail.com
                         </a>
                       </div>
                     </div>
@@ -144,12 +156,14 @@ const Index = () => {
               )}
 
               {activeTab === 'skills' && <SkillsPanel />}
+              {activeTab === 'projects' && <ProjectsPanel />}
+              {activeTab === 'knowledge' && <KnowledgePanel />}
             </div>
 
             {/* Sidebar - Stats */}
             <div className="space-y-4">
               {/* System Status */}
-              <div className="bg-card/50 border border-primary/30 rounded-lg p-4">
+              <div className="bg-card/50 backdrop-blur-sm border border-primary/30 rounded-lg p-4">
                 <h3 className="text-xs font-mono text-primary mb-3">SYSTEM_STATUS</h3>
                 <div className="space-y-2 text-xs font-mono">
                   <div className="flex justify-between">
@@ -172,7 +186,7 @@ const Index = () => {
               </div>
 
               {/* Active Technologies */}
-              <div className="bg-card/50 border border-secondary/30 rounded-lg p-4">
+              <div className="bg-card/50 backdrop-blur-sm border border-secondary/30 rounded-lg p-4">
                 <h3 className="text-xs font-mono text-secondary mb-3">ACTIVE_STACK</h3>
                 <div className="space-y-1 text-xs font-mono text-muted-foreground">
                   {[
@@ -182,7 +196,7 @@ const Index = () => {
                     'Azure DevOps Pipelines',
                     'Prometheus + Grafana',
                     'ArgoCD GitOps',
-                  ].map((tech, idx) => (
+                  ].map((tech) => (
                     <div key={tech} className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary pulse-glow" />
                       <span>{tech}</span>
@@ -192,7 +206,7 @@ const Index = () => {
               </div>
 
               {/* Instructions */}
-              <div className="bg-card/50 border border-accent/30 rounded-lg p-4">
+              <div className="bg-card/50 backdrop-blur-sm border border-accent/30 rounded-lg p-4">
                 <h3 className="text-xs font-mono text-accent mb-3">QUICK_GUIDE</h3>
                 <div className="text-xs font-mono text-muted-foreground space-y-1">
                   <p>→ Type 'hello' to start</p>
@@ -207,7 +221,7 @@ const Index = () => {
           {/* Footer */}
           <footer className="mt-8 text-center text-xs text-muted-foreground font-mono">
             <p className="neon-text-cyan">
-              © 2024 SUBINOY DEBNATH // DEVOPS-AI INTERFACE // ALL SYSTEMS OPERATIONAL
+              © 2025 SUBINOY DEBNATH // CLOUD-DEVOPS AI INTERFACE // ALL SYSTEMS OPERATIONAL
             </p>
           </footer>
         </div>
