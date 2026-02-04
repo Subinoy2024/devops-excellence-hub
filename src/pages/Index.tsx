@@ -196,10 +196,11 @@ const Index = () => {
                   {[
                     'Azure Cloud Platform',
                     'Terraform Enterprise',
-                    'Kubernetes Clusters',
                     'Azure DevOps Pipelines',
-                    'Prometheus + Grafana',
-                    'ArgoCD GitOps',
+                    'Docker Image',
+                    'Observability',
+                    'AWS Cloud Services',
+                    'OpenStack Cloud',
                   ].map((tech) => (
                     <div key={tech} className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary pulse-glow" />
