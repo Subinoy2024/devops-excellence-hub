@@ -5,7 +5,7 @@ import SkillsPanel from '@/components/SkillsPanel';
 import ProjectsPanel from '@/components/ProjectsPanel';
 import KnowledgePanel from '@/components/KnowledgePanel';
 import CertificationsPanel from '@/components/CertificationsPanel';
-import ExperienceTimeline from '@/components/ExperienceTimeline';
+
 import MatrixRain from '@/components/MatrixRain';
 import { Download, MessageSquare, User, Cpu, FolderGit2, BookOpen, Award } from 'lucide-react';
 
@@ -97,8 +97,22 @@ const Index = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <ProfileCard />
                   <div className="space-y-4">
-                    {/* Career Timeline */}
-                    <ExperienceTimeline />
+                    {/* Enterprise Experience */}
+                    <div className="bg-card/50 backdrop-blur-sm border border-primary/30 rounded-lg p-4">
+                      <h3 className="text-sm font-mono text-primary mb-3 neon-text-cyan">
+                        // ENTERPRISE EXPERIENCE
+                      </h3>
+                      <div className="flex flex-wrap gap-2">
+                        {['KYNDRYL', 'HCL', 'KPMG', 'ATOS', 'MICROLAND', 'CGI', 'TCS', 'CAPGEMINI'].map((company) => (
+                          <span
+                            key={company}
+                            className="text-xs px-3 py-1.5 bg-primary/10 rounded border border-primary/30 text-foreground font-mono hover:bg-primary/20 hover:border-primary transition-all"
+                          >
+                            {company}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
 
                     {/* Philosophy */}
                     <div className="bg-card/50 backdrop-blur-sm border border-accent/30 rounded-lg p-4">
