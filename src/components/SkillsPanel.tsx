@@ -1,10 +1,10 @@
-import { Cloud, Container, GitBranch, Shield, Activity, Settings } from 'lucide-react';
+import { Cloud, Container, GitBranch, Shield, Activity, Settings, Users, Brain } from 'lucide-react';
 
 const skills = [
   {
     category: 'Cloud Platforms',
     icon: Cloud,
-    items: ['Azure (AKS, VMs, Storage)', 'AWS (EKS, EC2, S3, IAM)'],
+    items: ['Azure (AKS, VMs, Storage)', 'AWS (EKS, EC2, S3, IAM)', 'OpenStack'],
     color: 'primary'
   },
   {
@@ -22,7 +22,7 @@ const skills = [
   {
     category: 'Infrastructure as Code',
     icon: Settings,
-    items: ['Terraform', 'ARM Templates', 'CloudFormation', 'Bicep'],
+    items: ['Terraform', 'ARM Templates', 'CloudFormation'],
     color: 'primary'
   },
   {
@@ -36,6 +36,18 @@ const skills = [
     icon: Activity,
     items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'],
     color: 'accent'
+  },
+  {
+    category: 'Team Management & AI',
+    icon: Users,
+    items: ['Collaboration', 'Motivation', 'Support', 'Build'],
+    color: 'primary'
+  },
+  {
+    category: 'AI / MLOps Explorer',
+    icon: Brain,
+    items: ['AI/ML Foundations', 'LLM & Generative AI', 'Agentic AI Foundations'],
+    color: 'secondary'
   },
 ];
 

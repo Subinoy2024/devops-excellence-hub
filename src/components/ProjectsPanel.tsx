@@ -1,4 +1,4 @@
-import { Cloud, Server, GitBranch, Database, Container, Settings } from 'lucide-react';
+import { Cloud, Server, GitBranch, Database, Container, Settings, Activity } from 'lucide-react';
 
 interface Project {
   title: string;
@@ -111,6 +111,56 @@ const projects: Project[] = [
     ],
     tools: ['Ansible', 'Nginx', 'Linux', 'YAML', 'SSH'],
     icon: Settings,
+    color: 'accent'
+  },
+  {
+    title: 'Custom Windows Server 2022 Image Creation for OpenStack',
+    overview: 'Built a custom, production-ready Windows Server 2022 image for OpenStack, enabling reliable networking, efficient lifecycle management, and rapid provisioning of reusable Windows VMs optimized for performance, security, and cloud compatibility.',
+    flow: 'Windows Install → VirtIO Drivers → QEMU Agent → Sysprep → Hardened Image → OpenStack Glance',
+    steps: [
+      'Install Windows Server 2022 using VirtIO SCSI drivers',
+      'Load required storage drivers during installation',
+      'Install NetKVM (VirtIO network driver) for stable networking',
+      'Configure QEMU Guest Agent for VM lifecycle management',
+      'Generalize OS using Sysprep for image reusability',
+      'Apply security hardening best practices',
+      'Upload and validate image in OpenStack Glance'
+    ],
+    tools: ['Windows Server 2022', 'OpenStack Glance', 'VirtIO Drivers', 'QEMU Guest Agent', 'Sysprep'],
+    icon: Server,
+    color: 'primary'
+  },
+  {
+    title: 'On-Prem OpenStack Private Cloud Deployment with Full Monitoring',
+    overview: 'Designed and validated a production-like OpenStack Private Cloud on bare-metal infrastructure in a physical data center, enabling hands-on practice and operational readiness aligned with enterprise data center standards.',
+    flow: 'Bare-Metal Servers → OpenStack Services → Horizon Dashboard → Monitoring & Observability',
+    steps: [
+      'Deploy OpenStack Private Cloud on bare-metal servers',
+      'Configure and validate Compute, Network, Block Storage, and Identity services',
+      'Enable Horizon Dashboard for cloud administration',
+      'Integrate Prometheus + Node Exporter + Grafana for monitoring',
+      'Monitor real-time CPU, RAM, Disk, Network, and Swap metrics',
+      'Validate platform stability via OS-level and dashboard metrics'
+    ],
+    tools: ['OpenStack', 'Bare-Metal Servers', 'Horizon Dashboard', 'Prometheus', 'Node Exporter', 'Grafana', 'Linux'],
+    icon: Activity,
+    color: 'secondary'
+  },
+  {
+    title: 'Enterprise-Grade Multi-Cloud Infrastructure Automation using Terraform',
+    overview: 'Modular, multi-environment, multi-cloud infrastructure platform spanning Azure, AWS, and OpenStack private cloud, following enterprise IaC best practices with unified strategy across hybrid and multi-cloud environments.',
+    flow: 'Terraform Modules → Azure/AWS/OpenStack → Multi-Env (Pre-Prod, Prod, UAT) → Secure Infrastructure',
+    steps: [
+      'Design multi-environment architecture (pre-prod, prod, UAT, release, upgrade)',
+      'Build reusable Terraform modules across Azure, AWS, and OpenStack',
+      'Provision Azure: VNets, NSGs, Bastion, Key Vault, Linux VMs, Azure SQL',
+      'Provision AWS: VPCs, Security Groups, EC2 instances, public access controls',
+      'Provision OpenStack: Projects, Networks, Security Groups, VM provisioning',
+      'Implement secrets management using Azure Key Vault',
+      'Apply consistent naming, tagging, and governance standards'
+    ],
+    tools: ['Terraform', 'Microsoft Azure', 'AWS', 'OpenStack', 'Infrastructure as Code', 'Linux'],
+    icon: Cloud,
     color: 'accent'
   }
 ];
