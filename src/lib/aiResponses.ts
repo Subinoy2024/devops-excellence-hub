@@ -75,7 +75,7 @@ Currently exploring: AIOps / GenAI for smarter cloud operations`
 ╭──────────────────────────────────────────────────────────────╮
 │  ENTERPRISE DEPLOYMENTS                                      │
 ├──────────────────────────────────────────────────────────────┤
-│  ► KYNDRYL     │ Sep 2022 - Sep 2026 │ Cloud Infrastructure  │
+│  ► KYNDRYL     │ Sep 2022 - Sep 2025 │ Cloud Infrastructure  │
 │  ► HCL         │ May 2022 - Sep 2022 │ Platform Engineering  │
 │  ► KPMG        │ May 2021 - May 2022 │ DevOps Transformation │
 │  ► ATOS        │ Feb 2019 - Apr 2021 │ Infra Automation      │

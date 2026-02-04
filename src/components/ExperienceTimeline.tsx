@@ -8,7 +8,7 @@ interface Experience {
 }
 
 const experiences: Experience[] = [
-  { company: 'KYNDRYL', period: 'Sep 2022 - Sep 2026', role: 'Cloud Infrastructure', duration: '4 yrs' },
+  { company: 'KYNDRYL', period: 'Sep 2022 - Sep 2025', role: 'Cloud Infrastructure', duration: '3 yrs' },
   { company: 'HCL', period: 'May 2022 - Sep 2022', role: 'Platform Engineering', duration: '5 mos' },
   { company: 'KPMG', period: 'May 2021 - May 2022', role: 'DevOps Transformation', duration: '1 yr' },
   { company: 'ATOS', period: 'Feb 2019 - Apr 2021', role: 'Infrastructure Automation', duration: '2 yrs' },
