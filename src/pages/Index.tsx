@@ -54,7 +54,7 @@ const Index = () => {
 
               <div className="flex items-center gap-2">
                 <a
-                  href="/README.md"
+                  href={`${import.meta.env.BASE_URL}README.md`}
                   download="README.md"
                   className="flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/50 rounded text-primary text-sm font-mono hover:bg-primary/20 hover:border-primary transition-all neon-glow-cyan"
                 >
