@@ -16,8 +16,8 @@ const Index = () => {
     { id: 'profile', label: 'Profile', icon: User },
     { id: 'skills', label: 'Skills Matrix', icon: Cpu },
     { id: 'projects', label: 'Projects', icon: FolderGit2 },
-    { id: 'knowledge', label: 'Knowledge', icon: BookOpen },
     { id: 'certifications', label: 'Certifications', icon: Award },
+    { id: 'knowledge', label: 'Knowledge', icon: BookOpen },
   ] as const;
 
   return (
