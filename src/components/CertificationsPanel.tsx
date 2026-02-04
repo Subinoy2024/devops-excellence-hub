@@ -22,7 +22,7 @@ const certifications = [
   {
     title: 'Cloud Engineer Bootcamp (AWS, Azure and GCP)',
     issuer: 'UPGRAD',
-    description: 'Participation certificate for Workshop of 1-Mar-2024 to 13-Oct-2024',
+    description: 'Successfully participated in the 7 months bootcamp program. Issued on 17-02-2025',
     icon: BookOpen,
     color: 'primary'
   },
