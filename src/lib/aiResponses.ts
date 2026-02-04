@@ -72,13 +72,18 @@ Currently exploring: AIOps / GenAI for smarter cloud operations`
     keywords: ['experience', 'work', 'company', 'enterprise', 'client'],
     response: `> QUERYING EXPERIENCE DATABASE...
 
-╭─────────────────────────────────────────╮
-│  ENTERPRISE DEPLOYMENTS                 │
-├─────────────────────────────────────────┤
-│  ► CGI         │ Cloud Infrastructure   │
-│  ► TCS         │ Platform Engineering   │
-│  ► CAPGEMINI   │ DevOps Transformation  │
-╰─────────────────────────────────────────╯
+╭─────────────────────────────────────────────╮
+│  ENTERPRISE DEPLOYMENTS                     │
+├─────────────────────────────────────────────┤
+│  ► KYNDRYL     │ Cloud Infrastructure       │
+│  ► HCL         │ Platform Engineering       │
+│  ► KPMG        │ DevOps Transformation      │
+│  ► ATOS        │ Infrastructure Automation  │
+│  ► MICROLAND   │ Managed Services           │
+│  ► CGI         │ Cloud Operations           │
+│  ► TCS         │ Enterprise Solutions       │
+│  ► CAPGEMINI   │ Digital Transformation     │
+╰─────────────────────────────────────────────╯
 
 Delivered production-grade infrastructure serving millions of users.
 Zero-downtime deployments. 99.99% SLA achievements.
