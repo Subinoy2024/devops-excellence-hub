@@ -72,18 +72,18 @@ Currently exploring: AIOps / GenAI for smarter cloud operations`
     keywords: ['experience', 'work', 'company', 'enterprise', 'client'],
     response: `> QUERYING EXPERIENCE DATABASE...
 
-╭─────────────────────────────────────────────╮
-│  ENTERPRISE DEPLOYMENTS                     │
-├─────────────────────────────────────────────┤
-│  ► KYNDRYL     │ Cloud Infrastructure       │
-│  ► HCL         │ Platform Engineering       │
-│  ► KPMG        │ DevOps Transformation      │
-│  ► ATOS        │ Infrastructure Automation  │
-│  ► MICROLAND   │ Managed Services           │
-│  ► CGI         │ Cloud Operations           │
-│  ► TCS         │ Enterprise Solutions       │
-│  ► CAPGEMINI   │ Digital Transformation     │
-╰─────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────╮
+│  ENTERPRISE DEPLOYMENTS                                      │
+├──────────────────────────────────────────────────────────────┤
+│  ► KYNDRYL     │ Sep 2022 - Sep 2026 │ Cloud Infrastructure  │
+│  ► HCL         │ May 2022 - Sep 2022 │ Platform Engineering  │
+│  ► KPMG        │ May 2021 - May 2022 │ DevOps Transformation │
+│  ► ATOS        │ Feb 2019 - Apr 2021 │ Infra Automation      │
+│  ► MICROLAND   │ Jan 2017 - Jun 2018 │ Managed Services      │
+│  ► CGI         │ Aug 2015 - Jan 2017 │ Cloud Operations      │
+│  ► TCS         │ Aug 2015 - Jan 2017 │ Enterprise Solutions  │
+│  ► CAPGEMINI   │ Feb 2013 - Aug 2015 │ Digital Transformation│
+╰──────────────────────────────────────────────────────────────╯
 
 Delivered production-grade infrastructure serving millions of users.
 Zero-downtime deployments. 99.99% SLA achievements.
