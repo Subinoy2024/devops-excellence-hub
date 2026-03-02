@@ -1,7 +1,6 @@
 import { Github, Linkedin, Mail, Download, ChevronDown, Cloud, Container, GitBranch, Shield, Activity, Settings, Users, Brain, Award, GraduationCap, BookOpen, ExternalLink } from 'lucide-react';
 import { useState } from 'react';
 import SearchBar from '@/components/SearchBar';
-import AIChatWidget from '@/components/AIChatWidget';
 
 const navLinks = [
   { id: 'about', label: 'About' },
@@ -85,14 +84,14 @@ const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background text-foreground bg-grid relative">
+    <div className="min-h-screen bg-background text-foreground bg-grid bg-orbs relative">
       <div className="bg-radial-glow fixed inset-0 pointer-events-none" />
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="font-heading text-lg font-bold tracking-tight text-primary">
-              Subinoy<span className="text-muted-foreground">.</span>
+              SD<span className="text-muted-foreground">.</span>
             </a>
 
             {/* Desktop Nav */}
@@ -409,7 +408,6 @@ const Index = () => {
           © 2025 Subinoy Debnath · Cloud & DevOps Engineer · All Rights Reserved
         </p>
       </footer>
-      <AIChatWidget />
     </div>
   );
 };
