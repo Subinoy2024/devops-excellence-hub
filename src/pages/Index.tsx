@@ -1,236 +1,410 @@
+import { Github, Linkedin, Mail, Download, ChevronDown, Cloud, Container, GitBranch, Shield, Activity, Settings, Users, Brain, Award, GraduationCap, BookOpen, ExternalLink } from 'lucide-react';
 import { useState } from 'react';
-import Terminal from '@/components/Terminal';
-import ProfileCard from '@/components/ProfileCard';
-import SkillsPanel from '@/components/SkillsPanel';
-import ProjectsPanel from '@/components/ProjectsPanel';
-import KnowledgePanel from '@/components/KnowledgePanel';
-import CertificationsPanel from '@/components/CertificationsPanel';
 
-import MatrixRain from '@/components/MatrixRain';
-import { Download, MessageSquare, User, Cpu, FolderGit2, BookOpen, Award } from 'lucide-react';
+const navLinks = [
+  { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'certifications', label: 'Certifications' },
+  { id: 'contact', label: 'Contact' },
+];
+
+const skills = [
+  { category: 'Cloud Platforms', icon: Cloud, items: ['Azure (AKS, VMs, Storage)', 'AWS (EKS, EC2, S3, IAM)', 'OpenStack'] },
+  { category: 'Containers & Orchestration', icon: Container, items: ['Kubernetes (AKS/EKS)', 'Docker', 'Helm', 'Kustomize'] },
+  { category: 'CI/CD & GitOps', icon: GitBranch, items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD'] },
+  { category: 'Infrastructure as Code', icon: Settings, items: ['Terraform', 'ARM Templates', 'CloudFormation'] },
+  { category: 'Security & Compliance', icon: Shield, items: ['Azure Policy', 'Sentinel', 'IAM', 'RBAC', 'Key Vault'] },
+  { category: 'Monitoring & Observability', icon: Activity, items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'] },
+  { category: 'Team & Collaboration', icon: Users, items: ['Collaboration', 'Motivation', 'Support', 'Build'] },
+  { category: 'AI / MLOps Explorer', icon: Brain, items: ['AI/ML Foundations', 'LLM & Generative AI', 'Agentic AI Foundations'] },
+];
+
+const projects = [
+  {
+    title: 'Automated CI/CD Pipeline with Docker, Jenkins, Terraform & Ansible',
+    overview: 'End-to-end automated CI/CD pipeline simulating real production environment integrating version control, CI/CD, containerization, IaC, configuration management, testing, and notification.',
+    tools: ['Jenkins', 'Docker', 'Terraform', 'Ansible', 'GitHub', 'Linux'],
+  },
+  {
+    title: 'CI/CD Pipeline for Kubernetes using Jenkins, Docker & Terraform',
+    overview: 'Fully automated CI/CD pipeline that provisions infrastructure, deploys containerised application to Kubernetes, with end-to-end automation triggered by GitHub webhook.',
+    tools: ['Jenkins', 'Docker', 'Terraform', 'Kubernetes', 'GitHub Webhooks', 'ECR/ACR'],
+  },
+  {
+    title: 'Automated WordPress Infrastructure on AWS using CloudFormation',
+    overview: 'Production-ready WordPress setup with separate Production and Dev/Test environments. Dev/Test runs only during business hours for cost optimization.',
+    tools: ['AWS CloudFormation', 'Amazon EC2', 'AMI', 'Auto Scaling Groups', 'Route 53'],
+  },
+  {
+    title: 'Real-Time NoSQL Data Warehousing using AWS Kinesis, Lambda & DynamoDB',
+    overview: 'Real-time data ingestion and NoSQL data warehousing architecture for continuous collection and analysis of streaming network telemetry data.',
+    tools: ['AWS Kinesis', 'AWS Lambda', 'Amazon DynamoDB', 'Python/Node.js'],
+  },
+  {
+    title: 'End-to-End Java App Deployment on AWS EC2 using Azure DevOps CI/CD',
+    overview: 'Cross-cloud CI/CD pipeline deploying Java application on AWS EC2, enabling secure online access via Azure DevOps pipelines.',
+    tools: ['Azure DevOps', 'Git', 'Azure VM', 'AWS EC2', 'Docker', 'Java'],
+  },
+  {
+    title: 'Custom Windows Server 2022 Image for OpenStack',
+    overview: 'Built a custom, production-ready Windows Server 2022 image for OpenStack with VirtIO drivers, QEMU agent, and security hardening.',
+    tools: ['Windows Server 2022', 'OpenStack Glance', 'VirtIO', 'QEMU', 'Sysprep'],
+  },
+  {
+    title: 'On-Prem OpenStack Private Cloud with Full Monitoring',
+    overview: 'Designed and validated a production-like OpenStack Private Cloud on bare-metal infrastructure with Prometheus + Grafana monitoring.',
+    tools: ['OpenStack', 'Bare-Metal', 'Prometheus', 'Node Exporter', 'Grafana', 'Linux'],
+  },
+  {
+    title: 'Enterprise Multi-Cloud Infrastructure Automation using Terraform',
+    overview: 'Modular, multi-environment, multi-cloud infrastructure platform spanning Azure, AWS, and OpenStack following enterprise IaC best practices.',
+    tools: ['Terraform', 'Azure', 'AWS', 'OpenStack', 'Infrastructure as Code'],
+  },
+  {
+    title: 'Automated Application Deployment on Nginx using Ansible',
+    overview: 'Ansible-based automation to deploy a blogging platform on remote Nginx web server, ensuring consistent and repeatable deployment.',
+    tools: ['Ansible', 'Nginx', 'Linux', 'YAML', 'SSH'],
+  },
+];
+
+const certifications = [
+  { title: 'AWS Certified CloudOps Engineer - Associate', issuer: 'Amazon Web Services', icon: Cloud },
+  { title: 'AZ-104: Microsoft Azure Administrator Associate', issuer: 'Microsoft', icon: Award },
+  { title: 'Microsoft 365 Certifications', issuer: 'Microsoft', icon: Award },
+  { title: 'Cloud Engineer Bootcamp (AWS, Azure and GCP)', issuer: 'UPGRAD', icon: BookOpen, description: 'Successfully completed the 7-month bootcamp program', certificateImage: '/assets/upgrad-certificate.png' },
+  { title: 'AI Powered Cloud & DevOps', issuer: 'IIT Guwahati', icon: GraduationCap, description: 'Professional Certificate Program (2025–2026 Expected)' },
+];
+
+const companies = ['KYNDRYL', 'HCL', 'KPMG', 'ATOS', 'MICROLAND', 'CGI', 'TCS', 'CAPGEMINI'];
 
 const Index = () => {
-  const [activeTab, setActiveTab] = useState<'terminal' | 'profile' | 'skills' | 'projects' | 'knowledge' | 'certifications'>('terminal');
-
-  const tabs = [
-    { id: 'terminal', label: 'Profile AI Assistance', icon: MessageSquare },
-    { id: 'profile', label: 'Profile', icon: User },
-    { id: 'skills', label: 'Skills Matrix', icon: Cpu },
-    { id: 'projects', label: 'Projects', icon: FolderGit2 },
-    { id: 'certifications', label: 'Certifications', icon: Award },
-    { id: 'knowledge', label: 'Knowledge', icon: BookOpen },
-  ] as const;
+  const [selectedCert, setSelectedCert] = useState<string | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-background text-foreground matrix-bg">
-      {/* Matrix Rain Background */}
-      <MatrixRain />
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="flex items-center justify-between h-16">
+            <a href="#" className="font-heading text-lg font-bold tracking-tight text-primary">
+              SD<span className="text-muted-foreground">.</span>
+            </a>
 
-      {/* Animated gradient overlay */}
-      <div className="fixed inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 pointer-events-none" />
-
-      {/* Main Content */}
-      <div className="relative z-10 min-h-screen p-4 md:p-6">
-        <div className="max-w-7xl mx-auto">
-          {/* Header */}
-          <header className="mb-6">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <div className="relative">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded blur opacity-50 animate-pulse" />
-                  <div className="relative w-12 h-12 bg-card border border-primary rounded flex items-center justify-center neon-glow-cyan">
-                    <Cpu className="text-primary" size={24} />
-                  </div>
-                </div>
-                <div>
-                  <h1 className="text-xl md:text-2xl font-bold font-mono neon-text-cyan">
-                    CLOUD-DEVOPS AI INTERFACE
-                  </h1>
-                  <p className="text-xs text-muted-foreground font-mono">
-                    v2.0.0 // Neural Network Active // AIOps Enabled
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-2">
+            {/* Desktop Nav */}
+            <div className="hidden md:flex items-center gap-8">
+              {navLinks.map(link => (
                 <a
-                  href={`${import.meta.env.BASE_URL}README.md`}
-                  download="README.md"
-                  className="flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/50 rounded text-primary text-sm font-mono hover:bg-primary/20 hover:border-primary transition-all neon-glow-cyan"
+                  key={link.id}
+                  href={`#${link.id}`}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  <Download size={16} />
-                  <span>README.md</span>
+                  {link.label}
                 </a>
-              </div>
-            </div>
-          </header>
-
-          {/* Navigation Tabs */}
-          <div className="flex flex-wrap gap-2 mb-6">
-            {tabs.map(({ id, label, icon: Icon }) => (
-              <button
-                key={id}
-                onClick={() => setActiveTab(id)}
-                className={`flex items-center gap-2 px-3 md:px-4 py-2 rounded font-mono text-xs md:text-sm transition-all ${
-                  activeTab === id
-                    ? 'bg-primary text-primary-foreground neon-glow-cyan'
-                    : 'bg-muted/30 text-muted-foreground border border-border hover:border-primary/50 hover:text-foreground'
-                }`}
+              ))}
+              <a
+                href={`${import.meta.env.BASE_URL}README.md`}
+                download="README.md"
+                className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
               >
-                <Icon size={16} />
-                <span className="hidden sm:inline">{label}</span>
-              </button>
-            ))}
+                <Download size={14} />
+                Resume
+              </a>
+            </div>
+
+            {/* Mobile menu toggle */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 text-muted-foreground"
+            >
+              <div className="space-y-1.5">
+                <span className={`block w-6 h-0.5 bg-current transition-transform ${mobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+                <span className={`block w-6 h-0.5 bg-current transition-opacity ${mobileMenuOpen ? 'opacity-0' : ''}`} />
+                <span className={`block w-6 h-0.5 bg-current transition-transform ${mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+              </div>
+            </button>
           </div>
 
-          {/* Content Area */}
-          <main className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-            {/* Main Content Panel */}
-            <div className="lg:col-span-3">
-              {activeTab === 'terminal' && (
-                <div className="h-[600px] md:h-[700px]">
-                  <Terminal />
-                </div>
-              )}
+          {/* Mobile Nav */}
+          {mobileMenuOpen && (
+            <div className="md:hidden pb-4 border-t border-border pt-4 space-y-3">
+              {navLinks.map(link => (
+                <a
+                  key={link.id}
+                  href={`#${link.id}`}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      </nav>
 
-              {activeTab === 'profile' && (
-                <div className="grid md:grid-cols-2 gap-6">
-                  <ProfileCard />
-                  <div className="space-y-4">
-                    {/* Enterprise Experience */}
-                    <div className="bg-card/50 backdrop-blur-sm border border-primary/30 rounded-lg p-4">
-                      <h3 className="text-sm font-mono text-primary mb-3 neon-text-cyan">
-                        // ENTERPRISE EXPERIENCE
-                      </h3>
-                      <div className="flex flex-wrap gap-2">
-                        {['KYNDRYL', 'HCL', 'KPMG', 'ATOS', 'MICROLAND', 'CGI', 'TCS', 'CAPGEMINI'].map((company) => (
-                          <span
-                            key={company}
-                            className="text-xs px-3 py-1.5 bg-primary/10 rounded border border-primary/30 text-foreground font-mono hover:bg-primary/20 hover:border-primary transition-all"
-                          >
-                            {company}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
+      {/* Hero Section */}
+      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 pt-16">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="mb-8">
+            <div className="relative inline-block">
+              <img
+                src={`${import.meta.env.BASE_URL}assets/profile.png`}
+                alt="Subinoy Debnath"
+                className="w-28 h-28 rounded-full border-2 border-primary/30 object-cover mx-auto"
+              />
+              <div className="absolute -bottom-1 -right-1 w-7 h-7 bg-primary rounded-full flex items-center justify-center border-2 border-background">
+                <span className="text-xs text-primary-foreground font-bold">✓</span>
+              </div>
+            </div>
+          </div>
 
-                    {/* Philosophy */}
-                    <div className="bg-card/50 backdrop-blur-sm border border-accent/30 rounded-lg p-4">
-                      <h3 className="text-sm font-mono text-accent mb-3 neon-text-pink">
-                        // PHILOSOPHY
-                      </h3>
-                      <p className="text-sm text-muted-foreground italic font-mono leading-relaxed">
-                        "Simplicity, observability, and resilience guide every architectural decision I make. Infrastructure should be cattle, not pets."
-                      </p>
-                    </div>
+          <p className="text-sm font-medium text-primary mb-3 tracking-widest uppercase mono-font">
+            Hello, I'm
+          </p>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-heading tracking-tight mb-4">
+            Subinoy Debnath
+          </h1>
+          <p className="text-lg sm:text-xl text-muted-foreground mb-2">
+            Cloud & DevOps Engineer
+          </p>
+          <p className="text-sm text-muted-foreground mb-8">
+            12+ Years IT Experience · 6+ Years Cloud & DevOps · Enterprise Infrastructure at Scale
+          </p>
 
-                    {/* Quick Actions */}
-                    <div className="bg-card/50 backdrop-blur-sm border border-secondary/30 rounded-lg p-4">
-                      <h3 className="text-sm font-mono text-secondary mb-3">
-                        // CONNECT
-                      </h3>
-                      <div className="space-y-2">
-                        <a
-                          href="https://www.linkedin.com/in/subinoy-debnath-3ab534272"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
-                        >
-                          → linkedin.com/in/subinoy-debnath-3ab534272
-                        </a>
-                        <a
-                          href="https://github.com/Subinoy2024"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
-                        >
-                          → github.com/Subinoy2024
-                        </a>
-                        <a
-                          href="mailto:sdebnath8887@gmail.com"
-                          className="block text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
-                        >
-                          → sdebnath8887@gmail.com
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              )}
+          {/* Social Links */}
+          <div className="flex items-center justify-center gap-4 mb-12">
+            <a href="https://github.com/Subinoy2024" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg bg-card border border-border hover:border-primary/50 hover:glow-sm transition-all">
+              <Github size={20} className="text-muted-foreground hover:text-foreground" />
+            </a>
+            <a href="https://www.linkedin.com/in/subinoy-debnath-3ab534272" target="_blank" rel="noopener noreferrer" className="p-3 rounded-lg bg-card border border-border hover:border-primary/50 hover:glow-sm transition-all">
+              <Linkedin size={20} className="text-muted-foreground hover:text-foreground" />
+            </a>
+            <a href="mailto:sdebnath8887@gmail.com" className="p-3 rounded-lg bg-card border border-border hover:border-primary/50 hover:glow-sm transition-all">
+              <Mail size={20} className="text-muted-foreground hover:text-foreground" />
+            </a>
+          </div>
 
-              {activeTab === 'skills' && <SkillsPanel />}
-              {activeTab === 'projects' && <ProjectsPanel />}
-              {activeTab === 'knowledge' && <KnowledgePanel />}
-              {activeTab === 'certifications' && <CertificationsPanel />}
+          <a href="#about" className="inline-block animate-bounce text-muted-foreground hover:text-primary transition-colors">
+            <ChevronDown size={28} />
+          </a>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 sm:py-28 px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">About Me</h2>
+          <div className="w-16 h-1 bg-primary rounded mb-8" />
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                Results-driven DevOps and Cloud Engineer with a strong foundation in infrastructure engineering and a passion for building scalable, resilient, and secure cloud platforms.
+              </p>
+              <p>
+                Enterprise experience across leading global organizations including Kyndryl, HCL, KPMG, Atos, Microland, CGI, TCS, and Capgemini—delivering production-grade infrastructure at scale.
+              </p>
+              <p>
+                I specialize in Infrastructure as Code, CI/CD automation and cloud configuration best practices, ensuring environments are consistent, auditable, and production-grade.
+              </p>
+              <p className="text-primary/80 italic">
+                Currently exploring AI-driven cloud operations (AIOps / GenAI) to enhance automation and enable smarter infrastructure management.
+              </p>
             </div>
 
-            {/* Sidebar - Stats */}
-            <div className="space-y-4">
-              {/* System Status */}
-              <div className="bg-card/50 backdrop-blur-sm border border-primary/30 rounded-lg p-4">
-                <h3 className="text-xs font-mono text-primary mb-3">SYSTEM_STATUS</h3>
-                <div className="space-y-2 text-xs font-mono">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Neural Net</span>
-                    <span className="text-primary">ONLINE</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Experience</span>
-                    <span className="text-secondary">12+ YRS</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Cloud Exp</span>
-                    <span className="text-accent">6+ YRS</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Deployments</span>
-                    <span className="text-primary">1000+</span>
-                  </div>
-                </div>
+            <div>
+              <h3 className="text-sm font-medium text-foreground mb-4 uppercase tracking-wider">Enterprise Experience</h3>
+              <div className="flex flex-wrap gap-2">
+                {companies.map(company => (
+                  <span key={company} className="text-xs px-3 py-1.5 bg-card rounded-lg border border-border text-muted-foreground">
+                    {company}
+                  </span>
+                ))}
               </div>
 
-              {/* Active Technologies */}
-              <div className="bg-card/50 backdrop-blur-sm border border-secondary/30 rounded-lg p-4">
-                <h3 className="text-xs font-mono text-secondary mb-3">ACTIVE_STACK</h3>
-                <div className="space-y-1 text-xs font-mono text-muted-foreground">
-                  {[
-                    'Azure Cloud Platform',
-                    'Terraform Enterprise',
-                    'Azure DevOps Pipelines',
-                    'Docker Image',
-                    'Observability',
-                    'AWS Cloud Services',
-                    'OpenStack Cloud',
-                  ].map((tech) => (
-                    <div key={tech} className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary pulse-glow" />
-                      <span>{tech}</span>
-                    </div>
+              <h3 className="text-sm font-medium text-foreground mt-6 mb-3 uppercase tracking-wider">Philosophy</h3>
+              <p className="text-sm text-muted-foreground italic leading-relaxed">
+                "Simplicity, observability, and resilience guide every architectural decision I make. Infrastructure should be cattle, not pets."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="py-20 sm:py-28 px-4 sm:px-6 bg-card/30">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Skills</h2>
+          <div className="w-16 h-1 bg-primary rounded mb-10" />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {skills.map((skill, idx) => {
+              const Icon = skill.icon;
+              return (
+                <div
+                  key={skill.category}
+                  className="bg-card border border-border rounded-xl p-5 card-hover animate-fade-in"
+                  style={{ animationDelay: `${idx * 80}ms` }}
+                >
+                  <div className="flex items-center gap-2.5 mb-3">
+                    <Icon size={18} className="text-primary" />
+                    <h3 className="text-sm font-semibold text-foreground">{skill.category}</h3>
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {skill.items.map(item => (
+                      <span key={item} className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-20 sm:py-28 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Projects</h2>
+          <div className="w-16 h-1 bg-primary rounded mb-3" />
+          <p className="text-sm text-muted-foreground mb-10">Real-world DevOps projects simulating enterprise environments</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {projects.map((project, idx) => (
+              <div
+                key={idx}
+                className="bg-card border border-border rounded-xl p-5 card-hover animate-fade-in flex flex-col"
+                style={{ animationDelay: `${idx * 80}ms` }}
+              >
+                <h3 className="text-sm font-semibold text-foreground mb-3 leading-snug">
+                  {project.title}
+                </h3>
+                <p className="text-xs text-muted-foreground leading-relaxed mb-4 flex-1">
+                  {project.overview}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {project.tools.map(tool => (
+                    <span key={tool} className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full border border-primary/20">
+                      {tool}
+                    </span>
                   ))}
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-              {/* Instructions */}
-              <div className="bg-card/50 backdrop-blur-sm border border-accent/30 rounded-lg p-4">
-                <h3 className="text-xs font-mono text-accent mb-3">QUICK_GUIDE</h3>
-                <div className="text-xs font-mono text-muted-foreground space-y-1">
-                  <p>→ Type 'hello' to start</p>
-                  <p>→ Ask about 'skills'</p>
-                  <p>→ Explore 'projects'</p>
-                  <p>→ Type 'help' for all</p>
-                </div>
+      {/* Certifications Section */}
+      <section id="certifications" className="py-20 sm:py-28 px-4 sm:px-6 bg-card/30">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Certifications</h2>
+          <div className="w-16 h-1 bg-primary rounded mb-10" />
+
+          {/* Certificate Modal */}
+          {selectedCert && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-background/90 backdrop-blur-sm p-4"
+              onClick={() => setSelectedCert(null)}
+            >
+              <div className="relative max-w-4xl w-full animate-fade-in">
+                <img src={selectedCert} alt="Certificate" className="w-full h-auto rounded-xl border border-border" />
+                <button
+                  onClick={() => setSelectedCert(null)}
+                  className="absolute top-4 right-4 px-4 py-2 bg-card border border-border rounded-lg text-sm hover:bg-muted transition-colors"
+                >
+                  Close
+                </button>
               </div>
             </div>
-          </main>
+          )}
 
-          {/* Footer */}
-          <footer className="mt-8 text-center text-xs text-muted-foreground font-mono">
-            <p className="neon-text-cyan">
-              © 2025 SUBINOY DEBNATH // CLOUD-DEVOPS AI INTERFACE // ALL SYSTEMS OPERATIONAL
-            </p>
-          </footer>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {certifications.map((cert, idx) => {
+              const Icon = cert.icon;
+              return (
+                <div
+                  key={cert.title}
+                  className="bg-card border border-border rounded-xl p-5 card-hover animate-fade-in"
+                  style={{ animationDelay: `${idx * 80}ms` }}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="p-2.5 rounded-lg bg-primary/10 border border-primary/20">
+                      <Icon size={20} className="text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-sm font-semibold text-foreground mb-1">{cert.title}</h3>
+                      <p className="text-xs text-primary mb-1">{cert.issuer}</p>
+                      {cert.description && (
+                        <p className="text-xs text-muted-foreground leading-relaxed">{cert.description}</p>
+                      )}
+                      {cert.certificateImage && (
+                        <button
+                          onClick={() => setSelectedCert(cert.certificateImage!)}
+                          className="mt-3 flex items-center gap-1.5 text-xs text-primary hover:underline"
+                        >
+                          <ExternalLink size={12} />
+                          View Certificate
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 sm:py-28 px-4 sm:px-6">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Get in Touch</h2>
+          <div className="w-16 h-1 bg-primary rounded mb-6 mx-auto" />
+          <p className="text-muted-foreground mb-10">
+            Open to Cloud & DevOps consulting, platform engineering roles, and infrastructure architecture discussions.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="mailto:sdebnath8887@gmail.com"
+              className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            >
+              <Mail size={18} />
+              sdebnath8887@gmail.com
+            </a>
+            <a
+              href="https://www.linkedin.com/in/subinoy-debnath-3ab534272"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 bg-card border border-border rounded-lg text-foreground hover:border-primary/50 transition-colors"
+            >
+              <Linkedin size={18} />
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/Subinoy2024"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-6 py-3 bg-card border border-border rounded-lg text-foreground hover:border-primary/50 transition-colors"
+            >
+              <Github size={18} />
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 border-t border-border text-center">
+        <p className="text-xs text-muted-foreground">
+          © 2025 Subinoy Debnath · Cloud & DevOps Engineer · All Rights Reserved
+        </p>
+      </footer>
     </div>
   );
 };
