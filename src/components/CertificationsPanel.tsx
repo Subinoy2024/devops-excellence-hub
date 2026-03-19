@@ -1,4 +1,4 @@
-import { Award, GraduationCap, BookOpen, Cloud } from 'lucide-react';
+import { Award, BookOpen, Cloud } from 'lucide-react';
 import { useState } from 'react';
 
 const certifications = [
