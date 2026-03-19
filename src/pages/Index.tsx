@@ -258,10 +258,11 @@ const Index = () => {
                   </div>
                   <div className="flex flex-wrap gap-1.5">
                     {skill.items.map(item => {
-                      const ToolIcon = getToolIcon(item);
+                      const toolInfo = getToolIcon(item);
+                      const ToolIcon = toolInfo?.icon;
                       return (
                         <span key={item} className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground inline-flex items-center gap-1">
-                          {ToolIcon && <ToolIcon size={11} className="text-primary/70" />}
+                          {ToolIcon && <ToolIcon size={12} className={toolInfo.color} />}
                           {item}
                         </span>
                       );
