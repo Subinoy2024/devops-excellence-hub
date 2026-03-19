@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Download, ChevronDown, Cloud, Container, GitBranch, Shield, Activity, Settings, Users, Brain, Award, GraduationCap, BookOpen, ExternalLink } from 'lucide-react';
+import { getToolIcon } from '@/lib/toolIcons';
 import { useState } from 'react';
 import SearchBar from '@/components/SearchBar';
 
