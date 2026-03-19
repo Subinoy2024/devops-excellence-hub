@@ -170,10 +170,10 @@ const Index = () => {
             Subinoy Debnath
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground mb-2">
-            Cloud & DevOps Engineer
+            Cloud Platform & DevOps Engineer
           </p>
           <p className="text-sm text-muted-foreground mb-8">
-            12+ Years IT Experience · 6+ Years Cloud & DevOps · Enterprise Infrastructure at Scale
+            14 Years IT Experience · 6+ Years Cloud & DevOps · Enterprise Infrastructure at Scale
           </p>
 
           {/* Social Links */}
