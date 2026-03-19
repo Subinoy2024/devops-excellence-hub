@@ -1,7 +1,7 @@
 const companies = ['Kyndryl', 'HCL', 'KPMG', 'Atos', 'Microland', 'CGI', 'TCS', 'Capgemini'];
 
 const highlights = [
-  { label: 'IT Experience', value: '14+ years' },
+  { label: 'IT Experience', value: '14 years' },
   { label: 'Cloud & DevOps', value: '6+ years' },
   { label: 'Certifications', value: '10+' },
   { label: 'Enterprise Clients', value: '8+' },
@@ -27,7 +27,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Cloud DevOps Engineer with 14+ years of IT experience and 6+ years focused on cloud
+              Cloud DevOps Engineer with 14 years of IT experience and 6+ years focused on cloud
               infrastructure, CI/CD automation, and container platform operations. I work with Azure,
               AWS, Terraform, Kubernetes, and OpenShift to build reliable infrastructure and streamline
               application delivery.
