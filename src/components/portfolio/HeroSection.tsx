@@ -25,7 +25,7 @@ const HeroSection = () => {
         </p>
 
         <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
-          Terraform &nbsp;|&nbsp; Azure &nbsp;|&nbsp; AWS &nbsp;|&nbsp; Kubernetes &nbsp;|&nbsp; CI/CD
+          Terraform &nbsp;|&nbsp; Azure &nbsp;|&nbsp; AWS &nbsp;|&nbsp; OpenShift &nbsp;|&nbsp; CI/CD &nbsp;|&nbsp; Docker
         </p>
 
         <p className="text-sm text-muted-foreground mb-6">
