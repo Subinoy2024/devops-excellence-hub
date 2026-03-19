@@ -34,11 +34,10 @@ const AboutSection = () => {
               and implement Infrastructure as Code using Terraform.
             </p>
             <p>
-              My delivery spans end-to-end cloud lifecycle management — from environment provisioning
-              and Git-based release workflows to observability, secret management, DevSecOps-aligned
-              practices, and cost optimization. I have delivered infrastructure and platform solutions
-              across organizations including Kyndryl, HCL, KPMG, Atos, and others — consistently
-              focused on deployment velocity, platform reliability, and operational efficiency.
+              My day-to-day work centers on cloud provisioning, CI/CD delivery, and OpenShift-based
+              container deployments across enterprise environments. I have contributed to infrastructure
+              and application delivery initiatives across organizations including Kyndryl, HCL, KPMG,
+              Atos, and others, with a strong focus on consistency, reliability, and operational efficiency.
             </p>
             <p className="text-foreground/80">
               Currently expanding into MLOps and AI-driven automation to strengthen platform
