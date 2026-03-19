@@ -295,11 +295,15 @@ const Index = () => {
                   {project.overview}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
-                  {project.tools.map(tool => (
-                    <span key={tool} className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full border border-primary/20">
-                      {tool}
-                    </span>
-                  ))}
+                  {project.tools.map(tool => {
+                    const ToolIcon = getToolIcon(tool);
+                    return (
+                      <span key={tool} className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full border border-primary/20 inline-flex items-center gap-1">
+                        {ToolIcon && <ToolIcon size={10} />}
+                        {tool}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
             ))}
