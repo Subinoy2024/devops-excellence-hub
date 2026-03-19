@@ -1,11 +1,11 @@
-import { Cloud, Container, GitBranch, Code, Activity } from 'lucide-react';
+import { Cloud, Container, GitBranch, Code, Activity, Shield, Bot } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
 
 const skillGroups = [
   {
-    category: 'Cloud',
+    category: 'Cloud Platforms',
     icon: Cloud,
-    items: ['Azure', 'AWS'],
+    items: ['Azure', 'AWS', 'OpenStack'],
   },
   {
     category: 'Infrastructure as Code',
@@ -20,17 +20,22 @@ const skillGroups = [
   {
     category: 'CI/CD & Automation',
     icon: GitBranch,
-    items: ['Azure DevOps', 'GitHub Actions', 'Jenkins'],
+    items: ['Azure DevOps', 'GitHub Actions', 'Jenkins', 'Git', 'GitHub', 'Python', 'Bash', 'Shell Scripting'],
   },
   {
-    category: 'Scripting',
-    icon: Code,
-    items: ['Python', 'Bash'],
+    category: 'Security & DevSecOps',
+    icon: Shield,
+    items: ['Azure Key Vault', 'AWS Secrets Manager', 'IAM Policies', 'Azure Policy', 'Trivy', 'DevSecOps Practices'],
   },
   {
-    category: 'Observability',
+    category: 'Monitoring & Observability',
     icon: Activity,
     items: ['Prometheus', 'Grafana', 'ELK Stack'],
+  },
+  {
+    category: 'AI Automation & Intelligent Workflows',
+    icon: Bot,
+    items: ['n8n', 'Make', 'Azure AI', 'Azure Foundry', 'MLOps', 'Vibe Coding'],
   },
 ];
 
@@ -41,7 +46,7 @@ const SkillsSection = () => {
         <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Technical Skills</h2>
         <div className="w-16 h-1 bg-primary rounded mb-3" />
         <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
-          Core technologies I work with daily for cloud infrastructure, deployment automation, and platform operations.
+          Core technologies and platforms aligned to cloud infrastructure, CI/CD automation, container operations, security, observability, and modern AI-assisted workflow automation.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

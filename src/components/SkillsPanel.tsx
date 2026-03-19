@@ -1,4 +1,4 @@
-import { Cloud, Container, GitBranch, Shield, Activity, Settings, Users, Brain } from 'lucide-react';
+import { Cloud, Container, GitBranch, Shield, Activity, Settings, Bot } from 'lucide-react';
 
 const skills = [
   {
@@ -8,27 +8,27 @@ const skills = [
     color: 'primary'
   },
   {
-    category: 'Container & Orchestration',
-    icon: Container,
-    items: ['Kubernetes (AKS/EKS)', 'Docker', 'Helm', 'Kustomize'],
-    color: 'secondary'
-  },
-  {
-    category: 'CI/CD & GitOps',
-    icon: GitBranch,
-    items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD'],
-    color: 'accent'
-  },
-  {
     category: 'Infrastructure as Code',
     icon: Settings,
     items: ['Terraform', 'ARM Templates', 'CloudFormation'],
+    color: 'secondary'
+  },
+  {
+    category: 'Container & Orchestration',
+    icon: Container,
+    items: ['Kubernetes (AKS/EKS)', 'Docker', 'Helm', 'Kustomize', 'OpenShift'],
+    color: 'accent'
+  },
+  {
+    category: 'CI/CD & Automation',
+    icon: GitBranch,
+    items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD', 'Git', 'GitHub', 'Python', 'Bash', 'Shell Scripting'],
     color: 'primary'
   },
   {
-    category: 'Security & Compliance',
+    category: 'Security & DevSecOps',
     icon: Shield,
-    items: ['Azure Policy', 'Sentinel', 'IAM', 'RBAC', 'Key Vault'],
+    items: ['Azure Key Vault', 'AWS Secrets Manager', 'IAM Policies', 'Azure Policy', 'Trivy', 'DevSecOps Practices'],
     color: 'secondary'
   },
   {
@@ -38,16 +38,10 @@ const skills = [
     color: 'accent'
   },
   {
-    category: 'Team Management',
-    icon: Users,
-    items: ['Collaboration', 'Motivation', 'Support', 'Build'],
+    category: 'AI Automation & Intelligent Workflows',
+    icon: Bot,
+    items: ['n8n', 'Make', 'Azure AI', 'Azure Foundry', 'MLOps', 'Vibe Coding'],
     color: 'primary'
-  },
-  {
-    category: 'AI / MLOps Explorer',
-    icon: Brain,
-    items: ['AI/ML Foundations', 'LLM & Generative AI', 'Agentic AI Foundations'],
-    color: 'secondary'
   },
 ];
 
