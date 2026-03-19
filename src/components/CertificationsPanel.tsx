@@ -27,14 +27,6 @@ const certifications = [
     icon: BookOpen,
     color: 'primary',
     certificateImage: '/assets/upgrad-certificate.png'
-  },
-  {
-    title: 'AI Powered Cloud & DevOps',
-    issuer: 'Indian Institute of Technology, Guwahati',
-    description: 'Professional Certificate Program in Cloud Computing & DevOps covering cloud development and deployment',
-    timeline: '2025 - 2026 (Expected)',
-    icon: GraduationCap,
-    color: 'secondary'
   }
 ];
 
