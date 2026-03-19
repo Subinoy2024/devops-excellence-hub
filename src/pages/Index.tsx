@@ -268,7 +268,7 @@ const Index = () => {
                       const ToolIcon = toolInfo?.icon;
                       return (
                         <span key={item} className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground inline-flex items-center gap-1">
-                          {ToolIcon && <ToolIcon size={12} className={toolInfo.color} />}
+                          {ToolIcon && <ToolIcon size={16} className={toolInfo.color} />}
                           {item}
                         </span>
                       );
