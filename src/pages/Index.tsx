@@ -17,7 +17,7 @@ const skills = [
   { category: 'Infrastructure as Code', icon: Settings, items: ['Terraform', 'ARM Templates', 'AWS CloudFormation'] },
   { category: 'Security & Secrets', icon: Shield, items: ['Azure Policy', 'IAM', 'RBAC', 'Azure Key Vault', 'AWS Secrets Manager'] },
   { category: 'Observability', icon: Activity, items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'] },
-  { category: 'AI & Modern Engineering', icon: Brain, items: ['AI/ML Foundations', 'AI Infrastructure', 'Agentic AI', 'Prompt Engineering', 'Vibe Coding', 'n8n', 'Make', 'ChatGPT', 'Custom GPTs'] },
+  { category: 'AI & Modern Engineering Enthusiast', icon: Brain, items: ['AI/ML Foundations', 'AI Infrastructure', 'Agentic AI', 'Prompt Engineering', 'Vibe Coding', 'n8n', 'Make', 'ChatGPT', 'Custom GPTs'] },
   { category: 'Team & Execution', icon: Users, items: ['Collaboration', 'Support', 'Delivery', 'Operational Ownership'] },
 ];
 
