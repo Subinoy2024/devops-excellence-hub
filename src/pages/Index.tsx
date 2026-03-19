@@ -7,7 +7,7 @@ const navLinks = [
   { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
-  { id: 'certifications', label: 'Certifications' },
+  { id: 'certifications', label: 'Certifications & Trainings' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -322,7 +322,7 @@ const Index = () => {
       {/* Certifications Section */}
       <section id="certifications" className="py-20 sm:py-28 px-4 sm:px-6 bg-card/30">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Certifications</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Certifications & Trainings</h2>
           <div className="w-16 h-1 bg-primary rounded mb-10" />
 
           {/* Certificate Modal */}
