@@ -72,7 +72,7 @@ const projects = [
 
 const certifications = [
   { title: 'AWS Certified CloudOps Engineer - Associate', issuer: 'Amazon Web Services', icon: Cloud },
-  { title: 'Terraform Authoring and Operations Professional', issuer: 'HashiCorp', icon: Settings },
+  { title: 'Terraform Associate (004)', issuer: 'HashiCorp', icon: Settings },
   { title: 'AZ-104: Microsoft Azure Administrator Associate', issuer: 'Microsoft', icon: Award },
   { title: 'AZ-400: Designing and Implementing Microsoft DevOps Solutions', issuer: 'Microsoft', icon: GitBranch },
   { title: 'Azure Developer Associate (AZ-204)', issuer: 'Microsoft', icon: Award },
