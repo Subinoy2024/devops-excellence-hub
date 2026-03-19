@@ -29,7 +29,7 @@ const HeroSection = () => {
         </p>
 
         <p className="text-sm text-muted-foreground mb-6">
-          14 years IT experience &nbsp;·&nbsp; 6+ years in Cloud & DevOps Engineering
+          13+ years IT experience &nbsp;·&nbsp; 6+ years in Cloud & DevOps Engineering
         </p>
 
         <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed text-[15px]">

@@ -1,10 +1,10 @@
-const companies = ['Kyndryl', 'HCL', 'KPMG', 'Atos', 'Microland', 'CGI', 'TCS', 'Capgemini'];
+const companies = ['Kyndryl', 'HCL', 'KPMG', 'Atos', 'Microland', 'Micropoint', 'CGI', 'TCS', 'Capgemini'];
 
 const highlights = [
-  { label: 'IT Experience', value: '14 years' },
+  { label: 'IT Experience', value: '13+ years' },
   { label: 'Cloud & DevOps', value: '6+ years' },
   { label: 'Certifications', value: '10+' },
-  { label: 'Enterprise Clients', value: '8+' },
+  { label: 'Global Clients', value: '30+' },
 ];
 
 const AboutSection = () => {
@@ -27,7 +27,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Cloud DevOps Engineer with 14 years of IT experience and 6+ years delivering
+              Cloud DevOps Engineer with 13+ years of IT experience and 6+ years delivering
               cloud infrastructure, CI/CD automation, and container platform operations across
               enterprise environments. I provision and manage cloud resources on Azure and AWS,
               engineer CI/CD pipelines, deploy containerized workloads on OpenShift and Kubernetes,

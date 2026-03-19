@@ -1,4 +1,4 @@
-import { Cloud, Container, GitBranch, Code, Activity, Shield, Bot, Terminal, DollarSign } from 'lucide-react';
+import { Cloud, Container, GitBranch, Code, Activity, Shield, Bot, DollarSign, Cpu } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
 
 const skillGroups = [
@@ -10,7 +10,7 @@ const skillGroups = [
   {
     category: 'DevOps / CI/CD',
     icon: GitBranch,
-    items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD'],
+    items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD', 'Python', 'Shell Scripting'],
   },
   {
     category: 'Infrastructure as Code',
@@ -20,12 +20,7 @@ const skillGroups = [
   {
     category: 'Containers / Orchestration',
     icon: Container,
-    items: ['Docker', 'Kubernetes', 'OpenShift', 'Helm', 'Kustomize'],
-  },
-  {
-    category: 'Scripting / Automation',
-    icon: Terminal,
-    items: ['Python', 'Bash', 'Shell Scripting', 'PowerShell'],
+    items: ['Docker', 'Kubernetes', 'EKS', 'AKS', 'OpenShift', 'Helm'],
   },
   {
     category: 'Version Control',
@@ -46,6 +41,11 @@ const skillGroups = [
     category: 'Cost Optimization',
     icon: DollarSign,
     items: ['Resource Right-Sizing', 'Azure Cost Management', 'Reserved Instances', 'Automation-Driven Savings'],
+  },
+  {
+    category: 'AI / ML Platforms',
+    icon: Cpu,
+    items: ['OpenShift AI', 'MLOps', 'AI/ML Model Deployment', 'Containerized Model Serving'],
   },
 ];
 

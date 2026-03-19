@@ -1,4 +1,4 @@
-import { Cloud, Container, GitBranch, Shield, Activity, Settings, Bot } from 'lucide-react';
+import { Cloud, Container, GitBranch, Shield, Activity, Settings, Cpu } from 'lucide-react';
 
 const skills = [
   {
@@ -16,13 +16,13 @@ const skills = [
   {
     category: 'Container & Orchestration',
     icon: Container,
-    items: ['Kubernetes (AKS/EKS)', 'Docker', 'Helm', 'Kustomize', 'OpenShift'],
+    items: ['Kubernetes (AKS/EKS)', 'Docker', 'Helm', 'OpenShift'],
     color: 'accent'
   },
   {
     category: 'CI/CD & Automation',
     icon: GitBranch,
-    items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD', 'Git', 'GitHub', 'Python', 'Bash', 'Shell Scripting'],
+    items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD', 'Git', 'GitHub', 'Python', 'Shell Scripting'],
     color: 'primary'
   },
   {
@@ -38,9 +38,9 @@ const skills = [
     color: 'accent'
   },
   {
-    category: 'AI Automation & Intelligent Workflows',
-    icon: Bot,
-    items: ['n8n', 'Make', 'Azure AI', 'Azure Foundry', 'MLOps', 'Vibe Coding'],
+    category: 'AI / ML Platforms',
+    icon: Cpu,
+    items: ['OpenShift AI', 'MLOps', 'AI/ML Model Deployment', 'Containerized Model Serving'],
     color: 'primary'
   },
 ];
