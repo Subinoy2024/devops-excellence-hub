@@ -72,8 +72,14 @@ const projects = [
 
 const certifications = [
   { title: 'AWS Certified CloudOps Engineer - Associate', issuer: 'Amazon Web Services', icon: Cloud },
+  { title: 'Terraform Authoring and Operations Professional', issuer: 'HashiCorp', icon: Settings },
   { title: 'AZ-104: Microsoft Azure Administrator Associate', issuer: 'Microsoft', icon: Award },
+  { title: 'AZ-400: Designing and Implementing Microsoft DevOps Solutions', issuer: 'Microsoft', icon: GitBranch },
+  { title: 'Azure Developer Associate (AZ-204)', issuer: 'Microsoft', icon: Award },
+  { title: 'Azure AI Fundamentals', issuer: 'Microsoft', icon: Brain },
   { title: 'Microsoft 365 Certifications', issuer: 'Microsoft', icon: Award },
+  { title: 'AI Infrastructure Management', issuer: 'Professional Training', icon: Brain },
+  { title: 'Microsoft Foundry', issuer: 'Microsoft', icon: Settings },
   { title: 'Cloud Engineer Bootcamp (AWS, Azure and GCP)', issuer: 'UPGRAD', icon: BookOpen, description: 'Successfully completed the 7-month bootcamp program', certificateImage: '/assets/upgrad-certificate.png' },
   { title: 'AI Powered Cloud & DevOps', issuer: 'IIT Guwahati', icon: GraduationCap, description: 'Professional Certificate Program (2025–2026 Expected)' },
 ];
