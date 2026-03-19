@@ -28,7 +28,7 @@ const HeroSection = () => {
         <div className="flex flex-wrap items-center justify-center gap-3 mb-6 text-sm text-muted-foreground">
           <span className="px-3 py-1 rounded-full bg-muted border border-border">14+ Years in IT</span>
           <span className="px-3 py-1 rounded-full bg-muted border border-border">6+ Years Cloud & DevOps</span>
-          <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary">Azure · AWS · Kubernetes · Terraform</span>
+          <span className="px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary">Terraform · Azure DevOps · Azure · OpenShift</span>
         </div>
 
         <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
