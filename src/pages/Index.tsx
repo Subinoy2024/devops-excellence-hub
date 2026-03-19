@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Download, ChevronDown, Cloud, Container, GitBranch, Shield, Activity, Settings, Users, Brain, Award, GraduationCap, BookOpen, ExternalLink } from 'lucide-react';
+import { getToolIcon } from '@/lib/toolIcons';
 import { useState } from 'react';
 import SearchBar from '@/components/SearchBar';
 
@@ -256,11 +257,15 @@ const Index = () => {
                     <h3 className="text-sm font-semibold text-foreground">{skill.category}</h3>
                   </div>
                   <div className="flex flex-wrap gap-1.5">
-                    {skill.items.map(item => (
-                      <span key={item} className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground">
-                        {item}
-                      </span>
-                    ))}
+                    {skill.items.map(item => {
+                      const ToolIcon = getToolIcon(item);
+                      return (
+                        <span key={item} className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground inline-flex items-center gap-1">
+                          {ToolIcon && <ToolIcon size={11} className="text-primary/70" />}
+                          {item}
+                        </span>
+                      );
+                    })}
                   </div>
                 </div>
               );
@@ -290,11 +295,15 @@ const Index = () => {
                   {project.overview}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
-                  {project.tools.map(tool => (
-                    <span key={tool} className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full border border-primary/20">
-                      {tool}
-                    </span>
-                  ))}
+                  {project.tools.map(tool => {
+                    const ToolIcon = getToolIcon(tool);
+                    return (
+                      <span key={tool} className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full border border-primary/20 inline-flex items-center gap-1">
+                        {ToolIcon && <ToolIcon size={10} />}
+                        {tool}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
             ))}
