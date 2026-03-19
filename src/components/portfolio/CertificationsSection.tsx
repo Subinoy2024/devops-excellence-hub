@@ -8,6 +8,9 @@ const certifications = [
   { title: 'AZ-400: Microsoft DevOps Solutions', issuer: 'Microsoft', icon: GitBranch },
   { title: 'AZ-204: Azure Developer Associate', issuer: 'Microsoft', icon: Award },
   { title: 'Azure AI Fundamentals', issuer: 'Microsoft', icon: Brain },
+];
+
+const training = [
   { title: 'Microsoft 365 Certifications', issuer: 'Microsoft', icon: Award },
   { title: 'AI Infrastructure Management', issuer: 'Professional Training', icon: Brain },
   { title: 'Microsoft Foundry', issuer: 'Microsoft', icon: Settings },
@@ -23,13 +26,45 @@ const certifications = [
 const CertificationsSection = () => {
   const [selectedCert, setSelectedCert] = useState<string | null>(null);
 
+  const renderCard = (cert: typeof certifications[0] & { description?: string; certificateImage?: string }, idx: number) => {
+    const Icon = cert.icon;
+    return (
+      <div
+        key={cert.title}
+        className="bg-card border border-border rounded-xl p-4 card-hover animate-fade-in flex items-start gap-3"
+        style={{ animationDelay: `${idx * 60}ms` }}
+      >
+        <div className="p-2 rounded-lg bg-primary/10 border border-primary/20 shrink-0">
+          <Icon size={18} className="text-primary" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-sm font-semibold text-foreground leading-snug">{cert.title}</h3>
+          <p className="text-xs text-primary mt-0.5">{cert.issuer}</p>
+          {cert.description && (
+            <p className="text-xs text-muted-foreground mt-1">{cert.description}</p>
+          )}
+          {cert.certificateImage && (
+            <button
+              onClick={() => setSelectedCert(cert.certificateImage!)}
+              className="mt-2 flex items-center gap-1.5 text-xs text-primary hover:underline"
+            >
+              <ExternalLink size={11} />
+              View Certificate
+            </button>
+          )}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <section id="certifications" className="py-20 sm:py-28 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Certifications</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Certifications & Training</h2>
         <div className="w-16 h-1 bg-primary rounded mb-3" />
         <p className="text-sm text-muted-foreground mb-10">
-          Industry certifications that validate my cloud and DevOps expertise.
+          Industry-recognized certifications and professional training aligned to cloud infrastructure,
+          DevOps automation, and platform engineering.
         </p>
 
         {selectedCert && (
@@ -49,37 +84,16 @@ const CertificationsSection = () => {
           </div>
         )}
 
+        {/* Certifications subsection */}
+        <h3 className="text-sm font-medium text-foreground uppercase tracking-wider mb-4">Certifications</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
+          {certifications.map((cert, idx) => renderCard(cert, idx))}
+        </div>
+
+        {/* Training subsection */}
+        <h3 className="text-sm font-medium text-foreground uppercase tracking-wider mb-4">Training & Continuous Learning</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {certifications.map((cert, idx) => {
-            const Icon = cert.icon;
-            return (
-              <div
-                key={cert.title}
-                className="bg-card border border-border rounded-xl p-4 card-hover animate-fade-in flex items-start gap-3"
-                style={{ animationDelay: `${idx * 60}ms` }}
-              >
-                <div className="p-2 rounded-lg bg-primary/10 border border-primary/20 shrink-0">
-                  <Icon size={18} className="text-primary" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-sm font-semibold text-foreground leading-snug">{cert.title}</h3>
-                  <p className="text-xs text-primary mt-0.5">{cert.issuer}</p>
-                  {cert.description && (
-                    <p className="text-xs text-muted-foreground mt-1">{cert.description}</p>
-                  )}
-                  {cert.certificateImage && (
-                    <button
-                      onClick={() => setSelectedCert(cert.certificateImage!)}
-                      className="mt-2 flex items-center gap-1.5 text-xs text-primary hover:underline"
-                    >
-                      <ExternalLink size={11} />
-                      View Certificate
-                    </button>
-                  )}
-                </div>
-              </div>
-            );
-          })}
+          {training.map((cert, idx) => renderCard(cert, idx))}
         </div>
       </div>
     </section>

@@ -27,19 +27,21 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              Cloud DevOps Engineer with 14+ years of IT experience and 6+ years focused on cloud infrastructure, 
-              CI/CD automation, and container platform operations. I work with Azure, AWS, Terraform, Kubernetes, 
-              and OpenShift to build reliable infrastructure and streamline application delivery.
+              Cloud DevOps Engineer with 14+ years of IT experience and 6+ years focused on cloud
+              infrastructure, CI/CD automation, and container platform operations. I work with Azure,
+              AWS, Terraform, Kubernetes, and OpenShift to build reliable infrastructure and streamline
+              application delivery.
             </p>
             <p>
-              My day-to-day involves provisioning cloud environments, building and maintaining CI/CD pipelines, 
-              managing container deployments, writing automation scripts, and supporting production systems. 
-              I've delivered infrastructure solutions across organizations including Kyndryl, HCL, KPMG, Atos, 
-              and others — always focused on consistency, reliability, and operational efficiency.
+              My day-to-day involves provisioning cloud environments, building and maintaining CI/CD
+              pipelines, managing container deployments, writing automation scripts, and supporting
+              production systems. I've delivered infrastructure solutions across organizations including
+              Kyndryl, HCL, KPMG, Atos, and others — always focused on consistency, reliability, and
+              operational efficiency.
             </p>
             <p className="text-foreground/80">
-              Currently expanding into MLOps and AI-driven automation to support modern infrastructure operations 
-              and improve platform efficiency.
+              Currently expanding into MLOps and AI-driven automation to support modern infrastructure
+              operations and improve platform efficiency.
             </p>
           </div>
 
@@ -55,26 +57,18 @@ const AboutSection = () => {
 
             <h3 className="text-sm font-medium text-foreground mb-3 uppercase tracking-wider">Focus Areas</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li className="flex items-start gap-2">
-                <span className="text-primary mt-1">▸</span>
-                Cloud infrastructure provisioning
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary mt-1">▸</span>
-                CI/CD pipeline automation
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary mt-1">▸</span>
-                Container platform operations
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary mt-1">▸</span>
-                Infrastructure as Code
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-primary mt-1">▸</span>
-                Monitoring & operational support
-              </li>
+              {[
+                'Cloud infrastructure provisioning',
+                'CI/CD pipeline automation',
+                'Container platform operations',
+                'Infrastructure as Code',
+                'Monitoring & operational support',
+              ].map(area => (
+                <li key={area} className="flex items-start gap-2">
+                  <span className="text-primary mt-1">▸</span>
+                  {area}
+                </li>
+              ))}
             </ul>
           </div>
         </div>

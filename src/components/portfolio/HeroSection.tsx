@@ -20,27 +20,28 @@ const HeroSection = () => {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-heading tracking-tight mb-3">
           Subinoy Debnath
         </h1>
-        <p className="text-xl sm:text-2xl text-primary font-heading font-semibold mb-3">
+        <p className="text-xl sm:text-2xl text-primary font-heading font-semibold mb-2">
           Cloud DevOps Engineer
         </p>
 
+        {/* Stack line */}
+        <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
+          Terraform &nbsp;|&nbsp; Azure &nbsp;|&nbsp; AWS &nbsp;|&nbsp; Kubernetes &nbsp;|&nbsp; CI/CD
+        </p>
+
         {/* Experience line */}
-        <p className="text-sm text-muted-foreground mb-4">
-          14+ years overall IT experience &nbsp;|&nbsp; 6+ years in Cloud & DevOps
+        <p className="text-sm text-muted-foreground mb-6">
+          14+ years overall IT experience &nbsp;·&nbsp; 6+ years in Cloud & DevOps
         </p>
 
-        {/* Tech stack line */}
-        <p className="text-sm text-primary/80 font-medium tracking-wide mb-6">
-          Terraform • Azure • AWS • Kubernetes • CI/CD
+        <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed text-[15px]">
+          I build and manage cloud infrastructure, automate deployment pipelines, and support container
+          platforms across enterprise environments — with a focus on reliability, scalability, and
+          operational efficiency.
         </p>
 
-        <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed">
-          14+ years of overall IT experience with 6+ years focused on cloud infrastructure, 
-          DevOps automation, container platforms, and deployment engineering.
-        </p>
-
-        {/* Top CTA row — Resume, GitHub, LinkedIn, Contact */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
+        {/* CTA row */}
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
           <a
             href={`${import.meta.env.BASE_URL}README.md`}
             download="Subinoy_Debnath_Resume.md"
@@ -74,15 +75,6 @@ const HeroSection = () => {
             <Mail size={15} />
             Contact
           </a>
-        </div>
-
-        {/* Why hire me strip */}
-        <div className="bg-card/60 border border-border rounded-xl px-6 py-4 max-w-2xl mx-auto mb-10">
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            <span className="text-foreground font-medium">Why hire me?</span>{' '}
-            Cloud DevOps Engineer with 14+ years in IT and 6+ years focused on infrastructure automation, 
-            CI/CD, cloud operations, and container platforms.
-          </p>
         </div>
 
         <a href="#projects" className="inline-block animate-bounce text-muted-foreground hover:text-primary transition-colors">
