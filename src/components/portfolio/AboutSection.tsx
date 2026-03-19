@@ -1,10 +1,10 @@
-const companies = ['Kyndryl', 'HCL', 'KPMG', 'Atos', 'Microland', 'CGI', 'TCS', 'Capgemini'];
+const companies = ['Kyndryl', 'HCL', 'KPMG', 'Atos', 'Microland', 'Micropoint', 'CGI', 'TCS', 'Capgemini'];
 
 const highlights = [
-  { label: 'IT Experience', value: '14 years' },
+  { label: 'IT Experience', value: '13+ years' },
   { label: 'Cloud & DevOps', value: '6+ years' },
   { label: 'Certifications', value: '10+' },
-  { label: 'Enterprise Clients', value: '8+' },
+  { label: 'Global Clients', value: '30+' },
 ];
 
 const AboutSection = () => {
