@@ -1,9 +1,9 @@
 import Navbar from '@/components/portfolio/Navbar';
 import HeroSection from '@/components/portfolio/HeroSection';
+import ProjectsSection from '@/components/portfolio/ProjectsSection';
 import AboutSection from '@/components/portfolio/AboutSection';
 import SkillsSection from '@/components/portfolio/SkillsSection';
 import ExperienceSection from '@/components/portfolio/ExperienceSection';
-import ProjectsSection from '@/components/portfolio/ProjectsSection';
 import CertificationsSection from '@/components/portfolio/CertificationsSection';
 import ContactSection from '@/components/portfolio/ContactSection';
 import Footer from '@/components/portfolio/Footer';
@@ -14,10 +14,10 @@ const Index = () => {
       <div className="bg-radial-glow fixed inset-0 pointer-events-none" />
       <Navbar />
       <HeroSection />
+      <ProjectsSection />
       <AboutSection />
       <SkillsSection />
       <ExperienceSection />
-      <ProjectsSection />
       <CertificationsSection />
       <ContactSection />
       <Footer />
