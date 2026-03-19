@@ -234,17 +234,10 @@ const Index = () => {
                 ))}
               </div>
 
-              <h3 className="text-sm font-medium text-foreground mt-6 mb-3 uppercase tracking-wider">Key Responsibility</h3>
-              <ul className="text-sm text-muted-foreground leading-relaxed space-y-2 list-disc list-inside mb-6">
-                <li>Engineered reusable infrastructure and deployment code for cloud resource provisioning, lifecycle management, and automation using modern DevOps and infrastructure-as-code practices.</li>
-                <li>Worked with Git-based repositories for source control, collaboration, branching, and structured change management across infrastructure and application delivery workflows, providing complete end-to-end traceability.</li>
-                <li>Developed and optimized Azure DevOps CI/CD pipelines for continuous integration, automated validation, release orchestration, deployment automation, and controlled promotion across environments.</li>
-                <li>Managed OpenShift containerization and application deployment workflows, enabling scalable, consistent, and production-ready releases across enterprise platforms.</li>
-                <li>Contributed to multi-cloud deployment initiatives by applying standardized automation, portable delivery patterns, and governed deployment practices across cloud environments.</li>
-                <li>Integrated DevSecOps principles into engineering workflows by aligning infrastructure and application delivery with secure configuration practices, policy-aware automation, and security-focused deployment controls.</li>
-                <li>Contributed to cost optimization by improving resource efficiency, supporting right-sizing approaches, reducing manual operational overhead, and enabling standardized, automation-driven cloud consumption practices.</li>
-                <li>Enabled end-to-end delivery across Git, CI/CD, cloud provisioning, OpenShift container platforms, DevSecOps-aligned automation, and multi-cloud deployment workflows, improving resilience, observability, governance, deployment velocity, and operational efficiency.</li>
-              </ul>
+              <h3 className="text-sm font-medium text-foreground mt-6 mb-3 uppercase tracking-wider">Key Responsibilities</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+                Delivered cloud provisioning, infrastructure automation, and application deployment using DevOps and IaC practices. Utilized Git for version control, collaboration, and structured change management across infrastructure and application code. Built and optimized Azure DevOps CI/CD pipelines for automated integration, testing, release orchestration, and deployment. Managed OpenShift containerization and application deployments, ensuring scalable and production-ready delivery. Contributed to multi-cloud deployment through standardized automation and portable release practices. Embedded DevSecOps controls through secure configuration, policy-driven automation, and controlled delivery workflows. Supported cost optimization through right-sizing, efficient resource utilization, and automation-led operational improvements. Improved end-to-end delivery with stronger resilience, observability, governance, and operational efficiency.
+              </p>
 
               <h3 className="text-sm font-medium text-foreground mt-6 mb-3 uppercase tracking-wider">Philosophy</h3>
               <p className="text-sm text-muted-foreground italic leading-relaxed">
