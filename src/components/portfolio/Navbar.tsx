@@ -1,4 +1,4 @@
-import { Download, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import SearchBar from '@/components/SearchBar';
 
@@ -34,12 +34,10 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href={`${import.meta.env.BASE_URL}README.md`}
-              download="Subinoy_Debnath_Resume.md"
+              href="#contact"
               className="flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
             >
-              <Download size={14} />
-              Resume
+              Contact
             </a>
           </div>
 
@@ -64,12 +62,10 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href={`${import.meta.env.BASE_URL}README.md`}
-              download="Subinoy_Debnath_Resume.md"
+              href="#contact"
               className="inline-flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium"
             >
-              <Download size={14} />
-              Resume
+              Contact
             </a>
           </div>
         )}

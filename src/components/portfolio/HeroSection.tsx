@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ChevronDown, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -24,12 +24,10 @@ const HeroSection = () => {
           Cloud DevOps Engineer
         </p>
 
-        {/* Stack line */}
         <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
           Terraform &nbsp;|&nbsp; Azure &nbsp;|&nbsp; AWS &nbsp;|&nbsp; Kubernetes &nbsp;|&nbsp; CI/CD
         </p>
 
-        {/* Experience line */}
         <p className="text-sm text-muted-foreground mb-6">
           14+ years overall IT experience &nbsp;·&nbsp; 6+ years in Cloud & DevOps
         </p>
@@ -40,16 +38,7 @@ const HeroSection = () => {
           operational efficiency.
         </p>
 
-        {/* CTA row */}
         <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
-          <a
-            href={`${import.meta.env.BASE_URL}README.md`}
-            download="Subinoy_Debnath_Resume.md"
-            className="flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors text-sm"
-          >
-            <Download size={15} />
-            Resume
-          </a>
           <a
             href="https://github.com/Subinoy2024"
             target="_blank"
@@ -70,7 +59,7 @@ const HeroSection = () => {
           </a>
           <a
             href="#contact"
-            className="flex items-center gap-2 px-5 py-2.5 bg-card border border-border rounded-lg text-foreground hover:border-primary/50 transition-colors text-sm"
+            className="flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors text-sm"
           >
             <Mail size={15} />
             Contact
