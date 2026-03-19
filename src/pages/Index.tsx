@@ -240,7 +240,7 @@ const Index = () => {
 
               <h3 className="text-sm font-medium text-foreground mt-6 mb-3 uppercase tracking-wider">Philosophy</h3>
               <p className="text-sm text-muted-foreground italic leading-relaxed">
-                "Simplicity, observability, and resilience guide my approach to cloud and platform delivery. Infrastructure should be cattle, not pets."
+                "Simplicity, observability, and resilience guide my approach to cloud and DevOps delivery. Infrastructure should be cattle, not pets."
               </p>
             </div>
           </div>
