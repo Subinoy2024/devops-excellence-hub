@@ -7,11 +7,11 @@ import {
 
 interface ToolIconInfo {
   icon: LucideIcon;
-  color: string; // Tailwind text color class
+  color: string;
 }
 
 const toolIconMap: Record<string, ToolIconInfo> = {
-  // Cloud - Azure blue, AWS orange, OpenStack red
+  // Cloud
   'Azure': { icon: Cloud, color: 'text-[#0078D4]' },
   'AWS': { icon: Cloud, color: 'text-[#FF9900]' },
   'OpenStack': { icon: Cloud, color: 'text-[#ED1944]' },
@@ -38,10 +38,11 @@ const toolIconMap: Record<string, ToolIconInfo> = {
   'Infrastructure as Code': { icon: FileCode, color: 'text-[#7B42BC]' },
   'Microsoft Azure': { icon: Cloud, color: 'text-[#0078D4]' },
 
-  // Containers - Docker blue, K8s blue
+  // Containers
   'Kubernetes': { icon: Container, color: 'text-[#326CE5]' },
   'Docker': { icon: Container, color: 'text-[#2496ED]' },
   'Helm': { icon: Layers, color: 'text-[#0F1689]' },
+  'OpenShift': { icon: Container, color: 'text-[#EE0000]' },
   'OpenShift Admin': { icon: Container, color: 'text-[#EE0000]' },
   'Deployment & Routing': { icon: Network, color: 'text-[#326CE5]' },
   'Secrets & ConfigMaps': { icon: Lock, color: 'text-[#326CE5]' },
@@ -55,15 +56,22 @@ const toolIconMap: Record<string, ToolIconInfo> = {
   'GitHub': { icon: GitBranch, color: 'text-[#E6EDF3]' },
   'GitHub Webhooks': { icon: GitBranch, color: 'text-[#E6EDF3]' },
   'Git': { icon: GitBranch, color: 'text-[#F05032]' },
-  'MLOps': { icon: Bot, color: 'text-[#0DB7ED]' },
   'ArgoCD': { icon: GitBranch, color: 'text-[#EF7B4D]' },
 
-  // IaC - Terraform purple
+  // IaC
   'Terraform': { icon: Settings, color: 'text-[#7B42BC]' },
   'ARM Templates': { icon: FileCode, color: 'text-[#0078D4]' },
 
-  // Security
+  // Security & DevSecOps
   'IAM': { icon: Shield, color: 'text-[#DD344C]' },
+  'IAM Policies': { icon: Shield, color: 'text-[#DD344C]' },
+  'Trivy': { icon: Shield, color: 'text-[#1904DA]' },
+  'DevSecOps Practices': { icon: Shield, color: 'text-[#A0AEC0]' },
+
+  // Scripting
+  'Python': { icon: Code, color: 'text-[#3776AB]' },
+  'Bash': { icon: Terminal, color: 'text-[#4EAA25]' },
+  'Shell Scripting': { icon: Terminal, color: 'text-[#73C991]' },
 
   // Observability
   'Prometheus': { icon: Activity, color: 'text-[#E6522C]' },
@@ -71,12 +79,15 @@ const toolIconMap: Record<string, ToolIconInfo> = {
   'ELK Stack': { icon: Eye, color: 'text-[#00BFB3]' },
   'Node Exporter': { icon: Activity, color: 'text-[#E6522C]' },
 
-  // AI - vibrant colors
+  // AI
   'AI/ML Foundations': { icon: Bot, color: 'text-[#10A37F]' },
   'AI Infrastructure': { icon: Cpu, color: 'text-[#76B900]' },
   'Agentic AI': { icon: Bot, color: 'text-[#A855F7]' },
+  'Azure AI': { icon: Bot, color: 'text-[#0078D4]' },
+  'Azure Foundry': { icon: Cog, color: 'text-[#0078D4]' },
   'Prompt Engineering': { icon: MessageSquare, color: 'text-[#10A37F]' },
   'Vibe Coding': { icon: Code, color: 'text-[#EC4899]' },
+  'MLOps': { icon: Bot, color: 'text-[#0DB7ED]' },
   'n8n': { icon: Workflow, color: 'text-[#EA4B71]' },
   'Make': { icon: Workflow, color: 'text-[#6D00CC]' },
   'ChatGPT': { icon: MessageSquare, color: 'text-[#10A37F]' },
@@ -88,7 +99,7 @@ const toolIconMap: Record<string, ToolIconInfo> = {
   'Delivery': { icon: Rocket, color: 'text-[#F97316]' },
   'Operational Ownership': { icon: Cog, color: 'text-[#38BDF8]' },
 
-  // Misc Tools
+  // Misc
   'Ansible': { icon: Settings, color: 'text-[#EE0000]' },
   'Nginx': { icon: Server, color: 'text-[#009639]' },
   'Linux': { icon: Terminal, color: 'text-[#FCC624]' },
