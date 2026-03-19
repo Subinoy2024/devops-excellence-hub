@@ -2,43 +2,46 @@ import { getToolIcon } from '@/lib/toolIcons';
 
 const featuredProjects = [
   {
-    title: 'Multi-Cloud Infrastructure Automation with Terraform',
-    summary: 'Built modular Terraform configurations to provision and manage infrastructure across Azure, AWS, and OpenStack with consistent, repeatable deployments.',
-    problem: 'Manual infrastructure provisioning across multiple cloud providers led to configuration drift and slow environment setup.',
-    role: 'Designed the Terraform module structure, implemented provider configurations, and automated environment provisioning for dev, staging, and production.',
+    title: 'Azure Landing Zone with Terraform',
+    summary: 'Designed and provisioned a standardized Azure landing zone using modular Terraform configurations, enabling consistent multi-environment deployments across dev, staging, and production.',
+    problem: 'Teams were provisioning Azure resources manually, leading to configuration drift, inconsistent environments, and slow onboarding of new workloads.',
+    role: 'Led the Terraform module design, implemented provider and backend configurations, built environment-specific variable structures, and integrated the workflow into CI/CD for automated plan and apply cycles.',
     highlights: [
-      'Modular Terraform codebase supporting Azure, AWS, and OpenStack',
-      'Environment-specific variable management with tfvars',
-      'State management with remote backends',
-      'Integrated with CI/CD for automated plan and apply workflows',
+      'Modular Terraform codebase with reusable resource modules',
+      'Remote state management with Azure Storage backend',
+      'Environment separation using workspaces and tfvars',
+      'Automated plan/apply via Azure DevOps pipelines',
     ],
-    tools: ['Terraform', 'Azure', 'AWS', 'OpenStack', 'Git'],
+    value: 'Reduced environment provisioning time from days to under an hour and eliminated manual configuration drift across environments.',
+    tools: ['Terraform', 'Azure', 'Azure DevOps', 'Git'],
   },
   {
-    title: 'CI/CD Pipeline for Kubernetes Deployment',
-    summary: 'End-to-end CI/CD pipeline that builds, tests, containerizes, and deploys applications to Kubernetes clusters with automated rollback support.',
-    problem: 'Development teams needed a reliable pipeline to deploy containerized applications to Kubernetes without manual intervention.',
-    role: 'Designed the pipeline architecture, configured Jenkins stages, built Docker images, and set up Kubernetes deployment manifests with Helm.',
+    title: 'CI/CD Platform for Kubernetes Deployments',
+    summary: 'Built an end-to-end CI/CD pipeline that builds, tests, containerizes, and deploys applications to Kubernetes clusters with automated rollback support.',
+    problem: 'Development teams lacked a reliable, repeatable pipeline to ship containerized applications to Kubernetes without manual intervention or environment-specific workarounds.',
+    role: 'Designed the pipeline architecture, configured multi-stage Jenkins pipelines, built Docker images, set up Helm-based Kubernetes deployments, and integrated webhook triggers from GitHub.',
     highlights: [
-      'Jenkins pipeline with build, test, scan, and deploy stages',
+      'Multi-stage Jenkins pipeline: build → test → scan → deploy',
       'Docker image builds pushed to container registry',
-      'Helm-based Kubernetes deployments with environment separation',
-      'Webhook-triggered automation from GitHub',
+      'Helm charts for Kubernetes deployments with environment separation',
+      'Webhook-triggered automation from GitHub repositories',
     ],
+    value: 'Enabled consistent, hands-off deployments across environments and reduced release cycle time significantly.',
     tools: ['Jenkins', 'Docker', 'Kubernetes', 'Helm', 'GitHub'],
   },
   {
     title: 'Cloud Monitoring & Observability Stack',
-    summary: 'Implemented monitoring infrastructure using Prometheus and Grafana for cloud and on-prem environments, providing visibility into system health and performance.',
-    problem: 'Lack of centralized monitoring across infrastructure made it difficult to detect and respond to issues proactively.',
-    role: 'Deployed Prometheus with custom exporters, built Grafana dashboards, and configured alerting rules for key infrastructure metrics.',
+    summary: 'Implemented centralized monitoring infrastructure using Prometheus and Grafana across cloud and on-prem environments, providing real-time visibility into system health and performance.',
+    problem: 'Lack of unified monitoring made it difficult to detect issues proactively, leading to delayed incident response and blind spots across infrastructure.',
+    role: 'Deployed Prometheus with custom exporters, built Grafana dashboards for key infrastructure metrics, and configured alert rules for CPU, memory, disk, and service health.',
     highlights: [
       'Prometheus metrics collection with Node Exporter and custom targets',
       'Grafana dashboards for compute, network, and application metrics',
-      'Alert rules for CPU, memory, disk, and service health',
-      'Integrated with existing OpenStack and cloud-hosted environments',
+      'Alert rules with notification routing for on-call teams',
+      'Integrated with Azure-hosted and OpenStack environments',
     ],
-    tools: ['Prometheus', 'Grafana', 'Linux', 'OpenStack'],
+    value: 'Provided full-stack observability, reduced mean time to detection, and improved incident response across infrastructure.',
+    tools: ['Prometheus', 'Grafana', 'Linux', 'Azure'],
   },
 ];
 
@@ -76,6 +79,11 @@ const ProjectsSection = () => {
                   <div className="mb-4">
                     <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-1">My Role</p>
                     <p className="text-xs text-muted-foreground leading-relaxed">{project.role}</p>
+                  </div>
+
+                  <div className="mb-4">
+                    <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-1">Value Delivered</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{project.value}</p>
                   </div>
                 </div>
 
