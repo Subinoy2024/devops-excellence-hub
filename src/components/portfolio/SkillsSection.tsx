@@ -1,4 +1,4 @@
-import { Cloud, Container, GitBranch, Code, Activity, Shield, Bot } from 'lucide-react';
+import { Cloud, Container, GitBranch, Code, Activity, Shield, Bot, Terminal, DollarSign } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
 
 const skillGroups = [
@@ -8,34 +8,44 @@ const skillGroups = [
     items: ['Azure', 'AWS', 'OpenStack'],
   },
   {
+    category: 'DevOps / CI/CD',
+    icon: GitBranch,
+    items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD'],
+  },
+  {
     category: 'Infrastructure as Code',
     icon: Code,
-    items: ['Terraform'],
+    items: ['Terraform', 'ARM Templates', 'CloudFormation'],
   },
   {
-    category: 'Containers & Orchestration',
+    category: 'Containers / Orchestration',
     icon: Container,
-    items: ['Docker', 'Kubernetes', 'OpenShift'],
+    items: ['Docker', 'Kubernetes', 'OpenShift', 'Helm', 'Kustomize'],
   },
   {
-    category: 'CI/CD & Automation',
+    category: 'Scripting / Automation',
+    icon: Terminal,
+    items: ['Python', 'Bash', 'Shell Scripting', 'PowerShell'],
+  },
+  {
+    category: 'Version Control',
     icon: GitBranch,
-    items: ['Azure DevOps', 'GitHub Actions', 'Jenkins', 'Git', 'GitHub', 'Python', 'Bash', 'Shell Scripting'],
+    items: ['Git', 'GitHub', 'Azure Repos'],
   },
   {
-    category: 'Security & DevSecOps',
-    icon: Shield,
-    items: ['Azure Key Vault', 'AWS Secrets Manager', 'IAM Policies', 'Azure Policy', 'Trivy', 'DevSecOps Practices'],
-  },
-  {
-    category: 'Monitoring & Observability',
+    category: 'Monitoring / Observability',
     icon: Activity,
-    items: ['Prometheus', 'Grafana', 'ELK Stack'],
+    items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'],
   },
   {
-    category: 'AI Automation & Intelligent Workflows',
-    icon: Bot,
-    items: ['n8n', 'Make', 'Azure AI', 'Azure Foundry', 'MLOps', 'Vibe Coding'],
+    category: 'Security / DevSecOps',
+    icon: Shield,
+    items: ['Azure Key Vault', 'AWS Secrets Manager', 'IAM/RBAC', 'Azure Policy', 'Trivy'],
+  },
+  {
+    category: 'Cost Optimization',
+    icon: DollarSign,
+    items: ['Resource Right-Sizing', 'Azure Cost Management', 'Reserved Instances', 'Automation-Driven Savings'],
   },
 ];
 
@@ -43,10 +53,10 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="py-20 sm:py-28 px-4 sm:px-6 bg-card/30">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Technical Skills</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Technology Stack</h2>
         <div className="w-16 h-1 bg-primary rounded mb-3" />
         <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
-          Core technologies and platforms aligned to cloud infrastructure, CI/CD automation, container operations, security, observability, and modern AI-assisted workflow automation.
+          Core technologies and platforms aligned to cloud provisioning, CI/CD automation, container operations, security, observability, and cost-efficient delivery.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

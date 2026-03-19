@@ -25,17 +25,16 @@ const HeroSection = () => {
         </p>
 
         <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
-          Terraform &nbsp;|&nbsp; Azure &nbsp;|&nbsp; AWS &nbsp;|&nbsp; OpenShift &nbsp;|&nbsp; CI/CD &nbsp;|&nbsp; Docker
+          Cloud Provisioning &nbsp;·&nbsp; CI/CD Automation &nbsp;·&nbsp; Platform Operations &nbsp;·&nbsp; Infrastructure as Code
         </p>
 
         <p className="text-sm text-muted-foreground mb-6">
-          14 years overall IT experience &nbsp;·&nbsp; 6+ years in Cloud & DevOps
+          14 years IT experience &nbsp;·&nbsp; 6+ years in Cloud & DevOps Engineering
         </p>
 
         <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed text-[15px]">
-          I build and manage cloud infrastructure, automate deployment pipelines, and support container
-          platforms across enterprise environments — with a focus on reliability, scalability, and
-          operational efficiency.
+          End-to-end cloud delivery across Terraform, Azure, AWS, OpenShift, and Kubernetes —
+          building infrastructure, automating pipelines, and operating platforms at enterprise scale.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
@@ -66,7 +65,7 @@ const HeroSection = () => {
           </a>
         </div>
 
-        <a href="#projects" className="inline-block animate-bounce text-muted-foreground hover:text-primary transition-colors">
+        <a href="#about" className="inline-block animate-bounce text-muted-foreground hover:text-primary transition-colors">
           <ChevronDown size={28} />
         </a>
       </div>
