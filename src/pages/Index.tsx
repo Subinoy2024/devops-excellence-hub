@@ -257,11 +257,15 @@ const Index = () => {
                     <h3 className="text-sm font-semibold text-foreground">{skill.category}</h3>
                   </div>
                   <div className="flex flex-wrap gap-1.5">
-                    {skill.items.map(item => (
-                      <span key={item} className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground">
-                        {item}
-                      </span>
-                    ))}
+                    {skill.items.map(item => {
+                      const ToolIcon = getToolIcon(item);
+                      return (
+                        <span key={item} className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground inline-flex items-center gap-1">
+                          {ToolIcon && <ToolIcon size={11} className="text-primary/70" />}
+                          {item}
+                        </span>
+                      );
+                    })}
                   </div>
                 </div>
               );
