@@ -71,6 +71,7 @@ const projects = [
 ];
 
 const certifications = [
+  { title: 'AI Powered Cloud & DevOps', issuer: 'IIT Guwahati', icon: GraduationCap, description: 'Professional Certificate Program (2025–2026 Expected)' },
   { title: 'AWS Certified CloudOps Engineer - Associate', issuer: 'Amazon Web Services', icon: Cloud },
   { title: 'Terraform Associate (004)', issuer: 'HashiCorp', icon: Settings },
   { title: 'AZ-104: Microsoft Azure Administrator Associate', issuer: 'Microsoft', icon: Award },
@@ -81,7 +82,6 @@ const certifications = [
   { title: 'AI Infrastructure Management', issuer: 'Professional Training', icon: Brain },
   { title: 'Microsoft Foundry', issuer: 'Microsoft', icon: Settings },
   { title: 'Cloud Engineer Bootcamp (AWS, Azure and GCP)', issuer: 'UPGRAD', icon: BookOpen, description: 'Successfully completed the 7-month bootcamp program', certificateImage: '/assets/upgrad-certificate.png' },
-  { title: 'AI Powered Cloud & DevOps', issuer: 'IIT Guwahati', icon: GraduationCap, description: 'Professional Certificate Program (2025–2026 Expected)' },
 ];
 
 const companies = ['KYNDRYL', 'HCL', 'KPMG', 'ATOS', 'MICROLAND', 'CGI', 'TCS', 'CAPGEMINI'];
