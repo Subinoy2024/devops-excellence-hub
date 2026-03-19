@@ -216,9 +216,6 @@ const Index = () => {
               <p>
                 Experienced in delivering enterprise-grade infrastructure solutions across global organizations including Kyndryl, HCL, KPMG, Atos, Microland, CGI, TCS, and Capgemini, with a focus on reliability, consistency, and operational excellence at scale.
               </p>
-              <p>
-                Specialized in Infrastructure as Code, OpenShift configuration and deployment, CI/CD automation, and cloud configuration best practices, enabling environments that are secure, auditable, standardized, and production-ready.
-              </p>
               <p className="text-primary/80 italic">
                 Also expanding into MLOps, AIOps, and GenAI-driven automation to enhance operational intelligence, improve platform efficiency, and support modern infrastructure management.
               </p>
