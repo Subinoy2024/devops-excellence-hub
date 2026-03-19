@@ -11,14 +11,14 @@ const navLinks = [
 ];
 
 const skills = [
-  { category: 'Cloud Platforms', icon: Cloud, items: ['Azure (AKS, VMs, Storage)', 'AWS (EKS, EC2, S3, IAM)', 'OpenStack'] },
-  { category: 'Containers & Orchestration', icon: Container, items: ['Kubernetes (AKS/EKS)', 'Docker', 'Helm', 'Kustomize'] },
-  { category: 'CI/CD & GitOps', icon: GitBranch, items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD'] },
-  { category: 'Infrastructure as Code', icon: Settings, items: ['Terraform', 'ARM Templates', 'CloudFormation'] },
-  { category: 'Security & Compliance', icon: Shield, items: ['Azure Policy', 'Sentinel', 'IAM', 'RBAC', 'Key Vault'] },
-  { category: 'Monitoring & Observability', icon: Activity, items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'] },
-  { category: 'Team & Collaboration', icon: Users, items: ['Collaboration', 'Motivation', 'Support', 'Build'] },
-  { category: 'AI / MLOps Explorer', icon: Brain, items: ['AI/ML Foundations', 'LLM & Generative AI', 'Agentic AI Foundations'] },
+  { category: 'Cloud & Infrastructure', icon: Cloud, items: ['Azure', 'AWS', 'OpenStack', 'Azure App Services', 'Azure Functions', 'AWS Lambda', 'Serverless', 'Event-Driven Architecture'] },
+  { category: 'Containers & Platform Engineering', icon: Container, items: ['Kubernetes', 'Docker', 'Helm', 'OpenShift Admin', 'Deployment & Routing', 'Secrets & ConfigMaps', 'RBAC', 'Troubleshooting'] },
+  { category: 'CI/CD & Automation', icon: GitBranch, items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'MLOps'] },
+  { category: 'Infrastructure as Code', icon: Settings, items: ['Terraform', 'ARM Templates', 'AWS CloudFormation'] },
+  { category: 'Security & Secrets', icon: Shield, items: ['Azure Policy', 'IAM', 'RBAC', 'Azure Key Vault', 'AWS Secrets Manager'] },
+  { category: 'Observability', icon: Activity, items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'] },
+  { category: 'AI & Modern Engineering', icon: Brain, items: ['AI/ML Foundations', 'AI Infrastructure', 'Agentic AI', 'Prompt Engineering', 'Vibe Coding', 'n8n', 'Make'] },
+  { category: 'Team & Execution', icon: Users, items: ['Collaboration', 'Support', 'Delivery', 'Operational Ownership'] },
 ];
 
 const projects = [
