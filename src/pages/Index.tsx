@@ -354,7 +354,7 @@ const Index = () => {
                 >
                   <div className="flex items-start gap-4">
                     <div className="p-2.5 rounded-lg bg-primary/10 border border-primary/20">
-                      <Icon size={20} className="text-primary" />
+                      <Icon size={24} className="text-primary" />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-sm font-semibold text-foreground mb-1">{cert.title}</h3>
