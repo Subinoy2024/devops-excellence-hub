@@ -222,6 +222,10 @@ const Index = () => {
               <p className="text-primary/80 italic">
                 Also expanding into MLOps, AIOps, and GenAI-driven automation to enhance operational intelligence, improve platform efficiency, and support modern infrastructure management.
               </p>
+              <h3 className="text-sm font-medium text-foreground mt-4 mb-2 uppercase tracking-wider">Key Responsibilities</h3>
+              <p className="text-sm leading-relaxed">
+                Delivered cloud provisioning, infrastructure automation, and application deployment using DevOps and IaC practices. Utilized Git for version control, collaboration, and structured change management across infrastructure and application code. Built and optimized Azure DevOps CI/CD pipelines for automated integration, testing, release orchestration, and deployment. Managed OpenShift containerization and application deployments, ensuring scalable and production-ready delivery. Contributed to multi-cloud deployment through standardized automation and portable release practices. Embedded DevSecOps controls through secure configuration, policy-driven automation, and controlled delivery workflows. Supported cost optimization through right-sizing, efficient resource utilization, and automation-led operational improvements. Improved end-to-end delivery with stronger resilience, observability, governance, and operational efficiency.
+              </p>
             </div>
 
             <div>
@@ -233,11 +237,6 @@ const Index = () => {
                   </span>
                 ))}
               </div>
-
-              <h3 className="text-sm font-medium text-foreground mt-6 mb-3 uppercase tracking-wider">Key Responsibilities</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-                Delivered cloud provisioning, infrastructure automation, and application deployment using DevOps and IaC practices. Utilized Git for version control, collaboration, and structured change management across infrastructure and application code. Built and optimized Azure DevOps CI/CD pipelines for automated integration, testing, release orchestration, and deployment. Managed OpenShift containerization and application deployments, ensuring scalable and production-ready delivery. Contributed to multi-cloud deployment through standardized automation and portable release practices. Embedded DevSecOps controls through secure configuration, policy-driven automation, and controlled delivery workflows. Supported cost optimization through right-sizing, efficient resource utilization, and automation-led operational improvements. Improved end-to-end delivery with stronger resilience, observability, governance, and operational efficiency.
-              </p>
 
               <h3 className="text-sm font-medium text-foreground mt-6 mb-3 uppercase tracking-wider">Philosophy</h3>
               <p className="text-sm text-muted-foreground italic leading-relaxed">
