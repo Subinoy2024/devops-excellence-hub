@@ -204,16 +204,16 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Results-driven DevOps and Cloud Engineer with a strong foundation in infrastructure engineering and a passion for building scalable, resilient, and secure cloud platforms.
+                Results-driven Cloud Platform & DevOps Engineer with a strong foundation in infrastructure engineering and a passion for building scalable, resilient, and secure cloud and application deployment platforms.
               </p>
               <p>
-                Enterprise experience across leading global organizations including Kyndryl, HCL, KPMG, Atos, Microland, CGI, TCS, and Capgemini—delivering production-grade infrastructure at scale.
+                Experienced in delivering enterprise-grade infrastructure solutions across global organizations including Kyndryl, HCL, KPMG, Atos, Microland, CGI, TCS, and Capgemini, with a focus on reliability, consistency, and operational excellence at scale.
               </p>
               <p>
-                I specialize in Infrastructure as Code, CI/CD automation and cloud configuration best practices, ensuring environments are consistent, auditable, and production-grade.
+                Specialized in Infrastructure as Code, OpenShift configuration and deployment, CI/CD automation, and cloud configuration best practices, enabling environments that are secure, auditable, standardized, and production-ready.
               </p>
               <p className="text-primary/80 italic">
-                Currently exploring AI-driven cloud operations (AIOps / GenAI) to enhance automation and enable smarter infrastructure management.
+                Also expanding into MLOps, AIOps, and GenAI-driven automation to enhance operational intelligence, improve platform efficiency, and support modern infrastructure management.
               </p>
             </div>
 
