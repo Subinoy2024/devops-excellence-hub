@@ -11,14 +11,14 @@ const navLinks = [
 ];
 
 const skills = [
-  { category: 'Cloud Platforms', icon: Cloud, items: ['Azure (AKS, VMs, Storage)', 'AWS (EKS, EC2, S3, IAM)', 'OpenStack'] },
-  { category: 'Containers & Orchestration', icon: Container, items: ['Kubernetes (AKS/EKS)', 'Docker', 'Helm', 'Kustomize'] },
-  { category: 'CI/CD & GitOps', icon: GitBranch, items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD'] },
-  { category: 'Infrastructure as Code', icon: Settings, items: ['Terraform', 'ARM Templates', 'CloudFormation'] },
-  { category: 'Security & Compliance', icon: Shield, items: ['Azure Policy', 'Sentinel', 'IAM', 'RBAC', 'Key Vault'] },
-  { category: 'Monitoring & Observability', icon: Activity, items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'] },
-  { category: 'Team & Collaboration', icon: Users, items: ['Collaboration', 'Motivation', 'Support', 'Build'] },
-  { category: 'AI / MLOps Explorer', icon: Brain, items: ['AI/ML Foundations', 'LLM & Generative AI', 'Agentic AI Foundations'] },
+  { category: 'Cloud & Infrastructure', icon: Cloud, items: ['Azure', 'AWS', 'OpenStack', 'Azure App Services', 'Azure Functions', 'AWS Lambda', 'Serverless', 'Event-Driven Architecture'] },
+  { category: 'Containers & Platform Engineering', icon: Container, items: ['Kubernetes', 'Docker', 'Helm', 'OpenShift Admin', 'Deployment & Routing', 'Secrets & ConfigMaps', 'RBAC', 'Troubleshooting'] },
+  { category: 'CI/CD & Automation', icon: GitBranch, items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'MLOps'] },
+  { category: 'Infrastructure as Code', icon: Settings, items: ['Terraform', 'ARM Templates', 'AWS CloudFormation'] },
+  { category: 'Security & Secrets', icon: Shield, items: ['Azure Policy', 'IAM', 'RBAC', 'Azure Key Vault', 'AWS Secrets Manager'] },
+  { category: 'Observability', icon: Activity, items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'] },
+  { category: 'AI & Modern Engineering', icon: Brain, items: ['AI/ML Foundations', 'AI Infrastructure', 'Agentic AI', 'Prompt Engineering', 'Vibe Coding', 'n8n', 'Make'] },
+  { category: 'Team & Execution', icon: Users, items: ['Collaboration', 'Support', 'Delivery', 'Operational Ownership'] },
 ];
 
 const projects = [
@@ -170,10 +170,10 @@ const Index = () => {
             Subinoy Debnath
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground mb-2">
-            Cloud & DevOps Engineer
+            Cloud Platform & DevOps Engineer
           </p>
           <p className="text-sm text-muted-foreground mb-8">
-            12+ Years IT Experience · 6+ Years Cloud & DevOps · Enterprise Infrastructure at Scale
+            14 Years IT Experience · 6+ Years Cloud & DevOps · Enterprise Infrastructure at Scale
           </p>
 
           {/* Social Links */}
@@ -204,16 +204,16 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Results-driven DevOps and Cloud Engineer with a strong foundation in infrastructure engineering and a passion for building scalable, resilient, and secure cloud platforms.
+                Results-driven Cloud Platform & DevOps Engineer with a strong foundation in infrastructure engineering and a passion for building scalable, resilient, and secure cloud and application deployment platforms.
               </p>
               <p>
-                Enterprise experience across leading global organizations including Kyndryl, HCL, KPMG, Atos, Microland, CGI, TCS, and Capgemini—delivering production-grade infrastructure at scale.
+                Experienced in delivering enterprise-grade infrastructure solutions across global organizations including Kyndryl, HCL, KPMG, Atos, Microland, CGI, TCS, and Capgemini, with a focus on reliability, consistency, and operational excellence at scale.
               </p>
               <p>
-                I specialize in Infrastructure as Code, CI/CD automation and cloud configuration best practices, ensuring environments are consistent, auditable, and production-grade.
+                Specialized in Infrastructure as Code, OpenShift configuration and deployment, CI/CD automation, and cloud configuration best practices, enabling environments that are secure, auditable, standardized, and production-ready.
               </p>
               <p className="text-primary/80 italic">
-                Currently exploring AI-driven cloud operations (AIOps / GenAI) to enhance automation and enable smarter infrastructure management.
+                Also expanding into MLOps, AIOps, and GenAI-driven automation to enhance operational intelligence, improve platform efficiency, and support modern infrastructure management.
               </p>
             </div>
 
@@ -405,7 +405,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 border-t border-border text-center">
         <p className="text-xs text-muted-foreground">
-          © 2025 Subinoy Debnath · Cloud & DevOps Engineer · All Rights Reserved
+          © 2025 Subinoy Debnath · Cloud Platform & DevOps Engineer · All Rights Reserved
         </p>
       </footer>
     </div>
