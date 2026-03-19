@@ -426,7 +426,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 border-t border-border text-center">
         <p className="text-xs text-muted-foreground">
-          © 2025 Subinoy Debnath · Cloud Platform & DevOps Engineer · All Rights Reserved
+          © 2025 dccloud.in.net · Cloud Platform & DevOps Engineer · All Rights Reserved
         </p>
       </footer>
     </div>
