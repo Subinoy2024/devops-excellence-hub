@@ -274,7 +274,7 @@ const Index = () => {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Projects</h2>
           <div className="w-16 h-1 bg-primary rounded mb-3" />
-          <p className="text-sm text-muted-foreground mb-10">Real-world DevOps projects simulating enterprise environments</p>
+          <p className="text-sm text-muted-foreground mb-10">Cloud and DevOps infrastructure and application deployments</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {projects.map((project, idx) => (
