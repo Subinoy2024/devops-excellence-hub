@@ -84,7 +84,7 @@ const certifications = [
   { title: 'Cloud Engineer Bootcamp (AWS, Azure and GCP)', issuer: 'UPGRAD', icon: BookOpen, description: 'Successfully completed the 7-month bootcamp program', certificateImage: '/assets/upgrad-certificate.png' },
 ];
 
-const companies = ['KYNDRYL', 'HCL', 'KPMG', 'ATOS', 'MICROLAND', 'CGI', 'TCS', 'CAPGEMINI'];
+const companies = ['KYNDRYL', 'HCL', 'KPMG', 'ATOS', 'MICROLAND', 'CGI', 'TCS', 'CAPGEMINI', 'MICROPOINT'];
 
 const Index = () => {
   const [selectedCert, setSelectedCert] = useState<string | null>(null);
