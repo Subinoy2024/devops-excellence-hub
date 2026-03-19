@@ -14,7 +14,7 @@ const navLinks = [
 const skills = [
   { category: 'Cloud & Infrastructure', icon: Cloud, items: ['Azure', 'AWS', 'OpenStack', 'Azure App Services', 'Azure Functions', 'AWS Lambda', 'Serverless', 'Event-Driven Architecture'] },
   { category: 'Containers & Platform Engineering', icon: Container, items: ['Kubernetes', 'Docker', 'Helm', 'OpenShift Admin', 'Deployment & Routing', 'Secrets & ConfigMaps', 'RBAC', 'Troubleshooting'] },
-  { category: 'CI/CD & Automation', icon: GitBranch, items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'Git', 'GitHub', 'Azure Repos', 'Azure Boards', 'Jira', 'MLOps', 'Microservice Deployment', 'Monolithic Deployment', 'Frontend CI/CD', 'Backend CI/CD'] },
+  { category: 'CI/CD & Automation', icon: GitBranch, items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'Git', 'GitHub', 'Azure Repos', 'Azure Boards', 'Jira', 'MLOps', 'Microservice Deployment', 'Monolithic Deployment', 'Python', 'PowerShell', 'Shell'] },
   { category: 'Infrastructure as Code', icon: Settings, items: ['Terraform', 'ARM Templates', 'AWS CloudFormation'] },
   { category: 'Security & Secrets', icon: Shield, items: ['Azure Policy', 'IAM', 'RBAC', 'Azure Key Vault', 'AWS Secrets Manager'] },
   { category: 'Observability', icon: Activity, items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'] },
