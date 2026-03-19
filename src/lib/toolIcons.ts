@@ -92,6 +92,11 @@ const toolIconMap: Record<string, ToolIconInfo> = {
   'Make': { icon: Workflow, color: 'text-[#6D00CC]' },
   'ChatGPT': { icon: MessageSquare, color: 'text-[#10A37F]' },
   'Custom GPTs': { icon: Bot, color: 'text-[#10A37F]' },
+  'OpenShift AI': { icon: Cpu, color: 'text-[#EE0000]' },
+  'AI/ML Model Deployment': { icon: Rocket, color: 'text-[#10A37F]' },
+  'Containerized Model Serving': { icon: Container, color: 'text-[#326CE5]' },
+  'EKS': { icon: Container, color: 'text-[#FF9900]' },
+  'AKS': { icon: Container, color: 'text-[#0078D4]' },
 
   // Team
   'Collaboration': { icon: Globe, color: 'text-[#38BDF8]' },
