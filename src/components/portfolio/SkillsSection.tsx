@@ -1,36 +1,36 @@
-import { Cloud, Container, GitBranch, Settings, Activity, Code } from 'lucide-react';
+import { Cloud, Container, GitBranch, Code, Activity } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
 
 const skillGroups = [
   {
-    category: 'Cloud Platforms',
+    category: 'Cloud',
     icon: Cloud,
-    items: ['Azure', 'AWS', 'OpenStack'],
+    items: ['Azure', 'AWS'],
   },
   {
     category: 'Infrastructure as Code',
-    icon: Settings,
-    items: ['Terraform', 'ARM Templates', 'AWS CloudFormation'],
+    icon: Code,
+    items: ['Terraform'],
   },
   {
     category: 'Containers & Orchestration',
     icon: Container,
-    items: ['Docker', 'Kubernetes', 'Helm', 'OpenShift Admin'],
+    items: ['Docker', 'Kubernetes', 'OpenShift'],
   },
   {
     category: 'CI/CD & Automation',
     icon: GitBranch,
-    items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'Git', 'GitHub'],
+    items: ['Azure DevOps', 'GitHub Actions', 'Jenkins'],
   },
   {
-    category: 'Scripting & Development',
+    category: 'Scripting',
     icon: Code,
-    items: ['Python', 'Bash', 'PowerShell', 'YAML'],
+    items: ['Python', 'Bash'],
   },
   {
-    category: 'Monitoring & Observability',
+    category: 'Observability',
     icon: Activity,
-    items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'],
+    items: ['Prometheus', 'Grafana', 'ELK Stack'],
   },
 ];
 
@@ -41,7 +41,7 @@ const SkillsSection = () => {
         <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Technical Skills</h2>
         <div className="w-16 h-1 bg-primary rounded mb-3" />
         <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
-          Core technologies I use regularly for cloud infrastructure, deployment automation, and platform operations.
+          Core technologies I work with daily for cloud infrastructure, deployment automation, and platform operations.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
