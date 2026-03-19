@@ -2,11 +2,12 @@ import { Search, X } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 
 const searchableContent = [
-  { section: 'About', id: 'about', keywords: ['devops', 'cloud', 'engineer', 'infrastructure', 'kyndryl', 'hcl', 'kpmg', 'atos', 'microland', 'cgi', 'tcs', 'capgemini', 'experience', 'iac', 'ci/cd', 'aiops', 'genai'] },
-  { section: 'Skills', id: 'skills', keywords: ['azure', 'aws', 'kubernetes', 'docker', 'terraform', 'jenkins', 'github actions', 'argocd', 'helm', 'prometheus', 'grafana', 'openstack', 'sentinel', 'iam', 'rbac', 'elk', 'cloudformation', 'arm templates', 'ai', 'mlops', 'llm'] },
-  { section: 'Projects', id: 'projects', keywords: ['ci/cd', 'pipeline', 'jenkins', 'docker', 'terraform', 'ansible', 'kubernetes', 'wordpress', 'cloudformation', 'kinesis', 'lambda', 'dynamodb', 'azure devops', 'openstack', 'nginx', 'multi-cloud', 'monitoring', 'windows server'] },
-  { section: 'Certifications', id: 'certifications', keywords: ['aws certified', 'az-104', 'microsoft', 'azure', 'cloud engineer', 'upgrad', 'iit guwahati', 'ai powered', 'bootcamp', 'microsoft 365'] },
-  { section: 'Contact', id: 'contact', keywords: ['email', 'linkedin', 'github', 'consulting', 'platform engineering'] },
+  { section: 'About', id: 'about', keywords: ['devops', 'cloud', 'engineer', 'infrastructure', 'kyndryl', 'hcl', 'kpmg', 'atos', 'microland', 'cgi', 'tcs', 'capgemini', 'experience'] },
+  { section: 'Skills', id: 'skills', keywords: ['azure', 'aws', 'kubernetes', 'docker', 'terraform', 'jenkins', 'github actions', 'helm', 'prometheus', 'grafana', 'openstack', 'elk', 'python', 'bash', 'powershell'] },
+  { section: 'Experience', id: 'experience', keywords: ['responsibilities', 'ci/cd', 'pipeline', 'automation', 'deployment', 'container', 'monitoring', 'scripting'] },
+  { section: 'Projects', id: 'projects', keywords: ['terraform', 'kubernetes', 'monitoring', 'ci/cd', 'multi-cloud', 'infrastructure', 'helm', 'prometheus', 'grafana'] },
+  { section: 'Certifications', id: 'certifications', keywords: ['aws certified', 'az-104', 'az-400', 'terraform associate', 'microsoft', 'azure', 'upgrad'] },
+  { section: 'Contact', id: 'contact', keywords: ['email', 'linkedin', 'github', 'resume', 'hire'] },
 ];
 
 const SearchBar = () => {
