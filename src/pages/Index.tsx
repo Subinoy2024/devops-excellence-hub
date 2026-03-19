@@ -268,7 +268,7 @@ const Index = () => {
                       const ToolIcon = toolInfo?.icon;
                       return (
                         <span key={item} className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground inline-flex items-center gap-1">
-                          {ToolIcon && <ToolIcon size={12} className={toolInfo.color} />}
+                          {ToolIcon && <ToolIcon size={16} className={toolInfo.color} />}
                           {item}
                         </span>
                       );
@@ -307,7 +307,7 @@ const Index = () => {
                     const ToolIcon = toolInfo?.icon;
                     return (
                       <span key={tool} className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full border border-primary/20 inline-flex items-center gap-1">
-                        {ToolIcon && <ToolIcon size={11} className={toolInfo.color} />}
+                        {ToolIcon && <ToolIcon size={14} className={toolInfo.color} />}
                         {tool}
                       </span>
                     );
@@ -354,7 +354,7 @@ const Index = () => {
                 >
                   <div className="flex items-start gap-4">
                     <div className="p-2.5 rounded-lg bg-primary/10 border border-primary/20">
-                      <Icon size={20} className="text-primary" />
+                      <Icon size={24} className="text-primary" />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-sm font-semibold text-foreground mb-1">{cert.title}</h3>
