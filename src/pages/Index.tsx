@@ -71,7 +71,7 @@ const projects = [
 ];
 
 const certifications = [
-  { title: 'AI Powered Cloud & DevOps', issuer: 'IIT Guwahati', icon: GraduationCap, description: 'Professional Certificate Program (2025–2026 Expected)' },
+  
   { title: 'AWS Certified CloudOps Engineer - Associate', issuer: 'Amazon Web Services', icon: Cloud },
   { title: 'Terraform Associate (004)', issuer: 'HashiCorp', icon: Settings },
   { title: 'AZ-104: Microsoft Azure Administrator Associate', issuer: 'Microsoft', icon: Award },
