@@ -111,7 +111,7 @@ const CertificationsPanel = () => {
                       {cert.description}
                     </p>
                   )}
-                  {cert.timeline && (
+                  {'timeline' in cert && cert.timeline && (
                     <span className="inline-block text-xs px-2 py-1 bg-primary/10 border border-primary/30 rounded text-primary font-mono">
                       {cert.timeline}
                     </span>
