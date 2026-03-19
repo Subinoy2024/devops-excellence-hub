@@ -297,10 +297,11 @@ const Index = () => {
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {project.tools.map(tool => {
-                    const ToolIcon = getToolIcon(tool);
+                    const toolInfo = getToolIcon(tool);
+                    const ToolIcon = toolInfo?.icon;
                     return (
                       <span key={tool} className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full border border-primary/20 inline-flex items-center gap-1">
-                        {ToolIcon && <ToolIcon size={10} />}
+                        {ToolIcon && <ToolIcon size={11} className={toolInfo.color} />}
                         {tool}
                       </span>
                     );
