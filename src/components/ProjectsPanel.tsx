@@ -174,7 +174,7 @@ const ProjectsPanel = () => {
           // PRODUCTION-GRADE PROJECTS
         </h2>
         <p className="text-sm text-muted-foreground font-mono">
-          Real-world Cloud and DevOps infrastructure and application deployments
+          Cloud Infrastructure, DevOps & Application Delivery
         </p>
       </div>
 
