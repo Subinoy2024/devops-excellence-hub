@@ -7,8 +7,8 @@ const ContactSection = () => {
         <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Let's Connect</h2>
         <div className="w-16 h-1 bg-primary rounded mb-6 mx-auto" />
         <p className="text-muted-foreground mb-10">
-          Open to Cloud DevOps roles, platform engineering opportunities, and infrastructure consulting. 
-          Let's talk about how I can contribute to your team.
+          Open to Cloud DevOps Engineer, Cloud Platform Engineer, and infrastructure delivery roles.
+          Let's discuss how I can contribute to your engineering team.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
