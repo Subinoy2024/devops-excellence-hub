@@ -1,4 +1,4 @@
-import { Download, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import SearchBar from '@/components/SearchBar';
 
