@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, BookOpen, ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
   return (
