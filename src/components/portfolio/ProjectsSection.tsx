@@ -1,4 +1,7 @@
+import { ExternalLink, FileText } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
+
+const GITHUB_DOCS_BASE = 'https://github.com/Subinoy2024/insighthub-docs/blob/main';
 
 const featuredProjects = [
   {
@@ -14,6 +17,10 @@ const featuredProjects = [
     ],
     value: 'Reduced environment provisioning time from days to under an hour and eliminated manual configuration drift across environments.',
     tools: ['Terraform', 'Azure', 'Azure DevOps', 'Git'],
+    docs: [
+      { label: 'Architecture Doc', path: '/projects/azure-landing-zone/architecture.md', type: 'md' },
+      { label: 'Terraform Modules', path: '/projects/azure-landing-zone/modules.pdf', type: 'pdf' },
+    ],
   },
   {
     title: 'CI/CD Platform for Kubernetes Deployments',
@@ -28,6 +35,9 @@ const featuredProjects = [
     ],
     value: 'Enabled consistent, hands-off deployments across environments and reduced release cycle time significantly.',
     tools: ['Jenkins', 'Docker', 'Kubernetes', 'Helm', 'GitHub'],
+    docs: [
+      { label: 'Pipeline Design', path: '/projects/cicd-k8s/pipeline-design.md', type: 'md' },
+    ],
   },
   {
     title: 'Cloud Monitoring & Observability Stack',
@@ -42,6 +52,10 @@ const featuredProjects = [
     ],
     value: 'Provided full-stack observability, reduced mean time to detection, and improved incident response across infrastructure.',
     tools: ['Prometheus', 'Grafana', 'Linux', 'Azure'],
+    docs: [
+      { label: 'Dashboard Guide', path: '/projects/observability/grafana-dashboards.pdf', type: 'pdf' },
+      { label: 'Alert Rules', path: '/projects/observability/alert-rules.md', type: 'md' },
+    ],
   },
 ];
 
@@ -111,6 +125,28 @@ const ProjectsSection = () => {
                       );
                     })}
                   </div>
+
+                  {project.docs && project.docs.length > 0 && (
+                    <>
+                      <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-2 mt-4">Documentation</p>
+                      <div className="flex flex-col gap-1.5">
+                        {project.docs.map((doc, di) => (
+                          <a
+                            key={di}
+                            href={`${GITHUB_DOCS_BASE}${doc.path}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-[11px] text-primary hover:underline"
+                          >
+                            <FileText size={10} />
+                            {doc.label}
+                            <span className="text-muted-foreground">({doc.type.toUpperCase()})</span>
+                            <ExternalLink size={8} className="opacity-60" />
+                          </a>
+                        ))}
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
