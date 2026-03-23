@@ -62,10 +62,10 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#contact"
+              href="#insighthub"
               className="inline-flex items-center gap-1.5 text-sm px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium"
             >
-              Contact
+              InsightHub
             </a>
           </div>
         )}
