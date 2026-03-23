@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, BookOpen, ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -57,11 +57,11 @@ const HeroSection = () => {
             LinkedIn
           </a>
           <a
-            href="#contact"
+            href="#insighthub"
             className="flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors text-sm"
           >
-            <Mail size={15} />
-            Contact
+            <BookOpen size={15} />
+            InsightHub
           </a>
         </div>
 
