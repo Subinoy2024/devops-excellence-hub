@@ -1,4 +1,4 @@
-import { Github, Linkedin, BookOpen, ChevronDown } from 'lucide-react';
+import { Linkedin, BookOpen, ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -38,15 +38,6 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
-          <a
-            href="https://github.com/Subinoy2024"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-2.5 bg-card border border-border rounded-lg text-foreground hover:border-primary/50 transition-colors text-sm"
-          >
-            <Github size={15} />
-            GitHub
-          </a>
           <a
             href="https://www.linkedin.com/in/subinoy-debnath-3ab534272"
             target="_blank"
