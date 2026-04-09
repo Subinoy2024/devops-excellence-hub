@@ -1,13 +1,17 @@
+import kpmgLogo from '@/assets/logos/kpmg.png';
+import hclLogo from '@/assets/logos/hcl.png';
+import atosLogo from '@/assets/logos/atos.png';
+
 const companies = [
-  { name: 'Kyndryl', domain: 'kyndryl.com' },
-  { name: 'HCL', domain: 'hcltech.com' },
-  { name: 'KPMG', domain: 'kpmg.com' },
-  { name: 'Atos', domain: 'atos.net' },
-  { name: 'Microland', domain: 'microland.com' },
-  { name: 'Micropoint', domain: '' },
-  { name: 'CGI', domain: 'cgi.com' },
-  { name: 'TCS', domain: 'tcs.com' },
-  { name: 'Capgemini', domain: 'capgemini.com' },
+  { name: 'Kyndryl', logo: '', domain: 'kyndryl.com' },
+  { name: 'HCL', logo: hclLogo, domain: '' },
+  { name: 'KPMG', logo: kpmgLogo, domain: '' },
+  { name: 'Atos', logo: atosLogo, domain: '' },
+  { name: 'Microland', logo: '', domain: 'microland.com' },
+  { name: 'Micropoint', logo: '', domain: '' },
+  { name: 'CGI', logo: '', domain: 'cgi.com' },
+  { name: 'TCS', logo: '', domain: 'tcs.com' },
+  { name: 'Capgemini', logo: '', domain: 'capgemini.com' },
 ];
 
 const highlights = [
