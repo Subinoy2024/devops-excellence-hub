@@ -1,6 +1,7 @@
 import kpmgLogo from '@/assets/logos/kpmg.png';
 import hclLogo from '@/assets/logos/hcl.png';
 import atosLogo from '@/assets/logos/atos.png';
+import tcsLogo from '@/assets/logos/tcs.png';
 
 const companies = [
   { name: 'Kyndryl', logo: '', domain: 'kyndryl.com' },
@@ -10,7 +11,7 @@ const companies = [
   { name: 'Microland', logo: '', domain: 'microland.com' },
   { name: 'Micropoint', logo: '', domain: '' },
   { name: 'CGI', logo: '', domain: 'cgi.com' },
-  { name: 'TCS', logo: '', domain: 'tcs.com' },
+  { name: 'TCS', logo: tcsLogo, domain: '' },
   { name: 'Capgemini', logo: '', domain: 'capgemini.com' },
 ];
 
