@@ -45,6 +45,11 @@ const AboutSection = () => {
               standardization, and developer enablement through streamlined deployment workflows, reusable
               infrastructure, and automation-driven release processes.
             </p>
+            <p className="text-foreground/80">
+              Currently expanding into MLOps and AI-driven automation, with hands-on experience in
+              ML model deployment and building AI-enabled DevOps workflows to improve platform
+              intelligence and delivery efficiency.
+            </p>
           </div>
 
           <div>
