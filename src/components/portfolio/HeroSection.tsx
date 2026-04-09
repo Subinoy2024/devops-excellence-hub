@@ -33,8 +33,8 @@ const HeroSection = () => {
         </p>
 
         <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed text-[15px]">
-          End-to-end DevOps & Cloud Engineering across Terraform, MultiCloud Platforms, and Kubernetes —
-          delivering scalable infrastructure, automated pipelines, and production-ready systems.
+          End-to-end DevOps & Cloud Engineering across Terraform, MultiCloud Platforms, and Containerization & Orchestration —
+          building scalable infrastructure, automated pipelines, and production-ready systems.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
