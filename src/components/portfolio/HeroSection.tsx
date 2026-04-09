@@ -21,11 +21,11 @@ const HeroSection = () => {
           Subinoy Debnath
         </h1>
         <p className="text-xl sm:text-2xl text-primary font-heading font-semibold mb-2">
-          Cloud DevOps Engineer
+          DevOps Engineer
         </p>
 
         <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
-          Cloud Provisioning &nbsp;·&nbsp; CI/CD Automation &nbsp;·&nbsp; Platform Operations &nbsp;·&nbsp; Infrastructure as Code
+          CI/CD Automation &nbsp;·&nbsp; Infrastructure as Code
         </p>
 
         <p className="text-sm text-muted-foreground mb-6">
