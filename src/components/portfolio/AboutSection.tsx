@@ -64,8 +64,11 @@ const AboutSection = () => {
             <h3 className="text-sm font-medium text-foreground mb-3 uppercase tracking-wider">Enterprise Delivery</h3>
             <div className="flex flex-wrap gap-2 mb-6">
               {companies.map(company => (
-                <span key={company} className="text-xs px-3 py-1.5 bg-card rounded-lg border border-border text-muted-foreground">
-                  {company}
+                <span key={company.name} className="inline-flex items-center gap-2 text-xs px-3 py-1.5 bg-card rounded-lg border border-border text-muted-foreground">
+                  {company.logo ? (
+                    <img src={company.logo} alt={company.name} className="h-4 w-4 object-contain" />
+                  ) : null}
+                  {company.name}
                 </span>
               ))}
             </div>
