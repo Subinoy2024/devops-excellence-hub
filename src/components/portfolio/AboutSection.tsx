@@ -27,21 +27,23 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              DevOps Engineer with 13+ years of IT experience and 6+ years delivering
-              cloud infrastructure, CI/CD automation, and container platform operations across
-              enterprise environments. I provision and manage cloud resources on Azure and AWS,
-              engineer CI/CD pipelines, deploy containerized workloads on OpenShift and Kubernetes,
-              and implement Infrastructure as Code using Terraform.
+              DevOps Engineer with 13+ years of IT experience and 6+ years in cloud and DevOps,
+              delivering scalable infrastructure, CI/CD automation, and container platform operations
+              across enterprise environments.
             </p>
             <p>
-              My day-to-day work centers on cloud provisioning, CI/CD delivery, and OpenShift-based
-              container deployments across enterprise environments. I have contributed to infrastructure
-              and application delivery initiatives across organizations including Kyndryl, HCL, KPMG,
-              Atos, and others, with a strong focus on consistency, reliability, and operational efficiency.
+              I specialize in provisioning and managing cloud resources across Azure, AWS, GCP, and OpenStack,
+              designing and implementing CI/CD pipelines, and deploying microservices-based applications on
+              Kubernetes and OpenShift container platforms. I also build and maintain Infrastructure as Code
+              using Terraform to enable consistent, repeatable, and reliable deployments.
             </p>
-            <p className="text-foreground/80">
-              Currently expanding into MLOps and AI-driven automation to strengthen platform
-              intelligence and delivery efficiency.
+            <p>
+              My day-to-day work focuses on cloud provisioning, automated delivery pipelines, and containerized
+              application deployments across enterprise environments. I have contributed to large-scale
+              infrastructure and application delivery initiatives across organizations including Kyndryl, HCL,
+              KPMG, Atos, and others, with a strong emphasis on operational efficiency, platform reliability,
+              standardization, and developer enablement through streamlined deployment workflows, reusable
+              infrastructure, and automation-driven release processes.
             </p>
           </div>
 
