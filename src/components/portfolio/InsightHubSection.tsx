@@ -66,7 +66,7 @@ const InsightHubSection = () => {
           </h2>
           <div className="w-16 h-1 bg-primary rounded mb-4 mx-auto" />
           <p className="text-muted-foreground text-sm max-w-xl mx-auto">
-            Practical perspectives on cloud infrastructure, DevOps delivery, and platform engineering — backed by documentation hosted on GitHub.
+            Practical information on cloud infrastructure, DevOps delivery, and platform engineering.
           </p>
         </div>
 
