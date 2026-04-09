@@ -1,13 +1,17 @@
+import kpmgLogo from '@/assets/logos/kpmg.png';
+import hclLogo from '@/assets/logos/hcl.png';
+import atosLogo from '@/assets/logos/atos.png';
+
 const companies = [
-  { name: 'Kyndryl', domain: 'kyndryl.com' },
-  { name: 'HCL', domain: 'hcltech.com' },
-  { name: 'KPMG', domain: 'kpmg.com' },
-  { name: 'Atos', domain: 'atos.net' },
-  { name: 'Microland', domain: 'microland.com' },
-  { name: 'Micropoint', domain: '' },
-  { name: 'CGI', domain: 'cgi.com' },
-  { name: 'TCS', domain: 'tcs.com' },
-  { name: 'Capgemini', domain: 'capgemini.com' },
+  { name: 'Kyndryl', logo: '', domain: 'kyndryl.com' },
+  { name: 'HCL', logo: hclLogo, domain: '' },
+  { name: 'KPMG', logo: kpmgLogo, domain: '' },
+  { name: 'Atos', logo: atosLogo, domain: '' },
+  { name: 'Microland', logo: '', domain: 'microland.com' },
+  { name: 'Micropoint', logo: '', domain: '' },
+  { name: 'CGI', logo: '', domain: 'cgi.com' },
+  { name: 'TCS', logo: '', domain: 'tcs.com' },
+  { name: 'Capgemini', logo: '', domain: 'capgemini.com' },
 ];
 
 const highlights = [
@@ -63,18 +67,21 @@ const AboutSection = () => {
           <div>
             <h3 className="text-sm font-medium text-foreground mb-3 uppercase tracking-wider">Enterprise Delivery</h3>
             <div className="flex flex-wrap gap-2 mb-6">
-              {companies.map(company => (
-                <span key={company.name} className="inline-flex items-center gap-2 text-xs px-3 py-1.5 bg-card rounded-lg border border-border text-muted-foreground">
-                  {company.domain && (
-                    <img
-                      src={`https://www.google.com/s2/favicons?domain=${company.domain}&sz=32`}
-                      alt={company.name}
-                      className="h-4 w-4 object-contain"
-                    />
-                  )}
-                  {company.name}
-                </span>
-              ))}
+              {companies.map(company => {
+                const imgSrc = company.logo
+                  ? company.logo
+                  : company.domain
+                    ? `https://www.google.com/s2/favicons?domain=${company.domain}&sz=32`
+                    : '';
+                return (
+                  <span key={company.name} className="inline-flex items-center gap-2 text-xs px-3 py-1.5 bg-card rounded-lg border border-border text-muted-foreground">
+                    {imgSrc && (
+                      <img src={imgSrc} alt={company.name} className="h-4 w-4 object-contain" loading="lazy" />
+                    )}
+                    {company.name}
+                  </span>
+                );
+              })}
             </div>
 
             <h3 className="text-sm font-medium text-foreground mb-3 uppercase tracking-wider">Core Delivery Areas</h3>
