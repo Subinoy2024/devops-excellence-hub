@@ -28,27 +28,25 @@ const AboutSection = () => {
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
               DevOps Engineer with 13+ years of IT experience and 6+ years in cloud and DevOps,
-              delivering scalable infrastructure, CI/CD automation, and container platform operations
+              delivering scalable infrastructure, CI/CD automation, and container platform deployments
               across enterprise environments.
             </p>
             <p>
-              I specialize in provisioning and managing cloud resources across Azure, AWS, GCP, and OpenStack,
+              I have experience in provisioning and managing cloud resources on Azure, AWS, GCP, and OpenStack,
               designing and implementing CI/CD pipelines, and deploying microservices-based applications on
-              Kubernetes and OpenShift container platforms. I also build and maintain Infrastructure as Code
-              using Terraform to enable consistent, repeatable, and reliable deployments.
+              Kubernetes and OpenShift container platforms.
             </p>
             <p>
-              My day-to-day work focuses on cloud provisioning, automated delivery pipelines, and containerized
-              application deployments across enterprise environments. I have contributed to large-scale
-              infrastructure and application delivery initiatives across organizations including Kyndryl, HCL,
-              KPMG, Atos, and others, with a strong emphasis on operational efficiency, platform reliability,
-              standardization, and developer enablement through streamlined deployment workflows, reusable
-              infrastructure, and automation-driven release processes.
+              I also build and maintain Infrastructure as Code with Terraform to enable consistent, repeatable,
+              and reliable deployments. I have contributed to large-scale infrastructure and application delivery
+              initiatives for various organizations such as Kyndryl, HCL, KPMG, Atos, and others, to deliver
+              operational efficiency, platform reliability, standardization, and developer enablement through
+              streamlined deployment workflows, reusable infrastructure, and automation-driven release processes.
             </p>
             <p className="text-foreground/80">
               Currently expanding into MLOps and AI-driven automation, with hands-on experience in
-              ML model deployment and building AI-enabled DevOps workflows to improve platform
-              intelligence and delivery efficiency.
+              ML model deployment and integrating AI-enabled capabilities into DevOps workflows to
+              enhance platform intelligence and delivery efficiency.
             </p>
           </div>
 
