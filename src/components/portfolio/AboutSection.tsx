@@ -1,13 +1,13 @@
 const companies = [
-  { name: 'Kyndryl', logo: 'https://logo.clearbit.com/kyndryl.com' },
-  { name: 'HCL', logo: 'https://logo.clearbit.com/hcltech.com' },
-  { name: 'KPMG', logo: 'https://logo.clearbit.com/kpmg.com' },
-  { name: 'Atos', logo: 'https://logo.clearbit.com/atos.net' },
-  { name: 'Microland', logo: 'https://logo.clearbit.com/microland.com' },
-  { name: 'Micropoint', logo: '' },
-  { name: 'CGI', logo: 'https://logo.clearbit.com/cgi.com' },
-  { name: 'TCS', logo: 'https://logo.clearbit.com/tcs.com' },
-  { name: 'Capgemini', logo: 'https://logo.clearbit.com/capgemini.com' },
+  { name: 'Kyndryl', domain: 'kyndryl.com' },
+  { name: 'HCL', domain: 'hcltech.com' },
+  { name: 'KPMG', domain: 'kpmg.com' },
+  { name: 'Atos', domain: 'atos.net' },
+  { name: 'Microland', domain: 'microland.com' },
+  { name: 'Micropoint', domain: '' },
+  { name: 'CGI', domain: 'cgi.com' },
+  { name: 'TCS', domain: 'tcs.com' },
+  { name: 'Capgemini', domain: 'capgemini.com' },
 ];
 
 const highlights = [
