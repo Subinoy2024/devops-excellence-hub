@@ -25,7 +25,7 @@ const HeroSection = () => {
         </p>
 
         <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
-          CI/CD Automation &nbsp;·&nbsp; Infrastructure as Code &nbsp;·&nbsp; Multicloud Deployments &nbsp;·&nbsp; Kubernetes
+          CI/CD Automation &nbsp;·&nbsp; Infrastructure as Code &nbsp;·&nbsp; MultiCloud Deployments &nbsp;·&nbsp; Microservices Application Deployment
         </p>
 
         <p className="text-sm text-muted-foreground mb-6">
