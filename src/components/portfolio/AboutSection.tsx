@@ -65,9 +65,13 @@ const AboutSection = () => {
             <div className="flex flex-wrap gap-2 mb-6">
               {companies.map(company => (
                 <span key={company.name} className="inline-flex items-center gap-2 text-xs px-3 py-1.5 bg-card rounded-lg border border-border text-muted-foreground">
-                  {company.logo ? (
-                    <img src={company.logo} alt={company.name} className="h-4 w-4 object-contain" />
-                  ) : null}
+                  {company.domain && (
+                    <img
+                      src={`https://www.google.com/s2/favicons?domain=${company.domain}&sz=32`}
+                      alt={company.name}
+                      className="h-4 w-4 object-contain"
+                    />
+                  )}
                   {company.name}
                 </span>
               ))}
