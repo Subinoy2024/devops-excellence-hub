@@ -21,7 +21,7 @@ const HeroSection = () => {
           Subinoy Debnath
         </h1>
         <p className="text-xl sm:text-2xl text-primary font-heading font-semibold mb-2">
-          Senior Cloud & DevOps Engineer
+          Cloud & DevOps Engineer
         </p>
 
         <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
