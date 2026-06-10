@@ -33,7 +33,7 @@ const HeroSection = () => {
         </p>
 
         <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed text-[15px]">
-          End-to-end DevOps & Cloud Engineering across AI-driven workflow automation, Terraform, multicloud platforms,
+          End-to-end Cloud & DevOps Engineering across AI-driven workflow automation, Terraform, multicloud platforms,
           and container orchestration — building scalable infrastructure, automated CI/CD pipelines, intelligent DevOps
           workflows, and production-ready cloud solutions.
         </p>
