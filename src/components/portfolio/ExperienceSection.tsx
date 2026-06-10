@@ -1,16 +1,17 @@
 const responsibilities = [
-  'Provision and manage cloud resources across Azure and AWS using Terraform and ARM templates',
-  'Engineer and maintain CI/CD pipelines in Azure DevOps, Jenkins, and GitHub Actions for automated build, release, and deployment',
-  'Deploy and manage containerized applications on Kubernetes and OpenShift environments',
-  'Develop automation scripts in Python, Bash, and PowerShell for provisioning, configuration, and operational workflows',
-  'Implement Infrastructure as Code practices for standardized, repeatable multi-environment deployments',
-  'Manage Git-based workflows for source control, branching, code integration, and release management',
-  'Enable observability through monitoring, logging, and alerting with Prometheus, Grafana, and Azure Monitor',
-  'Implement secret management, access controls, and security-aligned practices using Azure Key Vault and IAM/RBAC',
-  'Execute release activities including environment preparation, deployment validation, and controlled rollout',
-  'Troubleshoot and resolve infrastructure, deployment, and platform issues across cloud and container environments',
-  'Improve cloud cost efficiency through right-sizing, automation, and resource optimization',
-  'Strengthen deployment velocity, release consistency, and platform reliability through engineering-driven delivery',
+  'Build and manage AI-powered workflows using n8n, intelligent monitoring, automated RCA processes, and AI-enabled operational insights to improve platform efficiency and delivery outcomes',
+  'Design, provision, and manage cloud resources across Azure, AWS, GCP, and OpenStack using Terraform-based Infrastructure as Code and cloud-native services',
+  'Engineer and maintain enterprise CI/CD pipelines using Azure DevOps, GitHub Actions, and Harness for automated infrastructure and application delivery',
+  'Deploy and manage microservices-based applications on Kubernetes platforms (AKS, EKS, GKE) and OpenShift (ARO), ensuring scalability, reliability, and operational excellence',
+  'Design and implement modular Terraform architectures supporting multi-region, multi-subscription, and multi-environment deployments with secure remote state management',
+  'Implement Infrastructure as Code standards and deployment frameworks to enable automated, repeatable, and compliant infrastructure provisioning across cloud environments',
+  'Manage Git-based workflows including branching strategies, pull requests, version control, code integration, release management, and GitOps practices',
+  'Configure and manage observability solutions using OpenTelemetry, Prometheus, Grafana, Azure Monitor, Application Insights, and CloudWatch for metrics, logs, distributed tracing, and proactive alerting',
+  'Implement DevSecOps practices through security scanning, policy enforcement, secret management, RBAC/IAM controls, compliance validation, and secure release processes',
+  'Execute release management activities including deployment validation, environment readiness, rollback planning, production approvals, and controlled rollouts',
+  'Troubleshoot and resolve infrastructure, Kubernetes, platform, and CI/CD pipeline issues through RCA-driven analysis and automation-first remediation approaches',
+  'Optimize cloud costs through infrastructure right-sizing, Infracost integration, governance controls, automation, and resource utilization analysis',
+  'Drive platform reliability, deployment consistency, developer enablement, and accelerated delivery through reusable infrastructure, automation, and engineering best practices',
 ];
 
 const ExperienceSection = () => {
@@ -20,7 +21,8 @@ const ExperienceSection = () => {
         <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Core Engineering Responsibilities</h2>
         <div className="w-16 h-1 bg-primary rounded mb-3" />
         <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
-          Day-to-day engineering execution across cloud provisioning, CI/CD automation, container operations, and platform delivery.
+          Day-to-day engineering execution across AI-workflow automation, multi-cloud infrastructure provisioning,
+          CI/CD delivery, container platform operations, observability, and enterprise platform engineering.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4">

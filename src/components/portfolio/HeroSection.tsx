@@ -21,11 +21,11 @@ const HeroSection = () => {
           Subinoy Debnath
         </h1>
         <p className="text-xl sm:text-2xl text-primary font-heading font-semibold mb-2">
-          DevOps Engineer
+          Senior Cloud & DevOps Engineer
         </p>
 
         <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
-          CI/CD Automation &nbsp;·&nbsp; Infrastructure as Code &nbsp;·&nbsp; MultiCloud Platforms &nbsp;·&nbsp; Microservices Deployment
+          AI-Workflow Management &nbsp;·&nbsp; Infrastructure as Code &nbsp;·&nbsp; MultiCloud Platforms &nbsp;·&nbsp; Microservices Deployment &nbsp;·&nbsp; CI/CD Automation
         </p>
 
         <p className="text-sm text-muted-foreground mb-6">
@@ -33,8 +33,9 @@ const HeroSection = () => {
         </p>
 
         <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed text-[15px]">
-          End-to-end DevOps & Cloud Engineering across Terraform, MultiCloud platforms, Containerization & Orchestration —
-          building scalable infrastructure, automated pipelines, and production-ready systems.
+          End-to-end DevOps & Cloud Engineering across AI-driven workflow automation, Terraform, multicloud platforms,
+          and container orchestration — building scalable infrastructure, automated CI/CD pipelines, intelligent DevOps
+          workflows, and production-ready cloud solutions.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
