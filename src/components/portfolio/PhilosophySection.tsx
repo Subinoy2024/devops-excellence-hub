@@ -9,8 +9,8 @@ const PhilosophySection = () => {
         </div>
         <h2 className="text-lg sm:text-xl font-bold font-heading mb-4">Engineering Philosophy</h2>
         <p className="text-muted-foreground leading-relaxed text-[15px] italic">
-          "Simplicity, observability, and resilience guide my approach to cloud and DevOps delivery.
-          Infrastructure should be cattle, not pets."
+          "Automation, standardization, and scalability drive my approach to Cloud & DevOps engineering.
+          Infrastructure should be reproducible, secure, and delivered through code."
         </p>
       </div>
     </section>
