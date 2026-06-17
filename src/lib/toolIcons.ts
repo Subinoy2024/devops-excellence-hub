@@ -127,6 +127,14 @@ const toolIconMap: Record<string, ToolIconInfo> = {
   'Infracost': { icon: Activity, color: 'text-[#DB44B8]' },
   'Log Analytics': { icon: Eye, color: 'text-[#0078D4]' },
   'Harness': { icon: Workflow, color: 'text-[#00A3E0]' },
+  'PostgreSQL': { icon: Database, color: 'text-[#336791]' },
+  'OpenAI': { icon: Bot, color: 'text-[#10A37F]' },
+  'GitLab': { icon: GitBranch, color: 'text-[#FC6D26]' },
+  'HTML': { icon: Code, color: 'text-[#E34F26]' },
+  'MCP': { icon: Cog, color: 'text-[#6E56CF]' },
+  'AI Agents': { icon: Bot, color: 'text-[#A855F7]' },
+  'Workflow Orchestration': { icon: Workflow, color: 'text-[#38BDF8]' },
+  'Argo CD': { icon: GitBranch, color: 'text-[#EF7B4D]' },
 };
 
 export const getToolIcon = (name: string): ToolIconInfo | null => {
