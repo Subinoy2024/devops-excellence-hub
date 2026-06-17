@@ -6,7 +6,6 @@ const certifications = [
   { title: 'Terraform Associate (004)', issuer: 'HashiCorp', icon: Settings },
   { title: 'AZ-104: Azure Administrator Associate', issuer: 'Microsoft', icon: Award },
   { title: 'AZ-400: Microsoft DevOps Solutions', issuer: 'Microsoft', icon: GitBranch },
-  { title: 'AZ-204: Azure Developer Associate', issuer: 'Microsoft', icon: Award },
   { title: 'Azure AI Fundamentals', issuer: 'Microsoft', icon: Brain },
 ];
 
