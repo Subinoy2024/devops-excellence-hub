@@ -21,8 +21,8 @@ const ExperienceSection = () => {
         <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Core Engineering Responsibilities</h2>
         <div className="w-16 h-1 bg-primary rounded mb-3" />
         <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
-          Day-to-day engineering execution across AI-workflow automation, multi-cloud infrastructure provisioning,
-          CI/CD delivery, container platform operations, observability, and enterprise platform engineering.
+          Day-to-day engineering execution across multi-cloud infrastructure provisioning, Terraform-based Infrastructure as Code,
+          CI/CD delivery, container platform operations, observability, security, and enterprise platform engineering.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
