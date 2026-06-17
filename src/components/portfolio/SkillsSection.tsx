@@ -1,16 +1,11 @@
-import { Cloud, Container, GitBranch, Code, Activity, Shield, Bot, DollarSign, Cpu } from 'lucide-react';
+import { Cloud, Container, GitBranch, Code, Activity, Shield, Bot, DollarSign, Cpu, Terminal } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
 
 const skillGroups = [
   {
     category: 'Cloud Platforms',
     icon: Cloud,
-    items: ['Azure', 'AWS', 'OpenStack'],
-  },
-  {
-    category: 'DevOps / CI/CD',
-    icon: GitBranch,
-    items: ['Azure DevOps', 'Jenkins', 'GitHub Actions', 'ArgoCD', 'Python', 'Shell Scripting'],
+    items: ['Azure', 'AWS', 'GCP', 'OpenStack'],
   },
   {
     category: 'Infrastructure as Code',
@@ -18,9 +13,14 @@ const skillGroups = [
     items: ['Terraform', 'ARM Templates', 'CloudFormation'],
   },
   {
-    category: 'Containers / Orchestration',
+    category: 'CI/CD, GitOps & Automation',
+    icon: GitBranch,
+    items: ['Azure DevOps', 'GitHub Actions', 'Harness', 'ArgoCD', 'Helm', 'Ansible', 'Azure CLI', 'AWS CLI'],
+  },
+  {
+    category: 'Containers & Platform Engineering',
     icon: Container,
-    items: ['Docker', 'Kubernetes', 'EKS', 'AKS', 'OpenShift', 'Helm'],
+    items: ['Docker', 'Kubernetes', 'AKS', 'EKS', 'GKE', 'OpenShift (ARO)'],
   },
   {
     category: 'Version Control',
@@ -28,24 +28,34 @@ const skillGroups = [
     items: ['Git', 'GitHub', 'Azure Repos'],
   },
   {
-    category: 'Monitoring / Observability',
+    category: 'Monitoring & Observability',
     icon: Activity,
-    items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'],
+    items: ['OpenTelemetry', 'Prometheus', 'Grafana', 'Azure Monitor', 'Application Insights', 'Log Analytics', 'CloudWatch', 'ELK Stack'],
   },
   {
-    category: 'Security / DevSecOps',
+    category: 'Security & DevSecOps',
     icon: Shield,
-    items: ['Azure Key Vault', 'AWS Secrets Manager', 'IAM/RBAC', 'Azure Policy', 'Trivy'],
+    items: ['Azure Key Vault', 'AWS Secrets Manager', 'IAM / RBAC', 'Azure Policy', 'SonarQube', 'Trivy', 'OWASP ZAP', 'OPA Gatekeeper', 'Kyverno', 'Snyk'],
   },
   {
-    category: 'Cost Optimization',
+    category: 'Automation & Scripting',
+    icon: Bot,
+    items: ['Python Automation', 'Shell Scripting', 'PowerShell', 'REST APIs'],
+  },
+  {
+    category: 'Cloud Cost Optimization',
     icon: DollarSign,
-    items: ['Resource Right-Sizing', 'Azure Cost Management', 'Reserved Instances', 'Automation-Driven Savings'],
+    items: ['Infracost', 'Azure Cost Management', 'Resource Right-Sizing', 'Reserved Instances', 'Governance & Cost Controls'],
   },
   {
-    category: 'AI / ML Platforms',
+    category: 'AI-Driven Cloud & DevOps Automation',
     icon: Cpu,
-    items: ['OpenShift AI', 'MLOps', 'AI/ML Model Deployment', 'Containerized Model Serving'],
+    items: ['n8n Workflow Automation', 'Intelligent Operational Workflows', 'Automated RCA Workflows', 'Incident Response Automation', 'AI-Assisted Cloud Operations'],
+  },
+  {
+    category: 'Development & AI Productivity Tools',
+    icon: Terminal,
+    items: ['VS Code', 'Cursor', 'GitHub Copilot', 'Jupyter Notebook', 'Antigravity'],
   },
 ];
 
@@ -56,7 +66,7 @@ const SkillsSection = () => {
         <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Technology Stack</h2>
         <div className="w-16 h-1 bg-primary rounded mb-3" />
         <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
-          Core technologies and platforms aligned to cloud provisioning, CI/CD automation, container operations, security, observability, and cost-efficient delivery.
+          Core technologies and platforms aligned to cloud infrastructure provisioning, platform engineering, CI/CD automation, container operations, security, observability, and cloud optimization.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
