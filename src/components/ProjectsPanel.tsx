@@ -132,7 +132,7 @@ const projects: Project[] = [
   },
   {
     title: 'On-Prem OpenStack Private Cloud Deployment with Full Monitoring',
-    overview: 'Designed and validated a production-like OpenStack Private Cloud on bare-metal infrastructure in a physical data center, enabling hands-on practice and operational readiness aligned with enterprise data center standards.',
+    overview: 'Built and validated a production-like OpenStack Private Cloud on bare-metal infrastructure in a physical data center, enabling hands-on practice and operational readiness aligned with enterprise data center standards.',
     flow: 'Bare-Metal Servers → OpenStack Services → Horizon Dashboard → Monitoring & Observability',
     steps: [
       'Deploy OpenStack Private Cloud on bare-metal servers',

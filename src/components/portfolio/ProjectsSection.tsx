@@ -37,7 +37,7 @@ const featuredProjects: FeaturedProject[] = [
       'Multi-environment deployment strategy',
       'Azure DevOps pipeline automation',
     ],
-    value: 'Improved cloud governance, reduced provisioning effort, accelerated environment deployment, and enabled repeatable infrastructure delivery across teams.',
+    value: 'Enhanced cloud governance, reduced provisioning effort, accelerated environment deployment, and enabled repeatable infrastructure delivery across teams.',
     tools: ['Terraform', 'Azure', 'Azure DevOps', 'GitHub'],
   },
   {
@@ -67,7 +67,7 @@ const featuredProjects: FeaturedProject[] = [
       'Cost Governance & Optimization',
       'Approval-Based Deployment Controls',
     ],
-    value: 'Improved infrastructure security posture, standardized compliance validation, reduced deployment risks, optimized cloud costs, and enabled secure, scalable, and automated cloud provisioning.',
+    value: 'Strengthened infrastructure security posture, standardized compliance validation, reduced deployment risks, optimized cloud costs, and enabled secure, scalable, and automated cloud provisioning.',
     tools: ['Terraform', 'Azure DevOps', 'tfsec', 'TFLint', 'Terratest', 'OPA', 'Infracost', 'Azure Policy'],
   },
   {
@@ -83,7 +83,7 @@ const featuredProjects: FeaturedProject[] = [
       'Monitoring & Observability Integration',
       'Security & Governance Controls',
     ],
-    value: 'Improved platform reliability, accelerated infrastructure and application delivery, reduced operational overhead, and enabled secure, scalable cloud-native operations.',
+    value: 'Boosted platform reliability, accelerated infrastructure and application delivery, reduced operational overhead, and enabled secure, scalable cloud-native operations.',
     tools: ['Terraform', 'Kubernetes', 'Docker', 'Helm', 'ArgoCD', 'Azure DevOps', 'Harness', 'GitHub', 'Prometheus', 'Grafana'],
   },
   {
@@ -97,7 +97,7 @@ const featuredProjects: FeaturedProject[] = [
       'Alerting & Notification Framework',
       'Kubernetes & Cloud Monitoring Integration',
     ],
-    value: 'Improved operational visibility, accelerated incident detection, enabled proactive monitoring, and strengthened troubleshooting capabilities across cloud and platform environments.',
+    value: 'Expanded operational visibility, accelerated incident detection, enabled proactive monitoring, and strengthened troubleshooting capabilities across cloud and platform environments.',
     tools: ['Prometheus', 'Grafana', 'Azure Monitor', 'Log Analytics', 'Kubernetes'],
   },
 ];
