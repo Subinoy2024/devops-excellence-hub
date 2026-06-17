@@ -3,7 +3,29 @@ import { getToolIcon } from '@/lib/toolIcons';
 
 const GITHUB_DOCS_BASE = 'https://github.com/Subinoy2024/insighthub-docs/blob/main';
 
-const featuredProjects = [
+type ProjectDoc = { label: string; path: string; type: string };
+type FeaturedProject = {
+  title: string;
+  summary: string;
+  problem: string;
+  role: string;
+  highlights: string[];
+  value: string;
+  tools: string[];
+  docs?: ProjectDoc[];
+};
+type ResearchProject = {
+  title: string;
+  summary: string;
+  problem: string;
+  role: string;
+  highlights: string[];
+  value: string;
+  tools: string[];
+  objective?: string;
+};
+
+const featuredProjects: FeaturedProject[] = [
   {
     title: 'Azure Landing Zone with Terraform',
     summary: 'Designed and provisioned a standardized Azure Landing Zone using modular Terraform architecture, enabling secure, scalable, and governed multi-environment deployments across development, staging, and production environments.',
