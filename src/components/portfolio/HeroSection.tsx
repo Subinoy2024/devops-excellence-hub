@@ -25,7 +25,7 @@ const HeroSection = () => {
         </p>
 
         <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
-          AI-Workflow Management &nbsp;·&nbsp; Infrastructure as Code &nbsp;·&nbsp; MultiCloud Platforms &nbsp;·&nbsp; Microservices Deployment &nbsp;·&nbsp; CI/CD Automation
+          Terraform & Infrastructure as Code &nbsp;·&nbsp; Multi-Cloud Platforms &nbsp;·&nbsp; Kubernetes & OpenShift &nbsp;·&nbsp; CI/CD & GitOps &nbsp;·&nbsp; AI-Driven Automation
         </p>
 
         <p className="text-sm text-muted-foreground mb-6">
@@ -33,9 +33,9 @@ const HeroSection = () => {
         </p>
 
         <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed text-[15px]">
-          End-to-end Cloud & DevOps Engineering across AI-driven workflow automation, Terraform, multicloud platforms,
-          and container orchestration — building scalable infrastructure, automated CI/CD pipelines, intelligent DevOps
-          workflows, and production-ready cloud solutions.
+          End-to-end Cloud & DevOps Engineering across Terraform, Multi-Cloud Infrastructure, Kubernetes Platforms,
+          CI/CD Automation, and AI-Driven Operational Workflows — delivering scalable, secure, and production-ready
+          cloud solutions.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
