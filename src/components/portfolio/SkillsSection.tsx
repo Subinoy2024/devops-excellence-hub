@@ -1,4 +1,4 @@
-import { Cloud, Container, GitBranch, Code, Activity, Shield, Bot, DollarSign, Cpu, Terminal } from 'lucide-react';
+import { Cloud, Container, GitBranch, Code, Activity, Shield, DollarSign, Cpu, Terminal } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
 
 const skillGroups = [
