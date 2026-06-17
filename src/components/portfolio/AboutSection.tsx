@@ -81,12 +81,13 @@ const AboutSection = () => {
             <h3 className="text-sm font-medium text-foreground mb-3 uppercase tracking-wider">Core Delivery Areas</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
               {[
-                'Cloud provisioning & lifecycle management',
-                'CI/CD pipeline engineering',
-                'Container platform operations',
-                'Infrastructure as Code delivery',
-                'DevSecOps & observability',
-                'Cost optimization & right-sizing',
+                'Terraform & Infrastructure Automation',
+                'Multi-Cloud Platform Engineering',
+                'CI/CD & GitOps Delivery',
+                'Kubernetes & Container Operations',
+                'DevSecOps & Observability',
+                'Cloud Cost Optimization',
+                'AI-Driven Automation',
               ].map(area => (
                 <li key={area} className="flex items-start gap-2">
                   <span className="text-primary mt-1">▸</span>
