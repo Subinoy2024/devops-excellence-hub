@@ -17,10 +17,6 @@ const featuredProjects = [
     ],
     value: 'Improved cloud governance, reduced provisioning effort, accelerated environment deployment, and enabled repeatable infrastructure delivery across teams.',
     tools: ['Terraform', 'Azure', 'Azure DevOps', 'GitHub'],
-    docs: [
-      { label: 'Architecture Doc', path: '/projects/azure-landing-zone/architecture.md', type: 'md' },
-      { label: 'Terraform Modules', path: '/projects/azure-landing-zone/modules.pdf', type: 'pdf' },
-    ],
   },
   {
     title: 'Enterprise Multi-Cloud Application Platform',
