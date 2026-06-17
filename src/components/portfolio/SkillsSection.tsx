@@ -43,7 +43,7 @@ const skillGroups = [
     items: ['Infracost', 'Azure Cost Management', 'Resource Right-Sizing', 'Reserved Instances', 'Governance & Cost Controls'],
   },
   {
-    category: 'AI-Driven Cloud & DevOps Automation',
+    category: 'Cloud Automation & Intelligent Workflows',
     icon: Cpu,
     items: ['n8n Workflow Automation', 'Intelligent Operational Workflows', 'Automated RCA Workflows', 'Incident Response Automation', 'AI-Assisted Cloud Operations'],
   },
