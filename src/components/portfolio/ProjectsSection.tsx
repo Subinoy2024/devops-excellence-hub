@@ -28,7 +28,7 @@ type ResearchProject = {
 const featuredProjects: FeaturedProject[] = [
   {
     title: 'Azure Landing Zone with Terraform',
-    summary: 'Designed and provisioned a standardized Azure Landing Zone using modular Terraform architecture, enabling secure, scalable, and governed multi-environment deployments across development, staging, and production environments.',
+    summary: 'Established a standardized Azure Landing Zone using modular Terraform architecture, enabling secure, scalable, and governed multi-environment deployments across development, staging, and production environments.',
     problem: 'Manual cloud provisioning resulted in inconsistent configurations, governance challenges, configuration drift, and slower onboarding of enterprise workloads.',
     role: 'Designed reusable Terraform modules, implemented remote state management, established landing zone standards, and integrated infrastructure provisioning with Azure DevOps CI/CD pipelines.',
     highlights: [
@@ -42,7 +42,7 @@ const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Enterprise Multi-Cloud Application Platform',
-    summary: 'Designed and deployed a Terraform-based multi-cloud platform leveraging AWS services for frontend hosting and Azure services for backend workloads, database services, and deployment automation.',
+    summary: 'Delivered a Terraform-based multi-cloud application platform leveraging AWS services for frontend hosting and Azure services for backend workloads, database services, and deployment automation.',
     problem: 'Organizations required a standardized deployment model capable of operating across multiple cloud providers while maintaining consistency, governance, and operational efficiency.',
     role: 'Designed the cloud architecture, implemented modular Terraform frameworks, configured deployment automation, and established CI/CD workflows supporting multi-environment deployments.',
     highlights: [
@@ -56,7 +56,7 @@ const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'End-to-End DevSecOps Pipeline for Infrastructure Deployment',
-    summary: 'Designed and implemented secure Infrastructure as Code (IaC) delivery pipelines integrating Terraform automation, security validation, compliance enforcement, policy governance, and cost optimization throughout the deployment lifecycle.',
+    summary: 'Engineered secure Infrastructure as Code (IaC) delivery pipelines integrating Terraform automation, security validation, compliance enforcement, policy governance, and cost optimization throughout the deployment lifecycle.',
     problem: 'Infrastructure deployments lacked standardized security controls, compliance validation, and governance mechanisms, resulting in increased operational and security risks.',
     role: 'Designed and implemented Azure DevOps CI/CD pipelines for Terraform-based infrastructure provisioning. Integrated Terraform Validate, TFLint, tfsec, Terratest, OPA Policy-as-Code, and Infracost to automate infrastructure quality, security, compliance, and cost checks. Established approval-based deployment governance and automated validation workflows to ensure secure and consistent infrastructure delivery.',
     highlights: [
@@ -72,7 +72,7 @@ const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Cloud-Native Platform Engineering & Kubernetes Operations',
-    summary: 'Designed and implemented a scalable Kubernetes platform enabling automated infrastructure provisioning, application deployments, cluster governance, and platform operations across cloud environments.',
+    summary: 'Built and operated a scalable Kubernetes platform supporting automated infrastructure provisioning, application deployments, cluster governance, and platform operations across cloud environments.',
     problem: 'Infrastructure and application teams lacked a standardized platform for provisioning, deployment automation, governance, and operational management.',
     role: 'Built and managed Kubernetes platforms, automated infrastructure provisioning using Terraform, implemented CI/CD and GitOps workflows, integrated monitoring and security controls, and standardized deployment processes across multiple environments.',
     highlights: [
@@ -88,7 +88,7 @@ const featuredProjects: FeaturedProject[] = [
   },
   {
     title: 'Cloud Monitoring & Observability Platform',
-    summary: 'Designed and implemented a centralized monitoring and observability platform providing operational visibility across cloud infrastructure, Kubernetes workloads, and enterprise applications.',
+    summary: 'Established a centralized observability framework providing operational visibility across cloud infrastructure, Kubernetes workloads, and enterprise applications through integrated monitoring, alerting, and dashboarding solutions.',
     problem: 'Lack of centralized monitoring and alerting made it difficult to proactively identify issues, troubleshoot incidents, and maintain visibility across distributed environments.',
     role: 'Implemented monitoring integrations, configured metrics collection, designed operational dashboards, and established alerting mechanisms using Prometheus, Grafana, and cloud-native monitoring tools.',
     highlights: [
