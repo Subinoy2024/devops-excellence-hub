@@ -1,16 +1,16 @@
 const responsibilities = [
-  'Build and manage AI-powered workflows using n8n, intelligent monitoring, automated RCA processes, and AI-enabled operational insights to improve platform efficiency and delivery outcomes',
   'Design, provision, and manage cloud resources across Azure, AWS, GCP, and OpenStack using Terraform-based Infrastructure as Code and cloud-native services',
-  'Engineer and maintain enterprise CI/CD pipelines using Azure DevOps, GitHub Actions, and Harness for automated infrastructure and application delivery',
-  'Deploy and manage microservices-based applications on Kubernetes platforms (AKS, EKS, GKE) and OpenShift (ARO), ensuring scalability, reliability, and operational excellence',
   'Design and implement modular Terraform architectures supporting multi-region, multi-subscription, and multi-environment deployments with secure remote state management',
   'Implement Infrastructure as Code standards and deployment frameworks to enable automated, repeatable, and compliant infrastructure provisioning across cloud environments',
+  'Engineer and maintain enterprise CI/CD pipelines using Azure DevOps, GitHub Actions, and Harness for automated infrastructure and application delivery',
+  'Deploy and manage microservices-based applications on Kubernetes platforms (AKS, EKS, GKE) and OpenShift (ARO), ensuring scalability, reliability, and operational excellence',
   'Manage Git-based workflows including branching strategies, pull requests, version control, code integration, release management, and GitOps practices',
   'Configure and manage observability solutions using OpenTelemetry, Prometheus, Grafana, Azure Monitor, Application Insights, and CloudWatch for metrics, logs, distributed tracing, and proactive alerting',
   'Implement DevSecOps practices through security scanning, policy enforcement, secret management, RBAC/IAM controls, compliance validation, and secure release processes',
   'Execute release management activities including deployment validation, environment readiness, rollback planning, production approvals, and controlled rollouts',
   'Troubleshoot and resolve infrastructure, Kubernetes, platform, and CI/CD pipeline issues through RCA-driven analysis and automation-first remediation approaches',
   'Optimize cloud costs through infrastructure right-sizing, Infracost integration, governance controls, automation, and resource utilization analysis',
+  'Build and manage AI-driven automation workflows using n8n, intelligent monitoring, automated RCA processes, and operational automation frameworks to improve platform efficiency and delivery outcomes',
   'Drive platform reliability, deployment consistency, developer enablement, and accelerated delivery through reusable infrastructure, automation, and engineering best practices',
 ];
 
