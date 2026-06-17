@@ -64,10 +64,7 @@ const InsightHubSection = () => {
           <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">
             Engineering Insights & Notes
           </h2>
-          <div className="w-16 h-1 bg-primary rounded mb-4 mx-auto" />
-          <p className="text-muted-foreground text-sm max-w-xl mx-auto">
-            Practical information on cloud infrastructure, DevOps delivery, and platform engineering.
-          </p>
+          <div className="w-16 h-1 bg-primary rounded mx-auto" />
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
