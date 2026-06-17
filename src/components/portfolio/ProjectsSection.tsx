@@ -30,21 +30,21 @@ const featuredProjects: FeaturedProject[] = [
     title: 'Azure Landing Zone with Terraform',
     summary: 'Established a standardized Azure Landing Zone using modular Terraform architecture, enabling secure, scalable, and governed multi-environment deployments across development, staging, and production environments.',
     problem: 'Manual cloud provisioning resulted in inconsistent configurations, governance challenges, configuration drift, and slower onboarding of enterprise workloads.',
-    role: 'Designed reusable Terraform modules, implemented remote state management, established landing zone standards, and integrated infrastructure provisioning with Azure DevOps CI/CD pipelines.',
+    role: 'Built reusable Terraform modules, implemented remote state management, established landing zone standards, and integrated infrastructure provisioning with Azure DevOps CI/CD pipelines.',
     highlights: [
       'Modular Terraform architecture',
       'Azure Storage remote state management',
       'Multi-environment deployment strategy',
       'Azure DevOps pipeline automation',
     ],
-    value: 'Improved cloud governance, reduced provisioning effort, accelerated environment deployment, and enabled repeatable infrastructure delivery across teams.',
+    value: 'Enhanced cloud governance, reduced provisioning effort, accelerated environment deployment, and enabled repeatable infrastructure delivery across teams.',
     tools: ['Terraform', 'Azure', 'Azure DevOps', 'GitHub'],
   },
   {
     title: 'Enterprise Multi-Cloud Application Platform',
     summary: 'Delivered a Terraform-based multi-cloud application platform leveraging AWS services for frontend hosting and Azure services for backend workloads, database services, and deployment automation.',
     problem: 'Organizations required a standardized deployment model capable of operating across multiple cloud providers while maintaining consistency, governance, and operational efficiency.',
-    role: 'Designed the cloud architecture, implemented modular Terraform frameworks, configured deployment automation, and established CI/CD workflows supporting multi-environment deployments.',
+    role: 'Architected the cloud infrastructure, implemented modular Terraform frameworks, configured deployment automation, and established CI/CD workflows supporting multi-environment deployments.',
     highlights: [
       'Terraform module-based architecture',
       'AWS frontend and Azure backend deployment',
@@ -58,7 +58,7 @@ const featuredProjects: FeaturedProject[] = [
     title: 'End-to-End DevSecOps Pipeline for Infrastructure Deployment',
     summary: 'Engineered secure Infrastructure as Code (IaC) delivery pipelines integrating Terraform automation, security validation, compliance enforcement, policy governance, and cost optimization throughout the deployment lifecycle.',
     problem: 'Infrastructure deployments lacked standardized security controls, compliance validation, and governance mechanisms, resulting in increased operational and security risks.',
-    role: 'Designed and implemented Azure DevOps CI/CD pipelines for Terraform-based infrastructure provisioning. Integrated Terraform Validate, TFLint, tfsec, Terratest, OPA Policy-as-Code, and Infracost to automate infrastructure quality, security, compliance, and cost checks. Established approval-based deployment governance and automated validation workflows to ensure secure and consistent infrastructure delivery.',
+    role: 'Engineered Azure DevOps CI/CD pipelines for Terraform-based infrastructure provisioning. Integrated Terraform Validate, TFLint, tfsec, Terratest, OPA Policy-as-Code, and Infracost to automate infrastructure quality, security, compliance, and cost checks. Established approval-based deployment governance and automated validation workflows to ensure secure and consistent infrastructure delivery.',
     highlights: [
       'Terraform Plan & Apply Automation',
       'Security & Compliance Validation',
@@ -67,7 +67,7 @@ const featuredProjects: FeaturedProject[] = [
       'Cost Governance & Optimization',
       'Approval-Based Deployment Controls',
     ],
-    value: 'Improved infrastructure security posture, standardized compliance validation, reduced deployment risks, optimized cloud costs, and enabled secure, scalable, and automated cloud provisioning.',
+    value: 'Strengthened infrastructure security posture, standardized compliance validation, reduced deployment risks, optimized cloud costs, and enabled secure, scalable, and automated cloud provisioning.',
     tools: ['Terraform', 'Azure DevOps', 'tfsec', 'TFLint', 'Terratest', 'OPA', 'Infracost', 'Azure Policy'],
   },
   {
@@ -83,21 +83,21 @@ const featuredProjects: FeaturedProject[] = [
       'Monitoring & Observability Integration',
       'Security & Governance Controls',
     ],
-    value: 'Improved platform reliability, accelerated infrastructure and application delivery, reduced operational overhead, and enabled secure, scalable cloud-native operations.',
+    value: 'Boosted platform reliability, accelerated infrastructure and application delivery, reduced operational overhead, and enabled secure, scalable cloud-native operations.',
     tools: ['Terraform', 'Kubernetes', 'Docker', 'Helm', 'ArgoCD', 'Azure DevOps', 'Harness', 'GitHub', 'Prometheus', 'Grafana'],
   },
   {
     title: 'Cloud Monitoring & Observability Platform',
     summary: 'Established a centralized observability framework providing operational visibility across cloud infrastructure, Kubernetes workloads, and enterprise applications through integrated monitoring, alerting, and dashboarding solutions.',
     problem: 'Lack of centralized monitoring and alerting made it difficult to proactively identify issues, troubleshoot incidents, and maintain visibility across distributed environments.',
-    role: 'Implemented monitoring integrations, configured metrics collection, designed operational dashboards, and established alerting mechanisms using Prometheus, Grafana, and cloud-native monitoring tools.',
+    role: 'Deployed monitoring integrations, configured metrics collection, built operational dashboards, and established alerting mechanisms using Prometheus, Grafana, and cloud-native monitoring tools.',
     highlights: [
       'Centralized Metrics Collection',
       'Grafana Operational Dashboards',
       'Alerting & Notification Framework',
       'Kubernetes & Cloud Monitoring Integration',
     ],
-    value: 'Improved operational visibility, accelerated incident detection, enabled proactive monitoring, and strengthened troubleshooting capabilities across cloud and platform environments.',
+    value: 'Expanded operational visibility, accelerated incident detection, enabled proactive monitoring, and strengthened troubleshooting capabilities across cloud and platform environments.',
     tools: ['Prometheus', 'Grafana', 'Azure Monitor', 'Log Analytics', 'Kubernetes'],
   },
 ];
@@ -105,9 +105,9 @@ const featuredProjects: FeaturedProject[] = [
 const researchProjects: ResearchProject[] = [
   {
     title: 'CloudOps360 – AI-Enabled Cloud Operations Platform (M.Sc. Capstone Project)',
-    summary: 'Designed and implemented a cloud-native operations platform leveraging Kubernetes, workflow automation, observability, and intelligent incident management to improve operational efficiency and platform reliability.',
+    summary: 'Developed a cloud-native operations platform leveraging Kubernetes, workflow automation, observability, and intelligent incident management to improve operational efficiency and platform reliability.',
     problem: 'Cloud and DevOps teams often rely on multiple disconnected tools for monitoring, troubleshooting, remediation, governance, and operational management, resulting in increased manual effort and slower incident resolution.',
-    role: 'Designed the platform architecture, Kubernetes deployment model, automation workflows, observability integrations, operational dashboards, and cloud-native deployment strategy. Leveraged modern development approaches and workflow automation techniques to rapidly prototype and validate platform capabilities.',
+    role: 'Architected the platform blueprint, Kubernetes deployment model, automation workflows, observability integrations, operational dashboards, and cloud-native deployment strategy. Leveraged modern development approaches and workflow automation techniques to rapidly prototype and validate platform capabilities.',
     highlights: [
       'Kubernetes-based platform architecture',
       'Workflow orchestration and automation',
@@ -122,7 +122,7 @@ const researchProjects: ResearchProject[] = [
     title: 'AIPP – AI-Driven Pipeline Platform',
     summary: 'Built an AI-powered self-service platform that assists Development, DevOps, Cloud, and Platform Engineering teams by automatically generating CI/CD pipelines, Infrastructure as Code templates, Kubernetes manifests, security assessments, RCA reports, cost optimization recommendations, and operational documentation.',
     problem: 'Development and platform teams spent significant time creating deployment artifacts, infrastructure templates, troubleshooting issues, and maintaining technical documentation, leading to slower delivery and inconsistent engineering practices.',
-    role: 'Designed and implemented an AI Agent and MCP-based workflow platform that performs repository discovery, technology stack analysis, and automated generation of DevOps, Cloud, and Platform Engineering artifacts based on user requests.',
+    role: 'Engineered an AI Agent and MCP-based workflow platform that performs repository discovery, technology stack analysis, and automated generation of DevOps, Cloud, and Platform Engineering artifacts based on user requests.',
     highlights: [
       'AI Agent & MCP Architecture',
       'Repository Discovery & Stack Analysis',
