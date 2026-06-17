@@ -177,27 +177,31 @@ const renderProject = (project: typeof featuredProjects[number] | typeof researc
           })}
         </div>
 
-        {'docs' in project && project.docs && project.docs.length > 0 && (
-          <>
-            <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-2 mt-4">Documentation</p>
-            <div className="flex flex-col gap-1.5">
-              {project.docs.map((doc, di) => (
-                <a
-                  key={di}
-                  href={`${GITHUB_DOCS_BASE}${doc.path}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-[11px] text-primary hover:underline"
-                >
-                  <FileText size={10} />
-                  {doc.label}
-                  <span className="text-muted-foreground">({doc.type.toUpperCase()})</span>
-                  <ExternalLink size={8} className="opacity-60" />
-                </a>
-              ))}
-            </div>
-          </>
-        )}
+        {(() => {
+          const p = project as typeof featuredProjects[number];
+          if (!p.docs || p.docs.length === 0) return null;
+          return (
+            <>
+              <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-2 mt-4">Documentation</p>
+              <div className="flex flex-col gap-1.5">
+                {p.docs.map((doc, di) => (
+                  <a
+                    key={di}
+                    href={`${GITHUB_DOCS_BASE}${doc.path}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-[11px] text-primary hover:underline"
+                  >
+                    <FileText size={10} />
+                    {doc.label}
+                    <span className="text-muted-foreground">({doc.type.toUpperCase()})</span>
+                    <ExternalLink size={8} className="opacity-60" />
+                  </a>
+                ))}
+              </div>
+            </>
+          );
+        })()}
       </div>
     </div>
   </div>
