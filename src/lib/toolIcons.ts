@@ -120,6 +120,13 @@ const toolIconMap: Record<string, ToolIconInfo> = {
   'QEMU Guest Agent': { icon: Cpu, color: 'text-[#FF6600]' },
   'Sysprep': { icon: Settings, color: 'text-[#00ADEF]' },
   'Horizon Dashboard': { icon: Monitor, color: 'text-[#ED1944]' },
+  'tfsec': { icon: Shield, color: 'text-[#1904DA]' },
+  'TFLint': { icon: FileCode, color: 'text-[#7B42BC]' },
+  'Terratest': { icon: Settings, color: 'text-[#7B42BC]' },
+  'OPA': { icon: Shield, color: 'text-[#2A9D8F]' },
+  'Infracost': { icon: Activity, color: 'text-[#DB44B8]' },
+  'Log Analytics': { icon: Eye, color: 'text-[#0078D4]' },
+  'Harness': { icon: Workflow, color: 'text-[#00A3E0]' },
 };
 
 export const getToolIcon = (name: string): ToolIconInfo | null => {
