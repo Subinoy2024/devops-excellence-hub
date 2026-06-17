@@ -1,4 +1,4 @@
-import { Cloud, Container, GitBranch, Code, Activity, Shield, Bot, DollarSign, Cpu, Terminal } from 'lucide-react';
+import { Cloud, Container, GitBranch, Code, Activity, Shield, DollarSign, Cpu, Terminal } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
 
 const skillGroups = [
@@ -36,11 +36,6 @@ const skillGroups = [
     category: 'Security & DevSecOps',
     icon: Shield,
     items: ['Azure Key Vault', 'AWS Secrets Manager', 'IAM / RBAC', 'Azure Policy', 'SonarQube', 'Trivy', 'OWASP ZAP', 'OPA Gatekeeper', 'Kyverno', 'Snyk'],
-  },
-  {
-    category: 'Automation & Scripting',
-    icon: Bot,
-    items: ['Python Automation', 'Shell Scripting', 'PowerShell', 'REST APIs'],
   },
   {
     category: 'Cloud Cost Optimization',
