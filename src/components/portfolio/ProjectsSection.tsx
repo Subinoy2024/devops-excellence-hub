@@ -102,7 +102,7 @@ const featuredProjects: FeaturedProject[] = [
   },
 ];
 
-const researchProjects = [
+const researchProjects: ResearchProject[] = [
   {
     title: 'CloudOps360 – AI-Enabled Cloud Operations Platform (M.Sc. Capstone Project)',
     summary: 'Designed and implemented a cloud-native operations platform leveraging Kubernetes, workflow automation, observability, and intelligent incident management to improve operational efficiency and platform reliability.',
