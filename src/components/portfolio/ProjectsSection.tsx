@@ -3,7 +3,29 @@ import { getToolIcon } from '@/lib/toolIcons';
 
 const GITHUB_DOCS_BASE = 'https://github.com/Subinoy2024/insighthub-docs/blob/main';
 
-const featuredProjects = [
+type ProjectDoc = { label: string; path: string; type: string };
+type FeaturedProject = {
+  title: string;
+  summary: string;
+  problem: string;
+  role: string;
+  highlights: string[];
+  value: string;
+  tools: string[];
+  docs?: ProjectDoc[];
+};
+type ResearchProject = {
+  title: string;
+  summary: string;
+  problem: string;
+  role: string;
+  highlights: string[];
+  value: string;
+  tools: string[];
+  objective?: string;
+};
+
+const featuredProjects: FeaturedProject[] = [
   {
     title: 'Azure Landing Zone with Terraform',
     summary: 'Designed and provisioned a standardized Azure Landing Zone using modular Terraform architecture, enabling secure, scalable, and governed multi-environment deployments across development, staging, and production environments.',
@@ -17,10 +39,6 @@ const featuredProjects = [
     ],
     value: 'Improved cloud governance, reduced provisioning effort, accelerated environment deployment, and enabled repeatable infrastructure delivery across teams.',
     tools: ['Terraform', 'Azure', 'Azure DevOps', 'GitHub'],
-    docs: [
-      { label: 'Architecture Doc', path: '/projects/azure-landing-zone/architecture.md', type: 'md' },
-      { label: 'Terraform Modules', path: '/projects/azure-landing-zone/modules.pdf', type: 'pdf' },
-    ],
   },
   {
     title: 'Enterprise Multi-Cloud Application Platform',
@@ -84,7 +102,7 @@ const featuredProjects = [
   },
 ];
 
-const researchProjects = [
+const researchProjects: ResearchProject[] = [
   {
     title: 'CloudOps360 – AI-Enabled Cloud Operations Platform (M.Sc. Capstone Project)',
     summary: 'Designed and implemented a cloud-native operations platform leveraging Kubernetes, workflow automation, observability, and intelligent incident management to improve operational efficiency and platform reliability.',
@@ -118,7 +136,7 @@ const researchProjects = [
   },
 ];
 
-const renderProject = (project: typeof featuredProjects[number] | typeof researchProjects[number], idx: number) => (
+const renderProject = (project: FeaturedProject | ResearchProject, idx: number) => (
   <div
     key={idx}
     className="bg-card border border-border rounded-xl p-6 sm:p-8 card-hover animate-fade-in"
@@ -181,7 +199,7 @@ const renderProject = (project: typeof featuredProjects[number] | typeof researc
           })}
         </div>
 
-        {'docs' in project && project.docs && project.docs.length > 0 && (
+        {'docs' in project && project.docs && (
           <>
             <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-2 mt-4">Documentation</p>
             <div className="flex flex-col gap-1.5">
