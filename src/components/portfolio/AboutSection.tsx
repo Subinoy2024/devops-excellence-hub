@@ -79,7 +79,7 @@ const AboutSection = () => {
             </div>
 
             <h3 className="text-sm font-medium text-foreground mb-3 uppercase tracking-wider">Core Delivery Areas</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-sm text-muted-foreground mb-8">
               {[
                 'Terraform & Infrastructure Automation',
                 'Multi-Cloud Platform Engineering',
@@ -95,6 +95,19 @@ const AboutSection = () => {
                 </li>
               ))}
             </ul>
+
+            <h3 className="text-sm font-medium text-foreground mb-3 uppercase tracking-wider">Education</h3>
+            <div className="space-y-4">
+              <div>
+                <p className="text-sm font-semibold text-foreground">M.Sc. Cloud Architecture & Security</p>
+                <p className="text-xs text-primary">REVA University | 2024–2026 (Pursuing)</p>
+                <p className="text-xs text-muted-foreground mt-1">Focused on Cloud Architecture, Cloud Migration, Kubernetes, Cloud Security, and AI.</p>
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">Bachelor of Computer Applications (BCA)</p>
+                <p className="text-xs text-primary">Sikkim Manipal University | 2007–2010</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
