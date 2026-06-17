@@ -42,29 +42,19 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              DevOps Engineer with 13+ years of IT experience and 6+ years in cloud and DevOps,
-              delivering scalable infrastructure, CI/CD automation, container platform deployments,
-              and AI-driven workflow automation across enterprise environments.
+              DevOps & Cloud Engineer with 13+ years of IT experience and 6+ years specializing in cloud-native platforms, Infrastructure as Code, CI/CD automation, and container platform engineering across enterprise environments.
             </p>
             <p>
-              I have experience in provisioning and managing cloud resources across Azure, AWS, GCP, and OpenStack,
-              designing and implementing CI/CD pipelines, deploying microservices-based applications on Kubernetes
-              platforms (AKS, EKS, GKE) and OpenShift (ARO), and building AI-enabled workflow automation solutions
-              using n8n to streamline operational processes, automate incident response workflows, and enhance
-              platform efficiency.
+              Experienced in provisioning and managing cloud resources across Azure, AWS, GCP, and OpenStack, designing and implementing enterprise CI/CD pipelines, and deploying microservices-based applications on Kubernetes platforms (AKS, EKS, GKE) and OpenShift (ARO). Proven expertise in delivering scalable, secure, and highly available cloud solutions through automation, standardization, and engineering best practices.
             </p>
             <p>
-              I build and maintain Infrastructure as Code using Terraform to enable consistent, repeatable, and
-              reliable deployments across multi-cloud environments. I have contributed to large-scale infrastructure
-              and application delivery initiatives for organizations including Kyndryl, HCL, KPMG, Atos, and others,
-              driving operational efficiency, platform reliability, standardization, and developer enablement through
-              reusable infrastructure, streamlined deployment workflows, and automation-driven release processes.
+              Strong background in Terraform-based Infrastructure as Code, including modular architecture design, multi-region and multi-subscription deployments, remote state management, landing zones, governance controls, and reusable infrastructure patterns across multi-cloud environments. Contributed to large-scale cloud transformation and platform engineering initiatives for organizations including Kyndryl, HCL, KPMG, Atos, and others, driving operational efficiency, platform reliability, and deployment consistency.
+            </p>
+            <p>
+              Experienced in Kubernetes platform operations, GitOps practices, DevSecOps integration, observability, and release automation using Azure DevOps, GitHub Actions, Harness, ArgoCD, Prometheus, Grafana, and cloud-native services.
             </p>
             <p className="text-foreground/80">
-              Currently expanding into AI/MLOps and Agentic AI within Cloud & DevOps, with hands-on experience in
-              ML model deployment, AI-workflow orchestration using n8n, intelligent monitoring, automated RCA
-              workflows, AI-powered operational insights, and integrating AI-enabled capabilities into DevOps
-              processes to improve platform intelligence, automation, and delivery efficiency.
+              Actively exploring AI-driven Cloud & DevOps automation through n8n workflow orchestration, AI-assisted operational workflows, intelligent monitoring, automated RCA processes, and cloud automation frameworks to improve operational efficiency, platform visibility, and delivery outcomes.
             </p>
           </div>
 
