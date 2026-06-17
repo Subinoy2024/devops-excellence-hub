@@ -6,10 +6,13 @@ const certifications = [
   { title: 'Terraform Associate (004)', issuer: 'HashiCorp', icon: Settings },
   { title: 'AZ-104: Azure Administrator Associate', issuer: 'Microsoft', icon: Award },
   { title: 'AZ-400: Microsoft DevOps Solutions', issuer: 'Microsoft', icon: GitBranch },
-  { title: 'Azure AI Fundamentals', issuer: 'Microsoft', icon: Brain },
 ];
 
 const training = [
+  { title: 'Azure AI Fundamentals', issuer: 'Microsoft', icon: Brain },
+  { title: 'AI Powered Professional Certificate in Cloud Computing, GenAI & DevOps', issuer: 'Indian Institute of Technology, Guwahati', icon: Brain },
+  { title: 'Python3 Full-Stack Development', issuer: 'Professional Training', icon: BookOpen },
+  { title: 'Master of Networking Administration', issuer: 'Jetking', icon: Settings },
   { title: 'Microsoft 365 Certifications', issuer: 'Microsoft', icon: Award },
   { title: 'AI Infrastructure Management', issuer: 'Professional Training', icon: Brain },
   { title: 'Microsoft Foundry', issuer: 'Microsoft', icon: Settings },
