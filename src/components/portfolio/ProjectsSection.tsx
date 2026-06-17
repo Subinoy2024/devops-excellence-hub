@@ -136,7 +136,7 @@ const researchProjects: ResearchProject[] = [
   },
 ];
 
-const renderProject = (project: typeof featuredProjects[number] | typeof researchProjects[number], idx: number) => (
+const renderProject = (project: FeaturedProject | ResearchProject, idx: number) => (
   <div
     key={idx}
     className="bg-card border border-border rounded-xl p-6 sm:p-8 card-hover animate-fade-in"
