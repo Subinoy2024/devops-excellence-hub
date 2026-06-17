@@ -38,11 +38,6 @@ const skillGroups = [
     items: ['Azure Key Vault', 'AWS Secrets Manager', 'IAM / RBAC', 'Azure Policy', 'SonarQube', 'Trivy', 'OWASP ZAP', 'OPA Gatekeeper', 'Kyverno', 'Snyk'],
   },
   {
-    category: 'Automation & Scripting',
-    icon: Bot,
-    items: ['Python Automation', 'Shell Scripting', 'PowerShell', 'REST APIs'],
-  },
-  {
     category: 'Cloud Cost Optimization',
     icon: DollarSign,
     items: ['Infracost', 'Azure Cost Management', 'Resource Right-Sizing', 'Reserved Instances', 'Governance & Cost Controls'],
