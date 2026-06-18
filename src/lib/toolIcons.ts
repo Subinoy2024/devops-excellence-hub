@@ -88,7 +88,6 @@ const toolIconMap: Record<string, ToolIconInfo> = {
   'Prompt Engineering': { icon: MessageSquare, color: 'text-[#10A37F]' },
   'Vibe Coding': { icon: Code, color: 'text-[#EC4899]' },
   'MLOps': { icon: Bot, color: 'text-[#0DB7ED]' },
-  'n8n': { icon: Workflow, color: 'text-[#EA4B71]' },
   'Make': { icon: Workflow, color: 'text-[#6D00CC]' },
   'ChatGPT': { icon: MessageSquare, color: 'text-[#10A37F]' },
   'Custom GPTs': { icon: Bot, color: 'text-[#10A37F]' },
