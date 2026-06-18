@@ -87,7 +87,7 @@ const AboutSection = () => {
                 'Kubernetes & Container Operations',
                 'DevSecOps & Observability',
                 'Cloud Cost Optimization',
-                'AI-Driven Automation',
+                'AI-Driven Workflow Automation',
               ].map(area => (
                 <li key={area} className="flex items-start gap-2">
                   <span className="text-primary mt-1">▸</span>
