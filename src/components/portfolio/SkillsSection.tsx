@@ -45,7 +45,7 @@ const skillGroups = [
   {
     category: 'Cloud Automation & Intelligent Workflows',
     icon: Cpu,
-    items: ['n8n Workflow Automation', 'Intelligent Operational Workflows', 'Automated RCA Workflows', 'Incident Response Automation', 'AI-Assisted Cloud Operations'],
+    items: ['Workflow Automation', 'Intelligent Operational Workflows', 'Automated RCA Workflows', 'Incident Response Automation', 'AI-Assisted Cloud Operations'],
   },
   {
     category: 'Development & AI Productivity Tools',
