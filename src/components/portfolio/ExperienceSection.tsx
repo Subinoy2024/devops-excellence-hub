@@ -10,7 +10,7 @@ const responsibilities = [
   'Execute release management activities including deployment validation, environment readiness, rollback planning, production approvals, and controlled rollouts',
   'Troubleshoot and resolve infrastructure, Kubernetes, platform, and CI/CD pipeline issues through RCA-driven analysis and automation-first remediation approaches',
   'Optimize cloud costs through infrastructure right-sizing, Infracost integration, governance controls, automation, and resource utilization analysis',
-  'Build and manage AI-driven automation workflows using n8n, intelligent monitoring, automated RCA processes, and operational automation frameworks to improve platform efficiency and delivery outcomes',
+  'Actively exploring AI-driven Cloud & DevOps automation through AI driven workflow orchestration, intelligent monitoring, automated RCA processes, and cloud automation frameworks to improve operational efficiency, platform visibility, and delivery outcomes',
   'Drive platform reliability, deployment consistency, developer enablement, and accelerated delivery through reusable infrastructure, automation, and engineering best practices',
 ];
 
