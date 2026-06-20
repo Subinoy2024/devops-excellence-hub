@@ -88,6 +88,8 @@ const AboutSection = () => {
                 'DevSecOps & Observability',
                 'Cloud Cost Optimization',
                 'AI-Driven Workflow Automation',
+                'Vibe Coding',
+                'Prompt Engineering',
               ].map(area => (
                 <li key={area} className="flex items-start gap-2">
                   <span className="text-primary mt-1">▸</span>
