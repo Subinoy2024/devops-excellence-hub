@@ -111,7 +111,6 @@ const researchProjects: ResearchProject[] = [
     highlights: [
       'Kubernetes-based platform architecture',
       'Workflow orchestration and automation',
-      'AI-powered RCA and operational insights',
       'Automated remediation workflows',
     ],
     value: 'Demonstrated how workflow automation, platform engineering, and cloud-native engineering practices can accelerate cloud platform delivery, improve operational efficiency, and reduce manual engineering effort.',
