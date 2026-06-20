@@ -111,12 +111,11 @@ const researchProjects: ResearchProject[] = [
     highlights: [
       'Kubernetes-based platform architecture',
       'Workflow orchestration and automation',
-      'AI-powered RCA and operational insights',
       'Automated remediation workflows',
     ],
     value: 'Demonstrated how workflow automation, platform engineering, and cloud-native engineering practices can accelerate cloud platform delivery, improve operational efficiency, and reduce manual engineering effort.',
     objective: 'To evaluate how modern development approaches, intelligent workflow automation, and cloud-native engineering practices can accelerate cloud platform delivery, infrastructure automation, and operational efficiency while reducing manual engineering effort across Cloud & DevOps environments.',
-    tools: ['Kubernetes', 'Terraform', 'Prometheus', 'Grafana', 'PostgreSQL'],
+    tools: ['Kubernetes', 'Terraform', 'Prometheus', 'Grafana', 'PostgreSQL', 'Vibe Coding'],
   },
   {
     title: 'AIPP – AI-Driven Pipeline Platform',
