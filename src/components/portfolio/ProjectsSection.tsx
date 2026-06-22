@@ -117,6 +117,7 @@ const featuredProjects: FeaturedProject[] = [
     ],
     value: 'Expanded operational visibility, accelerated incident detection, enabled proactive monitoring, and strengthened troubleshooting capabilities across cloud and platform environments.',
     tools: ['Prometheus', 'Grafana', 'Azure Monitor', 'Log Analytics', 'Kubernetes'],
+    githubUrl: 'https://github.com/dccloud-in-net/Cloud-Monitoring-Observability-Platform.git',
   },
 ];
 
