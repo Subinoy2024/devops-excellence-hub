@@ -38,6 +38,7 @@ type ResearchProject = {
   value: string;
   tools: string[];
   objective?: string;
+  images?: { src: string; caption: string }[];
 };
 
 const featuredProjects: FeaturedProject[] = [
