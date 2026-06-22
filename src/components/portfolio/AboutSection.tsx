@@ -109,6 +109,10 @@ const AboutSection = () => {
                 <p className="text-sm font-semibold text-foreground">Bachelor of Computer Applications (BCA)</p>
                 <p className="text-xs text-primary">Sikkim Manipal University | 2007–2010</p>
               </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">AI Powered Professional Certificate in Cloud Computing, GenAI & DevOps</p>
+                <p className="text-xs text-primary">Indian Institute of Technology, Guwahati</p>
+              </div>
             </div>
           </div>
         </div>
