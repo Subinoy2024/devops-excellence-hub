@@ -1,7 +1,22 @@
 import { ExternalLink, FileText, FlaskConical } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
+import cloudops19 from '@/assets/cloudops360/cloudops360-19.png.asset.json';
+import cloudops20 from '@/assets/cloudops360/cloudops360-20.png.asset.json';
+import cloudops21 from '@/assets/cloudops360/cloudops360-21.png.asset.json';
+import cloudops22 from '@/assets/cloudops360/cloudops360-22.png.asset.json';
+import cloudops23 from '@/assets/cloudops360/cloudops360-23.png.asset.json';
+import cloudops24 from '@/assets/cloudops360/cloudops360-24.png.asset.json';
 
 const GITHUB_DOCS_BASE = 'https://github.com/Subinoy2024/insighthub-docs/blob/main';
+
+const cloudops360Images = [
+  { src: cloudops19.url, caption: 'Overview Dashboard' },
+  { src: cloudops20.url, caption: 'Microservices Monitor' },
+  { src: cloudops21.url, caption: 'Storage (PV/PVC)' },
+  { src: cloudops22.url, caption: 'GitOps · ArgoCD' },
+  { src: cloudops23.url, caption: 'ChatOps Workflow' },
+  { src: cloudops24.url, caption: 'Alert Remediation Workflow' },
+];
 
 type ProjectDoc = { label: string; path: string; type: string };
 type FeaturedProject = {
@@ -23,6 +38,7 @@ type ResearchProject = {
   value: string;
   tools: string[];
   objective?: string;
+  images?: { src: string; caption: string }[];
 };
 
 const featuredProjects: FeaturedProject[] = [
@@ -116,6 +132,7 @@ const researchProjects: ResearchProject[] = [
     value: 'Demonstrated how workflow automation, platform engineering, and cloud-native engineering practices can accelerate cloud platform delivery, improve operational efficiency, and reduce manual engineering effort.',
     objective: 'To evaluate how modern development approaches, intelligent workflow automation, and cloud-native engineering practices can accelerate cloud platform delivery, infrastructure automation, and operational efficiency while reducing manual engineering effort across Cloud & DevOps environments.',
     tools: ['Kubernetes', 'Terraform', 'Prometheus', 'Grafana', 'PostgreSQL', 'Vibe Coding', 'Workflow Automation'],
+    images: cloudops360Images,
   },
   {
     title: 'AIPP – AI-Driven Pipeline Platform',
@@ -171,6 +188,31 @@ const renderProject = (project: FeaturedProject | ResearchProject, idx: number) 
           <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-1">Value Delivered</p>
           <p className="text-xs text-muted-foreground leading-relaxed">{project.value}</p>
         </div>
+
+        {'images' in project && (project as ResearchProject).images && (
+          <div className="mb-4">
+            <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-2">Platform Screenshots</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {(project as ResearchProject).images!.map((img, i) => (
+                <a
+                  key={i}
+                  href={img.src}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block overflow-hidden rounded-md border border-border bg-background"
+                >
+                  <img
+                    src={img.src}
+                    alt={`${project.title} – ${img.caption}`}
+                    loading="lazy"
+                    className="w-full h-24 object-cover object-left-top group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <p className="text-[10px] text-muted-foreground px-1.5 py-1 truncate">{img.caption}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="lg:w-72 shrink-0 mt-4 lg:mt-0">
