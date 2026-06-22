@@ -1,4 +1,43 @@
-import { Lightbulb } from 'lucide-react';
+import { BookOpen, Cloud, Container, FileText, Gauge, Lock, Lightbulb, Server, Workflow } from 'lucide-react';
+
+const insights = [
+  {
+    icon: Cloud,
+    title: 'Cloud Architecture Patterns',
+    description: 'Design notes on resilient, scalable, and cost-optimized cloud foundations across Azure and AWS.',
+    tags: ['Well-Architected', 'Cost Optimization', 'Resilience'],
+  },
+  {
+    icon: Container,
+    title: 'Kubernetes Platform Engineering',
+    description: 'Production-grade cluster design, GitOps workflows, and landing-zone automation for AKS/EKS.',
+    tags: ['AKS', 'GitOps', 'Landing Zone'],
+  },
+  {
+    icon: Workflow,
+    title: 'DevOps & CI/CD Automation',
+    description: 'Pipeline engineering, trunk-based development, and automated quality gates for fast feedback.',
+    tags: ['CI/CD', 'Automation', 'Testing'],
+  },
+  {
+    icon: Gauge,
+    title: 'SRE & Observability',
+    description: 'SLI/SLO design, incident response runbooks, and telemetry strategies for reliable systems.',
+    tags: ['Observability', 'SLOs', 'Incident Response'],
+  },
+  {
+    icon: Lock,
+    title: 'Cloud Security & Compliance',
+    description: 'Zero-trust controls, policy-as-code, and compliance automation for regulated environments.',
+    tags: ['Zero Trust', 'Policy as Code', 'Compliance'],
+  },
+  {
+    icon: Server,
+    title: 'FinOps & Cost Governance',
+    description: 'Rightsizing tactics, tagging discipline, and chargeback models to keep cloud spend predictable.',
+    tags: ['FinOps', 'Tagging', 'Governance'],
+  },
+];
 
 const InsightHubSection = () => {
   return (
@@ -14,7 +53,54 @@ const InsightHubSection = () => {
           <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">
             Engineering Insights & Notes
           </h2>
-          <div className="w-16 h-1 bg-primary rounded mx-auto" />
+          <div className="w-16 h-1 bg-primary rounded mx-auto mb-6" />
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+            A living collection of architecture notes, automation playbooks, and field-tested engineering principles.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {insights.map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <article
+                key={index}
+                className="group p-5 rounded-xl border border-border/60 bg-card/50 hover:bg-card hover:border-primary/40 transition-all duration-300"
+              >
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                    <Icon size={18} />
+                  </div>
+                  <h3 className="text-sm font-semibold font-heading leading-tight group-hover:text-primary transition-colors">
+                    {item.title}
+                  </h3>
+                </div>
+                <p className="text-xs text-muted-foreground leading-relaxed mb-4">
+                  {item.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {item.tags.map((tag, tagIndex) => (
+                    <span
+                      key={tagIndex}
+                      className="inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-medium rounded-full bg-secondary text-secondary-foreground"
+                    >
+                      <BookOpen size={10} />
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            );
+          })}
+        </div>
+
+        <div className="mt-10 p-4 rounded-xl border border-dashed border-border/80 bg-card/30 text-center">
+          <div className="inline-flex items-center gap-2 text-muted-foreground">
+            <FileText size={16} />
+            <span className="text-xs font-medium">
+              Detailed articles and deep-dive notes are being added. Check back for updates.
+            </span>
+          </div>
         </div>
       </div>
     </section>
