@@ -22,7 +22,7 @@ const training = [
 const CertificationsSection = () => {
   const [selectedCert, setSelectedCert] = useState<string | null>(null);
 
-  const renderCard = (cert: typeof certifications[0] & { description?: string; certificateImage?: string }, idx: number) => {
+  const renderCard = (cert: typeof certifications[number], idx: number) => {
     const Icon = cert.icon;
     return (
       <div
