@@ -1,4 +1,4 @@
-import { ExternalLink, FileText, FlaskConical } from 'lucide-react';
+import { ExternalLink, FileText, FlaskConical, Github } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
 import cloudops19 from '@/assets/cloudops360/cloudops360-19.png';
 import cloudops20 from '@/assets/cloudops360/cloudops360-20.png';
@@ -28,6 +28,7 @@ type FeaturedProject = {
   value: string;
   tools: string[];
   docs?: ProjectDoc[];
+  githubUrl?: string;
 };
 type ResearchProject = {
   title: string;
@@ -101,6 +102,7 @@ const featuredProjects: FeaturedProject[] = [
     ],
     value: 'Boosted platform reliability, accelerated infrastructure and application delivery, reduced operational overhead, and enabled secure, scalable cloud-native operations.',
     tools: ['Terraform', 'Kubernetes', 'Docker', 'Helm', 'ArgoCD', 'Azure DevOps', 'Harness', 'GitHub', 'Prometheus', 'Grafana'],
+    githubUrl: 'https://github.com/Subinoy2024/AKS-Platform-Engineering-Production-Grade-Landing-Zone.git',
   },
   {
     title: 'Cloud Monitoring & Observability Platform',
@@ -259,6 +261,22 @@ const renderProject = (project: FeaturedProject | ResearchProject, idx: number) 
                 </a>
               ))}
             </div>
+          </>
+        )}
+
+        {'githubUrl' in project && project.githubUrl && (
+          <>
+            <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-2 mt-4">Repository</p>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[11px] text-primary hover:underline"
+            >
+              <Github size={12} />
+              View on GitHub
+              <ExternalLink size={8} className="opacity-60" />
+            </a>
           </>
         )}
       </div>
