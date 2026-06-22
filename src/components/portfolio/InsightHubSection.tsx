@@ -50,13 +50,6 @@ const InsightHubSection = () => {
               Insight Hub
             </span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">
-            Engineering Insights & Notes
-          </h2>
-          <div className="w-16 h-1 bg-primary rounded mx-auto mb-6" />
-          <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            A living collection of architecture notes, automation playbooks, and field-tested engineering principles.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
