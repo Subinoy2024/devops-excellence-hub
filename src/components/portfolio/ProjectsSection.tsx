@@ -120,7 +120,7 @@ const featuredProjects: FeaturedProject[] = [
 
 const researchProjects: ResearchProject[] = [
   {
-    title: 'CloudOps360 – AI-Enabled Cloud Operations Platform',
+    title: 'CloudOps360 AI-Agent Manage Operations Platform',
     summary: 'Developed a cloud-native operations platform leveraging Kubernetes, workflow automation, observability, and intelligent incident management to improve operational efficiency and platform reliability.',
     problem: 'Cloud and DevOps teams often rely on multiple disconnected tools for monitoring, troubleshooting, remediation, governance, and operational management, resulting in increased manual effort and slower incident resolution.',
     role: 'Architected the platform blueprint, Kubernetes deployment model, automation workflows, observability integrations, operational dashboards, and cloud-native deployment strategy. Leveraged modern development approaches and workflow automation techniques to rapidly prototype and validate platform capabilities.',
