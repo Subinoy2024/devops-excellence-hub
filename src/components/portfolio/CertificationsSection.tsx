@@ -7,7 +7,7 @@ const certifications = [
   { title: 'Terraform Associate (004)', issuer: 'HashiCorp', icon: Settings },
   { title: 'AZ-104: Azure Administrator Associate', issuer: 'Microsoft', icon: Award },
   { title: 'AZ-400: Microsoft DevOps Solutions', issuer: 'Microsoft', icon: GitBranch },
-  { title: 'AI Powered Professional Certificate in Cloud Computing, GenAI & DevOps', issuer: 'Indian Institute of Technology, Guwahati', icon: Brain },
+  
   { title: 'Cloud Engineer Bootcamp (AWS, Azure, GCP)', issuer: 'UPGRAD', icon: BookOpen, description: '7-month intensive bootcamp program', certificateImage: upgradCertificate },
 ];
 
