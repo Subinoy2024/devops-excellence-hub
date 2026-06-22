@@ -11,19 +11,12 @@ const certifications = [
 
 const training = [
   { title: 'Azure AI Fundamentals', issuer: 'Microsoft', icon: Brain },
-  { title: 'AI Powered Professional Certificate in Cloud Computing, GenAI & DevOps', issuer: 'Indian Institute of Technology, Guwahati', icon: Brain },
   { title: 'Python3 Full-Stack Development', issuer: 'Professional Training', icon: BookOpen },
   { title: 'Master of Networking Administration', issuer: 'Jetking', icon: Settings },
   { title: 'Microsoft 365 Certifications', issuer: 'Microsoft', icon: Award },
   { title: 'AI Infrastructure Management', issuer: 'Professional Training', icon: Brain },
   { title: 'Microsoft Foundry', issuer: 'Microsoft', icon: Settings },
-  {
-    title: 'Cloud Engineer Bootcamp (AWS, Azure, GCP)',
-    issuer: 'UPGRAD',
-    icon: BookOpen,
-    description: '7-month intensive bootcamp program',
-    certificateImage: '/assets/upgrad-certificate.png',
-  },
+  { title: 'Cloud Engineer Bootcamp (AWS, Azure, GCP)', issuer: 'UPGRAD', icon: BookOpen, description: '7-month intensive bootcamp program', certificateImage: '/assets/upgrad-certificate.png' },
 ];
 
 const CertificationsSection = () => {
