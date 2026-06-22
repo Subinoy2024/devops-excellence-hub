@@ -287,7 +287,7 @@ const ProjectsSection = () => {
           </div>
           <div className="w-16 h-1 bg-primary rounded mb-3" />
           <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
-            Research and capstone projects from my M.Sc. in Cloud Architecture & Security, exploring AI-driven platform engineering and cloud operations automation.
+            Research and innovation projects from my M.Sc. in Cloud Architecture & Security, exploring AI-driven platform engineering and cloud operations automation.
           </p>
 
           <div className="space-y-6">
