@@ -1,5 +1,6 @@
 import { Award, BookOpen, Cloud } from 'lucide-react';
 import { useState } from 'react';
+import upgradCertificate from '@/assets/upgrad-certificate.png';
 
 const certifications = [
   {
@@ -26,7 +27,7 @@ const certifications = [
     description: 'Successfully participated in the 7 months bootcamp program. Issued on 17-02-2025',
     icon: BookOpen,
     color: 'primary',
-    certificateImage: '/assets/upgrad-certificate.png'
+    certificateImage: upgradCertificate
   }
 ];
 
