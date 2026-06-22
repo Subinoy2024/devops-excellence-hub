@@ -188,6 +188,31 @@ const renderProject = (project: FeaturedProject | ResearchProject, idx: number) 
           <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-1">Value Delivered</p>
           <p className="text-xs text-muted-foreground leading-relaxed">{project.value}</p>
         </div>
+
+        {'images' in project && (project as ResearchProject).images && (
+          <div className="mb-4">
+            <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-2">Platform Screenshots</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {(project as ResearchProject).images!.map((img, i) => (
+                <a
+                  key={i}
+                  href={img.src}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block overflow-hidden rounded-md border border-border bg-background"
+                >
+                  <img
+                    src={img.src}
+                    alt={`${project.title} – ${img.caption}`}
+                    loading="lazy"
+                    className="w-full h-24 object-cover object-left-top group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <p className="text-[10px] text-muted-foreground px-1.5 py-1 truncate">{img.caption}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="lg:w-72 shrink-0 mt-4 lg:mt-0">
