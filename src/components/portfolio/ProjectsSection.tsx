@@ -263,6 +263,22 @@ const renderProject = (project: FeaturedProject | ResearchProject, idx: number) 
             </div>
           </>
         )}
+
+        {'githubUrl' in project && project.githubUrl && (
+          <>
+            <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-2 mt-4">Repository</p>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[11px] text-primary hover:underline"
+            >
+              <Github size={12} />
+              View on GitHub
+              <ExternalLink size={8} className="opacity-60" />
+            </a>
+          </>
+        )}
       </div>
     </div>
   </div>
