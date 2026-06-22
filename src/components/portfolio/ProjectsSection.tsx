@@ -1,7 +1,22 @@
 import { ExternalLink, FileText, FlaskConical } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
+import cloudops19 from '@/assets/cloudops360/cloudops360-19.png.asset.json';
+import cloudops20 from '@/assets/cloudops360/cloudops360-20.png.asset.json';
+import cloudops21 from '@/assets/cloudops360/cloudops360-21.png.asset.json';
+import cloudops22 from '@/assets/cloudops360/cloudops360-22.png.asset.json';
+import cloudops23 from '@/assets/cloudops360/cloudops360-23.png.asset.json';
+import cloudops24 from '@/assets/cloudops360/cloudops360-24.png.asset.json';
 
 const GITHUB_DOCS_BASE = 'https://github.com/Subinoy2024/insighthub-docs/blob/main';
+
+const cloudops360Images = [
+  { src: cloudops19.url, caption: 'Overview Dashboard' },
+  { src: cloudops20.url, caption: 'Microservices Monitor' },
+  { src: cloudops21.url, caption: 'Storage (PV/PVC)' },
+  { src: cloudops22.url, caption: 'GitOps · ArgoCD' },
+  { src: cloudops23.url, caption: 'ChatOps Workflow' },
+  { src: cloudops24.url, caption: 'Alert Remediation Workflow' },
+];
 
 type ProjectDoc = { label: string; path: string; type: string };
 type FeaturedProject = {
