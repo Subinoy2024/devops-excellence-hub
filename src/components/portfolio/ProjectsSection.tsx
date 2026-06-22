@@ -1,21 +1,21 @@
 import { ExternalLink, FileText, FlaskConical } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
-import cloudops19 from '@/assets/cloudops360/cloudops360-19.png.asset.json';
-import cloudops20 from '@/assets/cloudops360/cloudops360-20.png.asset.json';
-import cloudops21 from '@/assets/cloudops360/cloudops360-21.png.asset.json';
-import cloudops22 from '@/assets/cloudops360/cloudops360-22.png.asset.json';
-import cloudops23 from '@/assets/cloudops360/cloudops360-23.png.asset.json';
-import cloudops24 from '@/assets/cloudops360/cloudops360-24.png.asset.json';
+import cloudops19 from '@/assets/cloudops360/cloudops360-19.png';
+import cloudops20 from '@/assets/cloudops360/cloudops360-20.png';
+import cloudops21 from '@/assets/cloudops360/cloudops360-21.png';
+import cloudops22 from '@/assets/cloudops360/cloudops360-22.png';
+import cloudops23 from '@/assets/cloudops360/cloudops360-23.png';
+import cloudops24 from '@/assets/cloudops360/cloudops360-24.png';
 
 const GITHUB_DOCS_BASE = 'https://github.com/Subinoy2024/insighthub-docs/blob/main';
 
 const cloudops360Images = [
-  { src: cloudops19.url, caption: 'Overview Dashboard' },
-  { src: cloudops20.url, caption: 'Microservices Monitor' },
-  { src: cloudops21.url, caption: 'Storage (PV/PVC)' },
-  { src: cloudops22.url, caption: 'GitOps · ArgoCD' },
-  { src: cloudops23.url, caption: 'ChatOps Workflow' },
-  { src: cloudops24.url, caption: 'Alert Remediation Workflow' },
+  { src: cloudops19, caption: 'Overview Dashboard' },
+  { src: cloudops20, caption: 'Microservices Monitor' },
+  { src: cloudops21, caption: 'Storage (PV/PVC)' },
+  { src: cloudops22, caption: 'GitOps · ArgoCD' },
+  { src: cloudops23, caption: 'ChatOps Workflow' },
+  { src: cloudops24, caption: 'Alert Remediation Workflow' },
 ];
 
 type ProjectDoc = { label: string; path: string; type: string };
