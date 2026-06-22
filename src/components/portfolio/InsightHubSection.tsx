@@ -11,6 +11,9 @@ const InsightHubSection = () => {
               Insight Hub
             </span>
           </div>
+          <p className="text-sm text-muted-foreground">
+            Coming Soon .......
+          </p>
         </div>
       </div>
     </section>
