@@ -52,9 +52,6 @@ const AboutSection = () => {
             <p>
               Experienced in Kubernetes platform operations, GitOps practices, DevSecOps integration, observability, and release automation using Azure DevOps, GitHub Actions, Harness, ArgoCD, Prometheus, Grafana, and cloud-native services.
             </p>
-            <p className="text-foreground/80">
-              Actively exploring AI-driven Cloud & DevOps automation through n8n workflow orchestration, AI-assisted operational workflows, intelligent monitoring, automated RCA processes, and cloud automation frameworks to improve operational efficiency, platform visibility, and delivery outcomes.
-            </p>
           </div>
 
           <div>
