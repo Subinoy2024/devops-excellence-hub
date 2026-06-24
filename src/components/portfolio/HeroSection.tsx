@@ -25,7 +25,7 @@ const HeroSection = () => {
         </p>
 
         <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
-          Terraform as Infrastructure as Code &nbsp;·&nbsp; Multi-Cloud Platforms &nbsp;·&nbsp; Kubernetes & OpenShift &nbsp;·&nbsp; CI/CD & GitOps &nbsp;·&nbsp; AI-Driven Workflow Automation
+          Terraform as Infrastructure as Code &nbsp;·&nbsp; Multi-Cloud Platforms &nbsp;·&nbsp; AKS, EKS, GKE & OpenShift &nbsp;·&nbsp; CI/CD & GitOps &nbsp;·&nbsp; AI-Driven Workflow Automation
         </p>
 
         <p className="text-sm text-muted-foreground mb-6">
