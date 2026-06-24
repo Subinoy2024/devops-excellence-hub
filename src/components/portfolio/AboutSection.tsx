@@ -17,7 +17,6 @@ const companies = [
 
 const highlights = [
   { label: 'IT Experience', value: '13+ years' },
-  { label: 'Cloud & DevOps', value: '6+ years' },
   { label: 'Certifications', value: '10+' },
   { label: 'Global Clients', value: '30+' },
 ];
