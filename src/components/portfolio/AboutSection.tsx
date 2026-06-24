@@ -42,7 +42,7 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
             <p>
-              DevOps & Cloud Engineer with 13+ years of IT experience and 6+ years specializing in cloud-native platforms, Infrastructure as Code, CI/CD automation, and container platform engineering across enterprise environments.
+              Cloud & DevOps Engineer with 13+ years of IT experience delivering end-to-end cloud solutions across Terraform, Multi-Cloud Infrastructure, Kubernetes Platforms, CI/CD Automation, and AI-Driven Operational Workflows—building scalable, secure, and production-ready platforms.
             </p>
             <p>
               Experienced in provisioning and managing cloud resources across Azure, AWS, GCP, and OpenStack, designing and implementing enterprise CI/CD pipelines, and deploying microservices-based applications on Kubernetes platforms (AKS, EKS, GKE) and OpenShift (ARO). Proven expertise in delivering scalable, secure, and highly available cloud solutions through automation, standardization, and engineering best practices.
