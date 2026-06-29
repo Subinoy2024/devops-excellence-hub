@@ -21,7 +21,7 @@ const HeroSection = () => {
           Subinoy Debnath
         </h1>
         <p className="text-xl sm:text-2xl text-primary font-heading font-semibold mb-2">
-          Cloud & DevOps Engineer
+          Cloud Architecture & DevOps Engineering
         </p>
 
         <p className="text-sm text-primary/80 font-medium tracking-wide mb-3">
@@ -33,7 +33,7 @@ const HeroSection = () => {
         </p>
 
         <p className="text-muted-foreground max-w-xl mx-auto mb-8 leading-relaxed text-[15px]">
-          End-to-end Cloud & DevOps Engineering across Terraform, Multi-Cloud Infrastructure, Kubernetes Platforms,
+          End-to-end Cloud Architecture & DevOps Engineering across Terraform, Multi-Cloud Infrastructure, Kubernetes Platforms,
           CI/CD Automation, and AI-Driven Operational Workflows — delivering scalable, secure, and production-ready
           cloud solutions.
         </p>

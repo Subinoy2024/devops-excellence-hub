@@ -29,7 +29,7 @@ const ProfileCard = () => {
             SUBINOY DEBNATH
           </h1>
           <p className="text-accent mt-1 font-mono text-sm">
-            Cloud & DevOps Engineer
+            Cloud Architecture & DevOps Engineering
           </p>
           <div className="flex items-center justify-center gap-2 mt-2 text-xs text-muted-foreground">
             <span className="pulse-glow w-2 h-2 bg-primary rounded-full" />
