@@ -15,7 +15,7 @@ const skillGroups = [
   {
     category: 'CI/CD, GitOps & Automation',
     icon: GitBranch,
-    items: ['Azure DevOps', 'GitHub Actions', 'Harness', 'ArgoCD', 'Helm', 'Ansible', 'Azure CLI', 'AWS CLI'],
+    items: ['Azure DevOps', 'GitHub Actions', 'Harness', 'ArgoCD', 'Helm', 'Azure CLI', 'AWS CLI'],
   },
   {
     category: 'Containers & Platform Engineering',
