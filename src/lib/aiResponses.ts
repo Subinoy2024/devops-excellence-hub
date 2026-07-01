@@ -1,4 +1,4 @@
-// Pre-programmed AI responses for the Cloud Architecture & DevOps Engineering portfolio
+// Pre-programmed AI responses for the Cloud & DevOps Engineering portfolio
 // Simulates an AI assistant that knows about Subinoy Debnath's skills and experience
 
 interface AIResponse {
@@ -49,7 +49,7 @@ What would you like to explore?`
 ║  ABOUT SUBINOY DEBNATH                                       ║
 ╚══════════════════════════════════════════════════════════════╝
 
-Results-driven Cloud Architecture & DevOps Engineering with a strong foundation 
+Results-driven Cloud & DevOps Engineering with a strong foundation 
 in infrastructure engineering and a passion for building scalable, 
 resilient, and secure cloud platforms.
 
@@ -365,7 +365,7 @@ export const getWelcomeMessage = (): string => {
 > INITIALIZING SUBINOY DEBNATH PROFILE...
 > CONNECTION ESTABLISHED
 
-Welcome to the AI-powered Cloud Architecture & DevOps Engineering profile.
+Welcome to the AI-powered Cloud & DevOps Engineering profile.
 
 I am PROFILE-AI, your intelligent assistant. Ask me anything about:
 • Cloud infrastructure & architecture
