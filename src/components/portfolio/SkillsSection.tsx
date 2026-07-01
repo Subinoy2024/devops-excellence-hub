@@ -1,4 +1,4 @@
-import { Cloud, Container, GitBranch, Code, Activity, Shield, DollarSign, Cpu, Terminal } from 'lucide-react';
+import { Cloud, Container, GitBranch, Code, Shield, DollarSign, Cpu, Terminal } from 'lucide-react';
 import { getToolIcon } from '@/lib/toolIcons';
 
 const skillGroups = [
@@ -26,11 +26,6 @@ const skillGroups = [
     category: 'Version Control',
     icon: GitBranch,
     items: ['Git', 'GitHub', 'Azure Repos'],
-  },
-  {
-    category: 'Monitoring & Observability',
-    icon: Activity,
-    items: ['OpenTelemetry', 'Prometheus', 'Grafana', 'Azure Monitor', 'Application Insights', 'Log Analytics', 'CloudWatch', 'ELK Stack'],
   },
   {
     category: 'Security & DevSecOps',
@@ -61,7 +56,7 @@ const SkillsSection = () => {
         <h2 className="text-2xl sm:text-3xl font-bold font-heading mb-2">Technology Stack</h2>
         <div className="w-16 h-1 bg-primary rounded mb-3" />
         <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
-          Core technologies and platforms aligned to cloud infrastructure provisioning, platform engineering, CI/CD automation, container operations, security, observability, and cloud optimization.
+          Core technologies and platforms aligned to cloud infrastructure provisioning, platform engineering, CI/CD automation, container operations, security, and cloud optimization.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

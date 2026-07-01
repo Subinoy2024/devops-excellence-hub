@@ -1,4 +1,4 @@
-import { Cloud, Container, GitBranch, Shield, Activity, Settings, Cpu } from 'lucide-react';
+import { Cloud, Container, GitBranch, Shield, Settings, Cpu } from 'lucide-react';
 
 const skills = [
   {
@@ -30,12 +30,6 @@ const skills = [
     icon: Shield,
     items: ['Azure Key Vault', 'AWS Secrets Manager', 'IAM Policies', 'Azure Policy', 'Trivy', 'DevSecOps Practices'],
     color: 'secondary'
-  },
-  {
-    category: 'Monitoring & Observability',
-    icon: Activity,
-    items: ['Prometheus', 'Grafana', 'Azure Monitor', 'ELK Stack'],
-    color: 'accent'
   },
   {
     category: 'AI / ML Platforms',
