@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 type Message = { role: 'user' | 'assistant'; content: string };
 
 const knowledge: Record<string, string> = {
-  'who|name|about|introduction': "I'm Subinoy Debnath — a Cloud Architecture & DevOps Engineering with 12+ years of IT experience and 6+ years specializing in Cloud & DevOps. I build scalable, resilient, and secure cloud platforms for enterprise clients.",
+  'who|name|about|introduction': "I'm Subinoy Debnath — a Cloud & DevOps Engineering with 12+ years of IT experience and 6+ years specializing in Cloud & DevOps. I build scalable, resilient, and secure cloud platforms for enterprise clients.",
   'experience|years|companies|work': "I have 12+ years of IT experience across leading organizations: Kyndryl, HCL, KPMG, Atos, Microland, CGI, TCS, and Capgemini — delivering production-grade infrastructure at scale.",
   'skills|technologies|tools|tech stack': "My core skills include: Azure (AKS, VMs), AWS (EKS, EC2, S3), Kubernetes, Docker, Helm, Terraform, Jenkins, GitHub Actions, ArgoCD, Prometheus, Grafana, and Infrastructure as Code with ARM/CloudFormation.",
   'cloud|azure|aws': "I work across Azure and AWS. On Azure: AKS, VMs, Storage, Policy, Sentinel. On AWS: EKS, EC2, S3, IAM, CloudFormation, Kinesis, Lambda, DynamoDB.",
