@@ -5,7 +5,6 @@ const responsibilities = [
   'Engineer and maintain enterprise CI/CD pipelines using Azure DevOps, GitHub Actions, and Harness for automated infrastructure and application delivery',
   'Deploy and manage microservices-based applications on Kubernetes platforms (AKS, EKS, GKE) and OpenShift (ARO), ensuring scalability, reliability, and operational excellence',
   'Manage Git-based workflows including branching strategies, pull requests, version control, code integration, release management, and GitOps practices',
-  'Configure and manage observability solutions using OpenTelemetry, Prometheus, Grafana, Azure Monitor, Application Insights, and CloudWatch for metrics, logs, distributed tracing, and proactive alerting',
   'Implement DevSecOps practices through security scanning, policy enforcement, secret management, RBAC/IAM controls, compliance validation, and secure release processes',
   'Execute release management activities including deployment validation, environment readiness, rollback planning, production approvals, and controlled rollouts',
   'Troubleshoot and resolve infrastructure, Kubernetes, platform, and CI/CD pipeline issues through RCA-driven analysis and automation-first remediation approaches',
@@ -22,7 +21,7 @@ const ExperienceSection = () => {
         <div className="w-16 h-1 bg-primary rounded mb-3" />
         <p className="text-sm text-muted-foreground mb-10 max-w-2xl">
           Day-to-day engineering execution across multi-cloud infrastructure provisioning, Terraform-based Infrastructure as Code,
-          CI/CD delivery, container platform operations, observability, security, and enterprise platform engineering.
+          CI/CD delivery, container platform operations, security, and enterprise platform engineering.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4">
