@@ -69,4 +69,29 @@ const InsightHubSection = () => {
               {['Terraform', 'OPA', 'Rego', 'Python', 'AWS'].map((tool) => (
                 <span
                   key={tool}
-                  className="text-xs px-2.5 py-1 bg-muted/50 rounded text-muted-Post too large, but context is preserved. Continue from exactly where you would have stopped reading — do not restart the response.
+                  className="text-xs px-2.5 py-1 bg-muted/50 rounded text-muted-foreground border border-border/50"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* GitHub Link */}
+          <a
+            href="https://github.com/Subinoy2024/Policy-As-Code-with-Terraform-Demo.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-mono text-primary hover:text-primary/80 transition-colors"
+          >
+            <Github size={16} />
+            <span>View on GitHub</span>
+            <ExternalLink size={14} />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default InsightHubSection;
